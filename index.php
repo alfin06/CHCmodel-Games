@@ -12,6 +12,10 @@
     
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	
+	<link href="plugins/toastr/css/toastr.min.css" rel="stylesheet">  
+	<script src="plugins/toastr/js/toastr.min.js"></script>
+	
     <style>
       html, body {
       min-height: 100%;white
@@ -143,7 +147,7 @@
 	
 	$ldate = gmdate("Y-M-d", time()+420*60+7);
 
-	// Update the item's info
+	// Insert data
 	if (isset($_POST['insert']))
 	{
 		$result = $db->query("INSERT INTO account(name, gender, age)
@@ -158,11 +162,56 @@
 			echo "</script>";
 		}
 	}
+	
+	// Continue
+	if (isset($_POST['continue']))
+	{
+		echo "<script>";
+		echo "window.open('menu.php', '_SELF');";
+		echo "</script>";
+	}
+	
+	// Login
+	if (isset($_POST['login']))
+	{
+		$qry ="SELECT COUNT(*) AS found
+				FROM user
+			   WHERE password ='".$_POST['password']."'";
+			   
+		$result = $db->query($qry);// or die(mysql_error());
+		
+		while($r = mysqli_fetch_array($result))
+		{
+			$found  = $r['found'];
+		}
+		
+		if ($found > 0)
+		{
+			echo "<script>";
+			echo "window.open('result.php', '_SELF');";
+			echo "</script>";
+		}
+		else
+		{
+		?>
+			<script type="text/javascript">
+				toastr.error('Incorrect password.', 'ERROR', {timeOut: 5000});
+			</script> 
+		<?php
+		}
+	}
 ?>
     <div class="main-block">
       <div class="left-part">
         <i class="fas fa-gamepad"></i>
-        <h1>Register to our games</h1>
+        <h1>Welcome</h1>
+		<form method="post" style="background:white;">
+		<div style="color:black;">
+			<span>Password:</span>
+			<input type="password" name="password" id="password" style="color:black;border:1px solid"/><br/>
+			<button type="submit" id="login" name="login" style="width:50%;" formnovalidate>Login</button>
+		</div>
+		</form>
       </div>
       <form method="post">
         <div class="title">
@@ -170,15 +219,23 @@
           <h2>Register here</h2>
         </div>
         <div class="info">
-          <input class="fname" type="text" name="name" id="name" placeholder="Nama Lengkap" required>
+          <input class="fname" type="text" name="name" id="name" placeholder="Full Name" required>
 		  <select name="gender" id="gender" required>
-            <option value="" selected>Jenis Kelamin</option>
-            <option value="M">Laki-laki</option>
-            <option value="F">Perempuan</option>
+            <option value="" selected>Gender</option>
+            <option value="M">Boy</option>
+            <option value="F">Girl</option>
           </select>
-          <input type="number" name="age" id="age" placeholder="Umur" required>
+          <input type="number" name="age" id="age" placeholder="Age" required>
         </div>
-        <button type="submit" id="insert" name="insert">Daftar</button>
+        <button type="submit" id="insert" name="insert">Register</button>
+		<?php
+		if (isset($_SESSION['login_user']))
+		{
+		?>
+        <button type="submit" id="continue" name="continue" style="background:green;" formnovalidate>Continue</button>
+		<?php
+		}
+		?>
       </form>
     </div>
   </body>
