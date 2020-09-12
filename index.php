@@ -207,7 +207,7 @@
         <h1>Welcome</h1>
 		<form method="post" style="background:white;">
 		<div style="color:black;">
-			<span>Password:</span>
+			<span>Enter Password:</span>
 			<input type="password" name="password" id="password" style="color:black;border:1px solid"/><br/>
 			<button type="submit" id="login" name="login" style="width:50%;" formnovalidate>Login</button>
 		</div>
