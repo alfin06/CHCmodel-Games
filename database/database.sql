@@ -19,6 +19,7 @@ USE `thesis`;
 -- Dumping structure for table thesis.account
 CREATE TABLE IF NOT EXISTS `account` (
   `id` int(5) NOT NULL AUTO_INCREMENT,
+  `signup_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `gender` varchar(1) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `age` int(11) NOT NULL DEFAULT '0',
@@ -26,12 +27,13 @@ CREATE TABLE IF NOT EXISTS `account` (
   `game1_screenshot` varchar(15) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
   `game1_end` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table thesis.account: 1 rows
 /*!40000 ALTER TABLE `account` DISABLE KEYS */;
-INSERT INTO `account` (`id`, `name`, `gender`, `age`, `game1_start`, `game1_screenshot`, `game1_end`) VALUES
-	(4, 'Coba', 'M', 8, '2020-09-11 21:13:39', 'game1_4.PNG', '2020-09-11 21:32:17');
+INSERT INTO `account` (`id`, `signup_date`, `name`, `gender`, `age`, `game1_start`, `game1_screenshot`, `game1_end`) VALUES
+	(4, '2020-09-13 20:52:32', 'Coba', 'B', 8, '2020-09-11 21:13:39', 'game1_4.PNG', '2020-09-11 21:32:17'),
+	(5, '2020-09-13 21:24:41', 'Test 2 Dicoba', 'G', 9, '2020-09-13 21:24:50', 'game1_5.PNG', '2020-09-13 21:28:36');
 /*!40000 ALTER TABLE `account` ENABLE KEYS */;
 
 -- Dumping structure for table thesis.user
@@ -42,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table thesis.user: 0 rows
+-- Dumping data for table thesis.user: 1 rows
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` (`id`, `username`, `password`) VALUES
 	(1, 'admin', 'asdf');

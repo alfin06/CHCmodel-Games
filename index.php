@@ -133,7 +133,6 @@
       flex: 1;
       height: auto;
       }
-      }
     </style>
   </head>
   <body>
@@ -185,17 +184,16 @@
 			$found  = $r['found'];
 		}
 		
-		if ($found > 0)
+		if (intval($found) > 0)
 		{
-			echo "<script>";
-			echo "window.open('result.php', '_SELF');";
-			echo "</script>";
+			header("Location: result.php");
+			exit();
 		}
 		else
 		{
 		?>
 			<script type="text/javascript">
-				toastr.error('Incorrect password.', 'ERROR', {timeOut: 5000});
+				alert('Password salah.');
 			</script> 
 		<?php
 		}
@@ -222,8 +220,8 @@
           <input class="fname" type="text" name="name" id="name" placeholder="Full Name" required>
 		  <select name="gender" id="gender" required>
             <option value="" selected>Gender</option>
-            <option value="M">Boy</option>
-            <option value="F">Girl</option>
+            <option value="B">Boy</option>
+            <option value="G">Girl</option>
           </select>
           <input type="number" name="age" id="age" placeholder="Age" required>
         </div>
