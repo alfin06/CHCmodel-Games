@@ -4,12 +4,31 @@
 
 <!DOCTYPE html>
 <html>
+<head>
 <title>Games | Menu</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ <style>
+      html, body {
+      min-height: 100%;
+      background: rgb(89,242,150);
+background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100%);
+      }
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: 'Grandstander', cursive;
+      font-size: 20px;
+      color: #eee;
+      }
+    </style>
+
+</head>
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -20,12 +39,12 @@
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1250px;" id="home">
-  <img class="w3-image" src="images/background.jpg" alt="Architecture" width="1500" height="800">
+<header class="w3-display-container w3-content w3-wide" style="max-width:1250px; min-height:300px;" id="home">
+ <!--  <img class="w3-image" src="images/background.jpg" alt="Architecture" width="1500" height="800"> -->
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Hi, <?php echo $name; ?>!</b></span> 
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Welcome, <?php echo $name; ?>!</b></span> 
 	<br/>
-	<span class="w3-hide-small w3-text-light-grey">Hope you enjoy the game!</span></h1>
+	<span class="w3-hide-small w3-text-light-grey">Select a game below to start!</span></h1>
   </div>
 </header>
 
@@ -62,7 +81,7 @@
 		else
 		{
 		?>
-			<button onclick="window.location.href='game1.php';" class="w3-display-topleft w3-black w3-padding">Rush Hour</button>
+			<button onclick="window.location.href='rushhour.php';" class="w3-display-topleft w3-black w3-padding">Rush Hour</button>
 		<?php
 		}
 		?>
