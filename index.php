@@ -14,27 +14,30 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 	
 	<link href="plugins/toastr/css/toastr.min.css" rel="stylesheet">  
+
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 	<script src="plugins/toastr/js/toastr.min.js"></script>
 	
     <style>
       html, body {
-      min-height: 100%;white
+      min-height: 100%;
+      background: rgb(89,242,150);
+background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100%);
       }
       body, div, form, input, select, p { 
       padding: 0;
       margin: 0;
       outline: none;
-      font-family: Roboto, Arial, sans-serif;
-      font-size: 16px;
+      font-family: 'Grandstander', cursive;
+      font-size: 20px;
       color: #eee;
-      }
-      body {
-	  
-      }
-      h1 {
-	  color: black;
-	  text-transform: uppercase;
-      font-weight: 400;
       }
       h2 {
       margin: 0 0 0 8px;
@@ -48,7 +51,6 @@
       align-items: center;
       height: 100%;
       padding: 25px;
-      background: white; 
       }
       .left-part, form {
       padding: 25px;
@@ -62,6 +64,7 @@
       }
       form {
       background: rgba(0, 0, 0, 0.7); 
+
       }
       .title {
       display: flex;
@@ -129,10 +132,23 @@
       flex-direction: row;
       height: calc(100% - 50px);
       }
-      .left-part, form {
-      flex: 1;
-      height: auto;
+      .left-part {
+    
       }
+
+.dv_form{
+  position:relative;
+}
+
+#dv_adminlogin {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 23px;
+  text-align: right;
+}
+
     </style>
   </head>
   <body>
@@ -199,42 +215,54 @@
 		}
 	}
 ?>
+
     <div class="main-block">
-      <div class="left-part">
-        <i class="fas fa-gamepad"></i>
-        <h1>Welcome</h1>
-		<form method="post" style="background:white;">
-		<div style="color:black;">
-			<span>Enter Password:</span>
-			<input type="password" name="password" id="password" style="color:black;border:1px solid"/><br/>
-			<button type="submit" id="login" name="login" style="width:50%;" formnovalidate>Login</button>
-		</div>
-		</form>
-      </div>
-      <form method="post">
-        <div class="title">
-          <i class="fas fa-pencil-alt"></i> 
-          <h2>Register here</h2>
+
+      
+        <div class="dv_form" id="dv_adminlogin">
+		      <form method="post" >
+      		  <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:200px;">
+                Admin Log In
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <div class="dropdown-item"><span>Password:</span>
+                      <input type="password" name="password" id="password" style="color:black;border:1px solid"/><br/>
+                      <button type="submit" id="login" name="login" style="width:70px;" formnovalidate>Login</button>
+                </div>
+              </div>
+            </div>	  
+      		</form>
         </div>
-        <div class="info">
-          <input class="fname" type="text" name="name" id="name" placeholder="Full Name" required>
-		  <select name="gender" id="gender" required>
-            <option value="" selected>Gender</option>
-            <option value="B">Boy</option>
-            <option value="G">Girl</option>
-          </select>
-          <input type="number" name="age" id="age" placeholder="Age" required>
+
+        <div class="dv_form">
+          <form method="post">
+            <div class="title">
+              <i class="fas fa-pencil-alt"></i> 
+              <h2>Register here</h2>
+            </div>
+            <div class="info">
+              <input class="fname" type="text" name="name" id="name" placeholder="Full Name" required>
+		          <select name="gender" id="gender" required>
+                <option value="" selected disabled>Gender</option>
+                <option value="B">Boy</option>
+                <option value="G">Girl</option>
+              </select>
+              <input type="number" name="age" id="age" placeholder="Age" required>
+            </div>
+            <button type="submit" id="insert" name="insert">Register</button>
+        		<?php
+        		if (isset($_SESSION['login_user']))
+        		{
+        		?>
+                <button type="submit" id="continue" name="continue" style="background:green;" formnovalidate>Continue</button>
+        		<?php
+        		}
+        		?>
+          </form>
         </div>
-        <button type="submit" id="insert" name="insert">Register</button>
-		<?php
-		if (isset($_SESSION['login_user']))
-		{
-		?>
-        <button type="submit" id="continue" name="continue" style="background:green;" formnovalidate>Continue</button>
-		<?php
-		}
-		?>
-      </form>
+
+
     </div>
   </body>
 </html>
