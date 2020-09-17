@@ -15,24 +15,35 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 <style>
-	hr.new {
-	  border-top: 1px solid black;
-	  width:15%;
-	  margin-top: 0;
-	  padding: 0;
-	}
 	
-	button.id {
-		cursor: pointer;
-	}
+	html, body {
+      min-height: 100%;
+      background: rgb(89,242,150);
+	  background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100%);
+    }
+	
+    body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: 'Grandstander', cursive;
+      font-size: 20px;
+      color: black;
+    }
+	
+	button {
+		cursor: pointer; 
+	 }
 </style>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.php" class="w3-bar-item w3-button"><b>Home</b></a>
+    <a href="index.php" class="w3-bar-item w3-button"><i class="fas fa-home"></i></a>
   </div>
 </div>
 
@@ -42,7 +53,6 @@
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Results</h3>
-	<hr class="new" />
   </div>
 
   <form method="POST">

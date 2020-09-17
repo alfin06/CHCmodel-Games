@@ -20,20 +20,34 @@ USE `thesis`;
 CREATE TABLE IF NOT EXISTS `account` (
   `id` int(5) NOT NULL AUTO_INCREMENT,
   `signup_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `gender` varchar(1) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `name` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `gender` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `age` int(11) NOT NULL DEFAULT '0',
   `game1_start` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `game1_screenshot` varchar(15) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
   `game1_end` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `game2_start` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `game2_screenshot` varchar(15) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
+  `game2_end` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `game3_start` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `game3_screenshot` varchar(15) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
+  `game3_end` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `game4_start` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `game4_screenshot` varchar(15) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
+  `game4_end` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `game5_start` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `game5_screenshot` varchar(15) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
+  `game5_end` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `game6_start` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `game6_screenshot` varchar(15) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
+  `game6_end` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table thesis.account: 1 rows
+-- Dumping data for table thesis.account: 0 rows
 /*!40000 ALTER TABLE `account` DISABLE KEYS */;
-INSERT INTO `account` (`id`, `signup_date`, `name`, `gender`, `age`, `game1_start`, `game1_screenshot`, `game1_end`) VALUES
-	(4, '2020-09-13 20:52:32', 'Coba', 'B', 8, '2020-09-11 21:13:39', 'game1_4.PNG', '2020-09-11 21:32:17'),
-	(5, '2020-09-13 21:24:41', 'Test 2 Dicoba', 'G', 9, '2020-09-13 21:24:50', 'game1_5.PNG', '2020-09-13 21:28:36');
+INSERT INTO `account` (`id`, `signup_date`, `name`, `gender`, `age`, `game1_start`, `game1_screenshot`, `game1_end`, `game2_start`, `game2_screenshot`, `game2_end`, `game3_start`, `game3_screenshot`, `game3_end`, `game4_start`, `game4_screenshot`, `game4_end`, `game5_start`, `game5_screenshot`, `game5_end`, `game6_start`, `game6_screenshot`, `game6_end`) VALUES
+	(1, '2020-09-17 19:56:01', 'Test', 'B', 7, '2020-09-17 20:59:13', '', '2020-09-17 19:56:01', '2020-09-17 21:00:06', '', '2020-09-17 19:56:01', '2020-09-17 21:00:17', '', '2020-09-17 19:56:01', '2020-09-17 21:00:28', '', '2020-09-17 19:56:01', '2020-09-17 21:00:57', '', '2020-09-17 19:56:01', '2020-09-17 21:01:06', '', '2020-09-17 19:56:01');
 /*!40000 ALTER TABLE `account` ENABLE KEYS */;
 
 -- Dumping structure for table thesis.user

@@ -59,14 +59,14 @@
 		
 		$extension = end($nagambaradd_temp);
 		$namaakhir = $login_session;
-		$namaakhir = "game1_".$namaakhir.".".$extension;
+		$namaakhir = "game6_".$namaakhir.".".$extension;
 		
 		if(($typegambar == "image/jpeg" || $typegambar == "image/png" || $typegambar == "image/jpg") && 
 			$nagambaradd !="" && $ukurangambar < 1000000 )
 		{
 			$a="UPDATE account 
-				   SET game1_screenshot = '".$namaakhir."',
-				       game1_end = NOW()
+				   SET game6_screenshot = '".$namaakhir."',
+				       game6_end = NOW()
 				 WHERE id=".$login_session;
 
 			$result = $db->query($a);	
@@ -104,7 +104,7 @@
 	if (isset($_POST['start']))
 	{
 		$query="UPDATE account 
-				   SET game1_start = NOW() 
+				   SET game6_start = NOW() 
 				 WHERE id=".$login_session;
 
 		$result = $db->query($query);
@@ -113,7 +113,7 @@
 		{
 			?>
 			<script>
-				window.open('rushhour.php', '_blank');
+				window.open('https://www.braingymmer.com/en/brain-games/post/play/', '_blank');
 			</script>
 			<?php
 		}
@@ -131,7 +131,7 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="menu.php" class="w3-bar-item w3-button"><i class="fas fa-arrow-left"></i></a>
+    <a href="menu.php" class="w3-bar-item w3-button"><i class="fas fa-arrow-left"></i></b></a>
   </div>
 </div>
 

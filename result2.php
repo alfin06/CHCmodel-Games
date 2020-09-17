@@ -13,24 +13,34 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 <style>
-	hr.new {
-	  border-top: 1px solid black;
-	  width:15%;
-	  margin-top: 0;
-	  padding: 0;
-	}
+	button {
+		cursor: pointer; 
+	 }
 	
-	button.id {
-		cursor: pointer;
-	}
+	html, body {
+      min-height: 100%;
+      background: rgb(89,242,150);
+	  background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100%);
+    }
+	
+    body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: 'Grandstander', cursive;
+      font-size: 20px;
+      color: #eee;
+    }
 </style>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.php" class="w3-bar-item w3-button"><b>Home</b></a>
+	<a href="result.php" class="w3-bar-item w3-button"><i class="fas fa-arrow-left"></i></a>
   </div>
 </div>
 
@@ -40,7 +50,6 @@
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Result</h3>
-	<hr class="new" />
   </div>
 
   <form method="POST">
@@ -51,7 +60,17 @@
 		// Show data
 		$qry ="SELECT id, name, gender, age, DATE_FORMAT(signup_date, '%d/%m/%Y at %H:%i') AS signup_date,
 					  DATE_FORMAT(game1_start, '%d/%m/%Y at %H:%i') AS game1_start, game1_screenshot,
-					  DATE_FORMAT(game1_end, '%d/%m/%Y at %H:%i') AS game1_end
+					  DATE_FORMAT(game1_end, '%d/%m/%Y at %H:%i') AS game1_end,
+					  DATE_FORMAT(game2_start, '%d/%m/%Y at %H:%i') AS game2_start, game2_screenshot,
+					  DATE_FORMAT(game2_end, '%d/%m/%Y at %H:%i') AS game2_end,
+					  DATE_FORMAT(game3_start, '%d/%m/%Y at %H:%i') AS game3_start, game3_screenshot,
+					  DATE_FORMAT(game3_end, '%d/%m/%Y at %H:%i') AS game3_end,
+					  DATE_FORMAT(game4_start, '%d/%m/%Y at %H:%i') AS game4_start, game4_screenshot,
+					  DATE_FORMAT(game4_end, '%d/%m/%Y at %H:%i') AS game4_end,
+					  DATE_FORMAT(game5_start, '%d/%m/%Y at %H:%i') AS game5_start, game5_screenshot,
+					  DATE_FORMAT(game5_end, '%d/%m/%Y at %H:%i') AS game5_end,
+					  DATE_FORMAT(game6_start, '%d/%m/%Y at %H:%i') AS game6_start, game6_screenshot,
+					  DATE_FORMAT(game6_end, '%d/%m/%Y at %H:%i') AS game6_end
 				 FROM account
 				WHERE id = ".$_SESSION['student_id'];
 			   
@@ -66,6 +85,21 @@
 			$game1_start = $r['game1_start'];
 			$game1_screenshot = $r['game1_screenshot'];
 			$game1_end = $r['game1_end'];
+			$game2_start = $r['game2_start'];
+			$game2_screenshot = $r['game2_screenshot'];
+			$game2_end = $r['game2_end'];
+			$game3_start = $r['game3_start'];
+			$game3_screenshot = $r['game3_screenshot'];
+			$game3_end = $r['game3_end'];
+			$game4_start = $r['game4_start'];
+			$game4_screenshot = $r['game4_screenshot'];
+			$game4_end = $r['game4_end'];
+			$game5_start = $r['game5_start'];
+			$game5_screenshot = $r['game5_screenshot'];
+			$game5_end = $r['game5_end'];
+			$game6_start = $r['game6_start'];
+			$game6_screenshot = $r['game6_screenshot'];
+			$game6_end = $r['game6_end'];
 		}
 		?>
 		
@@ -95,7 +129,7 @@
 		<form class="w3-container">
 			<div class="w3-row">
 				<div class="w3-full">
-					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Fluid Reasoning (GF) - Rush Hour</h3>
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Fluid Reasoning (GF)</h3>
 				</div>
 			</div>
 			<div class="w3-row">
@@ -111,7 +145,139 @@
 			<br/>
 			<div class="w3-row">
 				<div class="w3-full">
+					<?php
+					if ($game1_screenshot != '') {
+					?>
 					<img src='<?php echo "images/upload/".$game1_screenshot;?>' class="w3-round" alt="game1">
+					<?php
+					}
+					?>
+				</div>
+			</div>
+			<div class="w3-row">
+				<div class="w3-third">
+					<label>Start:</label>
+					<input class="w3-input" type="text" value='<?php echo $game2_start; ?>' style="width:75%;" disabled>
+				</div>
+				<div class="w3-third">
+					<label>End:</label>
+					<input class="w3-input" type="text" value='<?php echo $game2_end; ?>' style="width:75%;" disabled>
+				</div>
+			</div>
+			<br/>
+			<div class="w3-row">
+				<div class="w3-full">
+					<?php
+					if ($game2_screenshot != '') {
+					?>
+					<img src='<?php echo "images/upload/".$game2_screenshot;?>' class="w3-round" alt="game2">
+					<?php
+					}
+					?>
+				</div>
+			</div>
+		</form>
+		<hr />
+		<form class="w3-container">
+			<div class="w3-row">
+				<div class="w3-full">
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Working Memory (GWM)</h3>
+				</div>
+			</div>
+			<div class="w3-row">
+				<div class="w3-third">
+					<label>Start:</label>
+					<input class="w3-input" type="text" value='<?php echo $game3_start; ?>' style="width:75%;" disabled>
+				</div>
+				<div class="w3-third">
+					<label>End:</label>
+					<input class="w3-input" type="text" value='<?php echo $game3_end; ?>' style="width:75%;" disabled>
+				</div>
+			</div>
+			<br/>
+			<div class="w3-row">
+				<div class="w3-full">
+					<?php
+					if ($game3_screenshot != '') {
+					?>
+					<img src='<?php echo "images/upload/".$game3_screenshot;?>' class="w3-round" alt="game3">
+					<?php
+					}
+					?>
+				</div>
+			</div>
+			<div class="w3-row">
+				<div class="w3-third">
+					<label>Start:</label>
+					<input class="w3-input" type="text" value='<?php echo $game4_start; ?>' style="width:75%;" disabled>
+				</div>
+				<div class="w3-third">
+					<label>End:</label>
+					<input class="w3-input" type="text" value='<?php echo $game4_end; ?>' style="width:75%;" disabled>
+				</div>
+			</div>
+			<br/>
+			<div class="w3-row">
+				<div class="w3-full">
+					<?php
+					if ($game4_screenshot != '') {
+					?>
+					<img src='<?php echo "images/upload/".$game4_screenshot;?>' class="w3-round" alt="game5">
+					<?php
+					}
+					?>
+				</div>
+			</div>
+		</form>
+		<hr />
+		<form class="w3-container">
+			<div class="w3-row">
+				<div class="w3-full">
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Speed (GS)</h3>
+				</div>
+			</div>
+			<div class="w3-row">
+				<div class="w3-third">
+					<label>Start:</label>
+					<input class="w3-input" type="text" value='<?php echo $game5_start; ?>' style="width:75%;" disabled>
+				</div>
+				<div class="w3-third">
+					<label>End:</label>
+					<input class="w3-input" type="text" value='<?php echo $game5_end; ?>' style="width:75%;" disabled>
+				</div>
+			</div>
+			<br/>
+			<div class="w3-row">
+				<div class="w3-full">
+					<?php
+					if ($game5_screenshot != '') {
+					?>
+					<img src='<?php echo "images/upload/".$game5_screenshot;?>' class="w3-round" alt="game3">
+					<?php
+					}
+					?>
+				</div>
+			</div>
+			<div class="w3-row">
+				<div class="w3-third">
+					<label>Start:</label>
+					<input class="w3-input" type="text" value='<?php echo $game6_start; ?>' style="width:75%;" disabled>
+				</div>
+				<div class="w3-third">
+					<label>End:</label>
+					<input class="w3-input" type="text" value='<?php echo $game6_end; ?>' style="width:75%;" disabled>
+				</div>
+			</div>
+			<br/>
+			<div class="w3-row">
+				<div class="w3-full">
+					<?php
+					if ($game6_screenshot != '') {
+					?>
+					<img src='<?php echo "images/upload/".$game6_screenshot;?>' class="w3-round" alt="game6">
+					<?php
+					}
+					?>
 				</div>
 			</div>
 		</form>

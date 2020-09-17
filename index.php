@@ -202,8 +202,9 @@ background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100
 		
 		if (intval($found) > 0)
 		{
-			header("Location: result.php");
-			exit();
+			echo "<script>";
+			echo "window.open('result.php', '_SELF');";
+			echo "</script>";
 		}
 		else
 		{

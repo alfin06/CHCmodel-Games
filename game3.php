@@ -59,14 +59,14 @@
 		
 		$extension = end($nagambaradd_temp);
 		$namaakhir = $login_session;
-		$namaakhir = "game1_".$namaakhir.".".$extension;
+		$namaakhir = "game3_".$namaakhir.".".$extension;
 		
 		if(($typegambar == "image/jpeg" || $typegambar == "image/png" || $typegambar == "image/jpg") && 
 			$nagambaradd !="" && $ukurangambar < 1000000 )
 		{
 			$a="UPDATE account 
-				   SET game1_screenshot = '".$namaakhir."',
-				       game1_end = NOW()
+				   SET game3_screenshot = '".$namaakhir."',
+				       game3_end = NOW()
 				 WHERE id=".$login_session;
 
 			$result = $db->query($a);	
@@ -104,7 +104,7 @@
 	if (isset($_POST['start']))
 	{
 		$query="UPDATE account 
-				   SET game1_start = NOW() 
+				   SET game3_start = NOW() 
 				 WHERE id=".$login_session;
 
 		$result = $db->query($query);
@@ -113,7 +113,7 @@
 		{
 			?>
 			<script>
-				window.open('rushhour.php', '_blank');
+				window.open('https://www.braingymmer.com/en/brain-games/digit/play/', '_blank');
 			</script>
 			<?php
 		}

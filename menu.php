@@ -12,6 +12,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
  <style>
       html, body {
       min-height: 100%;
@@ -26,6 +28,10 @@ background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100
       font-size: 20px;
       color: #eee;
       }
+	  
+	  button {
+		cursor: pointer;  
+	  }
     </style>
 
 </head>
@@ -34,7 +40,7 @@ background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="menu.php" class="w3-bar-item w3-button"><b>Games</b></a>
+    <a href="index.php" class="w3-bar-item w3-button"><i class="fas fa-home"></i></a>
   </div>
 </div>
 
@@ -81,11 +87,40 @@ background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100
 		else
 		{
 		?>
-			<button onclick="window.location.href='rushhour.php';" class="w3-display-topleft w3-black w3-padding">Rush Hour</button>
+			<button onclick="window.location.href='game1.php';" class="w3-display-topleft w3-black w3-padding">Rush Hour</button>
 		<?php
 		}
 		?>
-        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+		<?php
+		// Check if the game is available
+		$qry ="SELECT game2_screenshot
+				FROM account
+			   WHERE id =".$login_session;
+			   
+		$result = $db->query($qry);// or die(mysql_error());
+		
+		while($r = mysqli_fetch_array($result))
+		{
+			$isavailable  = $r['game2_screenshot'] != "" ? "N" : "Y";
+		}
+		
+		if ($isavailable == "N")
+		{
+		?>
+			<button onclick="window.location.href='game2.php';" class="w3-display-topleft w3-black w3-padding" disabled>Bait</button>
+		<?php
+		}
+		else
+		{
+		?>
+			<button onclick="window.location.href='game2.php';" class="w3-display-topleft w3-black w3-padding">Bait</button>
+		<?php
+		}
+		?>
       </div>
     </div>
   </div>
@@ -96,16 +131,64 @@ background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100
   </div>
 
   <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
+   <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
+		<?php
+		// Check if the game is available
+		$qry ="SELECT game3_screenshot
+				FROM account
+			   WHERE id =".$login_session;
+			   
+		$result = $db->query($qry);// or die(mysql_error());
+		
+		while($r = mysqli_fetch_array($result))
+		{
+			$isavailable  = $r['game3_screenshot'] != "" ? "N" : "Y";
+		}
+		
+		if ($isavailable == "N")
+		{
+		?>
+			<button onclick="window.location.href='game3.php';" class="w3-display-topleft w3-black w3-padding" disabled>Digit</button>
+		<?php
+		}
+		else
+		{
+		?>
+			<button onclick="window.location.href='game3.php';" class="w3-display-topleft w3-black w3-padding">Digit</button>
+		<?php
+		}
+		?>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
+	<div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
+		<?php
+		// Check if the game is available
+		$qry ="SELECT game4_screenshot
+				FROM account
+			   WHERE id =".$login_session;
+			   
+		$result = $db->query($qry);// or die(mysql_error());
+		
+		while($r = mysqli_fetch_array($result))
+		{
+			$isavailable  = $r['game4_screenshot'] != "" ? "N" : "Y";
+		}
+		
+		if ($isavailable == "N")
+		{
+		?>
+			<button onclick="window.location.href='game4.php';" class="w3-display-topleft w3-black w3-padding" disabled>Moving Memory</button>
+		<?php
+		}
+		else
+		{
+		?>
+			<button onclick="window.location.href='game4.php';" class="w3-display-topleft w3-black w3-padding">Moving Memory</button>
+		<?php
+		}
+		?>
       </div>
     </div>
   </div>
@@ -118,14 +201,62 @@ background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
+		<?php
+		// Check if the game is available
+		$qry ="SELECT game5_screenshot
+				FROM account
+			   WHERE id =".$login_session;
+			   
+		$result = $db->query($qry);// or die(mysql_error());
+		
+		while($r = mysqli_fetch_array($result))
+		{
+			$isavailable  = $r['game5_screenshot'] != "" ? "N" : "Y";
+		}
+		
+		if ($isavailable == "N")
+		{
+		?>
+			<button onclick="window.location.href='game5.php';" class="w3-display-topleft w3-black w3-padding" disabled>Flip</button>
+		<?php
+		}
+		else
+		{
+		?>
+			<button onclick="window.location.href='game5.php';" class="w3-display-topleft w3-black w3-padding">Flip</button>
+		<?php
+		}
+		?>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
+	<div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
+		<?php
+		// Check if the game is available
+		$qry ="SELECT game6_screenshot
+				FROM account
+			   WHERE id =".$login_session;
+			   
+		$result = $db->query($qry);// or die(mysql_error());
+		
+		while($r = mysqli_fetch_array($result))
+		{
+			$isavailable  = $r['game6_screenshot'] != "" ? "N" : "Y";
+		}
+		
+		if ($isavailable == "N")
+		{
+		?>
+			<button onclick="window.location.href='game6.php';" class="w3-display-topleft w3-black w3-padding" disabled>Post</button>
+		<?php
+		}
+		else
+		{
+		?>
+			<button onclick="window.location.href='game6.php';" class="w3-display-topleft w3-black w3-padding">Post</button>
+		<?php
+		}
+		?>
       </div>
     </div>
   </div>
