@@ -15,6 +15,9 @@
 	
 	<link href="plugins/toastr/css/toastr.min.css" rel="stylesheet">  
 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -28,8 +31,8 @@
     <style>
       html, body {
       min-height: 100%;
-      background: rgb(89,242,150);
-background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100%);
+      background-image: url("images/bg1.png");
+      background-color: #cccccc;
       }
       body, div, form, input, select, p { 
       padding: 0;
@@ -62,10 +65,6 @@ background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100
       font-size: 72px;
 	  color: black;
       }
-      form {
-      background: rgba(0, 0, 0, 0.7); 
-
-      }
       .title {
       display: flex;
       align-items: center;
@@ -89,7 +88,7 @@ background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100
       border: none;
       }
       option {
-      background: black; 
+      background: #85d6de; 
       border: none;
       }
       .checkbox input {
@@ -124,6 +123,32 @@ background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100
       button:hover, .btn-item:hover {
       background: #85d6de;
       }
+
+.dv_form{
+  position:absolute;
+  top:20%;
+  background-color: #ff5f5f;
+  border-radius: 25px;
+  border:10px solid #ffd065;
+}
+.btn_login{
+  color: rgb(175,238,238);
+}
+
+.dv_adminlogin {
+  background-color: rgb(255 231 112);
+  color: rgb(250,250,210);
+  border: 10px solid #ff9494;
+  margin:10px;
+  border-radius: 25px;
+}
+.w3-dropdown-click:hover{
+  background-color:white!important;
+}
+.w3-dropdown-click{
+  color:black!important;
+}
+
       @media (min-width: 568px) {
       html, body {
       height: 100%;
@@ -132,22 +157,8 @@ background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100
       flex-direction: row;
       height: calc(100% - 50px);
       }
-      .left-part {
-    
       }
 
-.dv_form{
-  position:relative;
-}
-
-#dv_adminlogin {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 23px;
-  text-align: right;
-}
 
     </style>
   </head>
@@ -217,24 +228,36 @@ background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100
 	}
 ?>
 
-    <div class="main-block">
+  <script type="text/javascript">
+    function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+  </script>
 
-      
-        <div class="dv_form" id="dv_adminlogin">
-		      <form method="post" >
-      		  <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:200px;">
-                Admin Log In
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <div class="dropdown-item"><span>Password:</span>
-                      <input type="password" name="password" id="password" style="color:black;border:1px solid"/><br/>
-                      <button type="submit" id="login" name="login" style="width:70px;" formnovalidate>Login</button>
-                </div>
-              </div>
-            </div>	  
-      		</form>
-        </div>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#" class="w3-bar-item"><b>SPPAS</b></a>
+    <div class="w3-dropdown-click w3-right w3-hover-none">
+      <button class="w3-button" onclick="myFunction()" style="color:black; font-size: 18px;">
+        Admin Login <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content dv_adminlogin" style="right:0">
+ <form method="post" >
+        <a href="#" class="w3-bar-item w3-mobile"><span>Password:</span><br/>
+                      <input type="password" name="password" id="password" style="color:black;border:1px solid"/>
+                      <button type="submit" id="login" name="login" class="btn_login" style="width:70px;" formnovalidate>Login</button></a>
+                      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="main-block">
 
         <div class="dv_form">
           <form method="post">
