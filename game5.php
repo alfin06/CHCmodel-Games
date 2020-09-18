@@ -2,6 +2,9 @@
 	include("session.php");
 	
 	$gambar = "";
+	
+	date_default_timezone_set('Asia/Bangkok');
+	$date = date("Y-m-d G:i:s");
 ?>
 
 <!DOCTYPE html>
@@ -66,7 +69,7 @@
 		{
 			$a="UPDATE account 
 				   SET game5_screenshot = '".$namaakhir."',
-				       game5_end = NOW()
+				       game5_end = '".$date."'
 				 WHERE id=".$login_session;
 
 			$result = $db->query($a);	
@@ -104,7 +107,7 @@
 	if (isset($_POST['start']))
 	{
 		$query="UPDATE account 
-				   SET game5_start = NOW() 
+				   SET game5_start = '".$date."'
 				 WHERE id=".$login_session;
 
 		$result = $db->query($query);

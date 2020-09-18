@@ -171,13 +171,14 @@
 	$gender = $_POST['gender'];
 	$age = $_POST['age'];
 	
-	$ldate = gmdate("Y-M-d", time()+420*60+7);
+	date_default_timezone_set('Asia/Bangkok');
+	$date = date("Y-m-d G:i:s");
 
 	// Insert data
 	if (isset($_POST['insert']))
 	{
-		$result = $db->query("INSERT INTO account(name, gender, age)
-									  VALUES ('".$name."', '".$gender."', ".$age.")");
+		$result = $db->query("INSERT INTO account(name, gender, age, signup_date)
+									  VALUES ('".$name."', '".$gender."', ".$age.", '".$date."')");
 									  
 		if ($result === TRUE) 
 		{

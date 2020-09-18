@@ -63,10 +63,10 @@
 			<thead>
 				<tr class="w3-light-grey">
 					<th>&nbsp;</th>
-					<th>Full Name</th>
-					<th>Gender</th>
-					<th>Age</th>
-					<th>Sign Up Date</th>
+					<th>Nama Lengkap</th>
+					<th>Jenis Kelamin</th>
+					<th>Usia</th>
+					<th>Tgl Register</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -74,7 +74,7 @@
 				// Show data
 				$qry ="SELECT id, name, gender, age, DATE_FORMAT(signup_date, '%d/%m/%Y at %H:%i') AS signup_date
 						FROM account
-						ORDER BY name ASC";
+						ORDER BY signup_date DESC";
 					   
 				$result = $db->query($qry);// or die(mysql_error());
 				
