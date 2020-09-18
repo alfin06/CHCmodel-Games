@@ -19,9 +19,7 @@ button {
 }
 
 body {
-  /*background-image: url('http://image.shutterstock.com/z/stock-vector-a-cartoon-traffic-jam-scene-cityscape-traffic-52014274.jpg');*/
-  background: rgb(89,242,150);
-background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100%);
+      background-color: #b82bcd8;;
     font-family: 'Fredoka One', cursive;
       font-size: 20px;
 }

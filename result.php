@@ -21,8 +21,8 @@
 	
 	html, body {
       min-height: 100%;
-      background: rgb(89,242,150);
-	  background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100%);
+      background-image: url("images/bg1.png");
+      background-color: #cccccc;
     }
 	
     body, div, form, input, select, p { 
@@ -36,6 +36,11 @@
 	
 	button {
 		cursor: pointer; 
+	 }
+	 .dv_tableresult{
+	 	background-color: #ff5f5f;
+  border-radius: 25px;
+  border:10px solid #ffd065;
 	 }
 </style>
 <body>
@@ -59,9 +64,9 @@
   <div class="w3-row-padding">
     <div class="w3-col m12 w3-margin-bottom">
       <div class="w3-display-container">
-		<table class="w3-table-all w3-hoverable">
+		<table class="w3-table-all w3-hoverable dv_tableresult ">
 			<thead>
-				<tr class="w3-light-grey">
+				<tr class="w3-pale-yellow">
 					<th>&nbsp;</th>
 					<th>Nama Lengkap</th>
 					<th>Jenis Kelamin</th>

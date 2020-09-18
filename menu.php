@@ -17,8 +17,7 @@
  <style>
       html, body {
       min-height: 100%;
-      background: rgb(89,242,150);
-background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100%);
+      background: #82bcd8;
       }
       body, div, form, input, select, p { 
       padding: 0;
