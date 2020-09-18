@@ -135,11 +135,11 @@
 			<div class="w3-row">
 				<div class="w3-third">
 					<label>Start:</label>
-					<input class="w3-input" type="text" value='<?php echo $game1_start; ?>' style="width:75%;" disabled>
+					<input class="w3-input" type="text" value='<?php echo $game1_screenshot!=''?$game1_start:'-'; ?>' style="width:75%;" disabled>
 				</div>
 				<div class="w3-third">
 					<label>End:</label>
-					<input class="w3-input" type="text" value='<?php echo $game1_end; ?>' style="width:75%;" disabled>
+					<input class="w3-input" type="text" value='<?php echo $game1_screenshot!=''?$game1_end:'-'; ?>' style="width:75%;" disabled>
 				</div>
 			</div>
 			<br/>
@@ -157,11 +157,11 @@
 			<div class="w3-row">
 				<div class="w3-third">
 					<label>Start:</label>
-					<input class="w3-input" type="text" value='<?php echo $game2_start; ?>' style="width:75%;" disabled>
+					<input class="w3-input" type="text" value='<?php echo $game2_screenshot!=''?$game2_start:'-'; ?>' style="width:75%;" disabled>
 				</div>
 				<div class="w3-third">
 					<label>End:</label>
-					<input class="w3-input" type="text" value='<?php echo $game2_end; ?>' style="width:75%;" disabled>
+					<input class="w3-input" type="text" value='<?php echo $game2_screenshot!=''?$game2_end:'-'; ?>' style="width:75%;" disabled>
 				</div>
 			</div>
 			<br/>
@@ -187,11 +187,11 @@
 			<div class="w3-row">
 				<div class="w3-third">
 					<label>Start:</label>
-					<input class="w3-input" type="text" value='<?php echo $game3_start; ?>' style="width:75%;" disabled>
+					<input class="w3-input" type="text" value='<?php echo $game3_screenshot!=''?$game3_start:'-'; ?>' style="width:75%;" disabled>
 				</div>
 				<div class="w3-third">
 					<label>End:</label>
-					<input class="w3-input" type="text" value='<?php echo $game3_end; ?>' style="width:75%;" disabled>
+					<input class="w3-input" type="text" value='<?php echo $game3_screenshot!=''?$game3_end:'-'; ?>' style="width:75%;" disabled>
 				</div>
 			</div>
 			<br/>
@@ -209,11 +209,11 @@
 			<div class="w3-row">
 				<div class="w3-third">
 					<label>Start:</label>
-					<input class="w3-input" type="text" value='<?php echo $game4_start; ?>' style="width:75%;" disabled>
+					<input class="w3-input" type="text" value='<?php echo $game4_screenshot!=''?$game4_start:'-'; ?>' style="width:75%;" disabled>
 				</div>
 				<div class="w3-third">
 					<label>End:</label>
-					<input class="w3-input" type="text" value='<?php echo $game4_end; ?>' style="width:75%;" disabled>
+					<input class="w3-input" type="text" value='<?php echo $game4_screenshot!=''?$game4_end:'-'; ?>' style="width:75%;" disabled>
 				</div>
 			</div>
 			<br/>
@@ -239,11 +239,11 @@
 			<div class="w3-row">
 				<div class="w3-third">
 					<label>Start:</label>
-					<input class="w3-input" type="text" value='<?php echo $game5_start; ?>' style="width:75%;" disabled>
+					<input class="w3-input" type="text" value='<?php echo $game5_screenshot!=''?$game5_start:'-'; ?>' style="width:75%;" disabled>
 				</div>
 				<div class="w3-third">
 					<label>End:</label>
-					<input class="w3-input" type="text" value='<?php echo $game5_end; ?>' style="width:75%;" disabled>
+					<input class="w3-input" type="text" value='<?php echo $game5_screenshot!=''?$game5_end:'-'; ?>' style="width:75%;" disabled>
 				</div>
 			</div>
 			<br/>
@@ -261,11 +261,11 @@
 			<div class="w3-row">
 				<div class="w3-third">
 					<label>Start:</label>
-					<input class="w3-input" type="text" value='<?php echo $game6_start; ?>' style="width:75%;" disabled>
+					<input class="w3-input" type="text" value='<?php echo $game6_screenshot!=''?$game6_start:'-'; ?>' style="width:75%;" disabled>
 				</div>
 				<div class="w3-third">
 					<label>End:</label>
-					<input class="w3-input" type="text" value='<?php echo $game6_end; ?>' style="width:75%;" disabled>
+					<input class="w3-input" type="text" value='<?php echo $game6_screenshot!=''?$game6_end:'-'; ?>' style="width:75%;" disabled>
 				</div>
 			</div>
 			<br/>
