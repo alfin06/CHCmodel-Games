@@ -63,10 +63,10 @@
 			<thead>
 				<tr class="w3-light-grey">
 					<th>&nbsp;</th>
-					<th>Full Name</th>
-					<th>Gender</th>
-					<th>Age</th>
-					<th>Sign Up Date</th>
+					<th>Nama Lengkap</th>
+					<th>Jenis Kelamin</th>
+					<th>Usia</th>
+					<th>Tgl Register</th>
 				</tr>
 			</thead>
 			<tbody>
