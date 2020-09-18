@@ -74,7 +74,7 @@
 				// Show data
 				$qry ="SELECT id, name, gender, age, DATE_FORMAT(signup_date, '%d/%m/%Y at %H:%i') AS signup_date
 						FROM account
-						ORDER BY name ASC";
+						ORDER BY signup_date DESC";
 					   
 				$result = $db->query($qry);// or die(mysql_error());
 				
