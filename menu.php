@@ -262,7 +262,7 @@
 
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Thank you for your participation!</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Terima kasih atas partisipasi kamu!</h3>
   </div>
 
 <!-- End page content -->

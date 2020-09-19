@@ -267,20 +267,20 @@
               <h2>Register here</h2>
             </div>
             <div class="info">
-              <input class="fname" type="text" name="name" id="name" placeholder="Full Name" required>
+              <input class="fname" type="text" name="name" id="name" placeholder="Nama Lengkap" required>
 		          <select name="gender" id="gender" required>
-                <option value="" selected disabled>Gender</option>
-                <option value="B">Boy</option>
-                <option value="G">Girl</option>
+                <option value="" selected disabled>Jenis Kelamin</option>
+                <option value="B">Laki-laki</option>
+                <option value="G">Perempuan</option>
               </select>
-              <input type="number" name="age" id="age" placeholder="Age" required>
+              <input type="number" name="age" id="age" placeholder="Usia" required>
             </div>
-            <button type="submit" id="insert" name="insert">Register</button>
+            <button type="submit" id="insert" name="insert">Daftar</button>
         		<?php
         		if (isset($_SESSION['login_user']))
         		{
         		?>
-                <button type="submit" id="continue" name="continue" style="background:green;" formnovalidate>Continue</button>
+                <button type="submit" id="continue" name="continue" style="background:green;" formnovalidate>Lanjutkan Permainan</button>
         		<?php
         		}
         		?>
