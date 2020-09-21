@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Games</title>
+    <title>SPGPAS - Games</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -247,7 +247,7 @@
 
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#" class="w3-bar-item"><b>SPGPAS</b></a>
+    <a href="#" class="w3-bar-item"><img src="images/logo3.jpg" style="width:150px; height:50px;"></a>
     <div class="w3-dropdown-click w3-right w3-hover-none">
       <button class="w3-button" onclick="myFunction()" style="color:black; font-size: 18px;">
         Admin Login <i class="fa fa-caret-down"></i>
@@ -264,12 +264,11 @@
 </div>
 
     <div class="main-block">
-
         <div class="dv_form">
           <form method="post">
             <div class="title">
-              <i class="fas fa-pencil-alt"></i> 
-              <h2>Register here</h2>
+              <i class="fas fa-pencil-alt"></i>
+              <h2>Lengkapi data :</h2>
             </div>
             <div class="info">
               <input class="fname" type="text" name="name" id="name" placeholder="Nama Lengkap" required>
@@ -290,6 +289,10 @@
         		}
         		?>
           </form>
+          <div style="text-align: center;padding:50px;">
+           <img src="images/logo4.jpg" style="width:150px; height:150px;"><br />
+           <b>S</b>kala <b>P</b>enilaian <b>G</b>uru <b>P</b>erilaku <b>A</b>tentif
+           </div>
         </div>
 
 

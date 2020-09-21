@@ -85,7 +85,6 @@
 	  }, 10);
 	
 	  $('.easy-button').click(function () {
-	  	console.log("test");
 	    $container.empty();
 	    $(".win-phrase").removeClass("show");
 	    $(".current-level").removeClass("current-level");
@@ -293,9 +292,9 @@
 	    value: function isWon() {
 	      if (this.cars[0].segments[0][1] === 5) {
 	        //if the red car's head is on the right edge
-	        // $('.easy-button').prop('disabled', true);
-	        // $('.medium-button').prop('disabled', true);
-	        // $('.hard-button').prop('disabled', true);
+	        $('.easy-button').prop('disabled', true);
+	        $('.medium-button').prop('disabled', true);
+	        $('.hard-button').prop('disabled', true);
 	        return true;
 	      }
 	      return false;

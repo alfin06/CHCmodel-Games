@@ -15,14 +15,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/dc492cc8b0.js"></script>
     <script src="./js/rushhourbundle.js"></script>
-
-  </head>
+   </head>
 
   <body>
-    <!-- Navbar (sit on top) -->
+<!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="menu.php" class="w3-bar-item w3-button"><i class="fa fa-arrow-left"></i></a>
+    <a href="index.php" class="w3-bar-item w3-button"><i class="fa fa-arrow-left"></i> </a>
   </div>
 </div>
 

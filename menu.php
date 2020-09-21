@@ -73,13 +73,13 @@
     if ($isavailable == "N")
     {
     ?>
-      <button onclick="window.location.href='game1.php';" disabled style="width:200px; height:200px;"><img src="images/rushhour.png" style="width:150px; height:150px;"> Rush Hour </button>
+      <button onclick="window.location.href='game1.php';" disabled style="width:150px; height:150px;"><img src="images/rushhour.png" style="width:100px; height:100px;"> Rush Hour </button>
     <?php
     }
     else
     {
     ?>
-      <button onclick="window.location.href='game1.php';" style="width:200px; height:200px;"><img src="images/rushhour.png" style="width:150px; height:150px;"> Rush Hour </button>
+      <button onclick="window.location.href='game1.php';" style="width:150px; height:150px;"><img src="images/rushhour.png" style="width:100px; height:100px;"> Rush Hour </button>
     <?php
     }
     ?>
@@ -102,13 +102,13 @@
     if ($isavailable == "N")
     {
     ?>
-      <button onclick="window.location.href='game2.php';" disabled style="width:200px; height:200px;"><img src="images/bait.png" style="width:150px; height:150px;"> Bait</button>
+      <button onclick="window.location.href='game2.php';" disabled style="width:150px; height:150px;"><img src="images/bait.png" style="width:100px; height:100px;"> Bait</button>
     <?php
     }
     else
     {
     ?>
-     <button onclick="window.location.href='game2.php';" style="width:200px; height:200px;"><img src="images/bait.png" style="width:150px; height:150px;"> Bait</button>
+     <button onclick="window.location.href='game2.php';" style="width:150px; height:150px;"><img src="images/bait.png" style="width:100px; height:100px;"> Bait</button>
     <?php
     }
     ?>
@@ -138,13 +138,13 @@
     if ($isavailable == "N")
     {
     ?>
-      <button onclick="window.location.href='game3.php';" disabled style="width:200px; height:200px;"><img src="images/digit.png" style="width:150px; height:150px;"> Digit</button>
+      <button onclick="window.location.href='game3.php';" disabled style="width:150px; height:150px;"><img src="images/digit.png" style="width:100px; height:100px;"> Digit</button>
     <?php
     }
     else
     {
     ?>
-      <button onclick="window.location.href='game3.php';" style="width:200px; height:200px;"><img src="images/digit.png" style="width:150px; height:150px;"> Digit </button>
+      <button onclick="window.location.href='game3.php';" style="width:150px; height:150px;"><img src="images/digit.png" style="width:100px; height:100px;"> Digit </button>
     <?php
     }
     ?>
@@ -167,13 +167,13 @@
     if ($isavailable == "N")
     {
     ?>
-      <button onclick="window.location.href='game4.php';" disabled style="width:200px; height:200px;"><img src="images/moving.png" style="width:150px; height:150px;"> Moving Memory</button>
+      <button onclick="window.location.href='game4.php';" disabled style="width:150px; height:150px;"><img src="images/moving.png" style="width:100px; height:100px;">Moving</button>
     <?php
     }
     else
     {
     ?>
-     <button onclick="window.location.href='game4.php';" style="width:200px; height:200px;"><img src="images/moving.png" style="width:150px; height:150px;"> Moving Memory</button>
+     <button onclick="window.location.href='game4.php';" style="width:150px; height:150px;"><img src="images/moving.png" style="width:100px; height:100px;">Moving</button>
     <?php
     }
     ?>
@@ -202,13 +202,13 @@
     if ($isavailable == "N")
     {
     ?>
-      <button onclick="window.location.href='game5.php';" disabled style="width:200px; height:200px;"><img src="images/flip.png" style="width:150px; height:150px;"> Flip</button>
+      <button onclick="window.location.href='game5.php';" disabled style="width:150px; height:150px;"><img src="images/flip.png" style="width:100px; height:100px;"> Flip</button>
     <?php
     }
     else
     {
     ?>
-      <button onclick="window.location.href='game5.php';" style="width:200px; height:200px;"><img src="images/flip.png" style="width:150px; height:150px;"> Flip </button>
+      <button onclick="window.location.href='game5.php';" style="width:150px; height:150px;"><img src="images/flip.png" style="width:100px; height:100px;"> Flip </button>
     <?php
     }
     ?>
@@ -231,13 +231,13 @@
     if ($isavailable == "N")
     {
     ?>
-      <button onclick="window.location.href='game6.php';" disabled style="width:200px; height:200px;"><img src="images/post.png" style="width:150px; height:150px;"> Post</button>
+      <button onclick="window.location.href='game6.php';" disabled style="width:150px; height:150px;"><img src="images/post.png" style="width:100px; height:100px;"> Post</button>
     <?php
     }
     else
     {
     ?>
-     <button onclick="window.location.href='game6.php';" style="width:200px; height:200px;"><img src="images/post.png" style="width:150px; height:150px;"> Post</button>
+     <button onclick="window.location.href='game6.php';" style="width:150px; height:150px;"><img src="images/post.png" style="width:100px; height:100px;"> Post</button>
     <?php
     }
     ?>
@@ -258,7 +258,7 @@
 
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
+<footer class="w3-center w3-black">
 </footer>
 
 </body>
