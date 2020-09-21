@@ -16,14 +16,10 @@
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 <style>
-	button {
-		cursor: pointer; 
-	 }
-	
 	html, body {
       min-height: 100%;
-      background: rgb(89,242,150);
-	  background: radial-gradient(circle, rgba(89,242,150,1) 0%, rgba(5,151,181,1) 100%);
+      background-image: url("images/bg1.png");
+      background-color: #cccccc;
     }
 	
     body, div, form, input, select, p { 
@@ -32,8 +28,17 @@
       outline: none;
       font-family: 'Grandstander', cursive;
       font-size: 20px;
-      color: #eee;
+      color: black;
     }
+	
+	button {
+		cursor: pointer; 
+	 }
+	 .dv_tableresult{
+	 	background-color: #ff5f5f;
+  border-radius: 25px;
+  border:10px solid #ffd065;
+	 }
 </style>
 <body>
 
@@ -79,7 +84,7 @@
 		while($r = mysqli_fetch_array($result))
 		{
 			$name = $r['name'];
-			$gender = $r['gender']=="B" ? "Boy" : "Girl";
+			$gender = $r['gender']=="B" ? "Laki-laki" : "Perempuan";
 			$age = $r['age'];
 			$signup_date = $r['signup_date'];
 			$game1_start = $r['game1_start'];
@@ -106,21 +111,21 @@
 		<form class="w3-container">
 			<div class="w3-row">
 				<div class="w3-third">
-					<label>Name:</label>
+					<label>Nama Lengkap:</label>
 					<input class="w3-input" type="text" value='<?php echo $name; ?>' style="width:75%;" disabled>
 				</div>
 				<div class="w3-third">
-					<label>Gender:</label>
+					<label>Jenis Kelamin:</label>
 					<input class="w3-input" type="text" value='<?php echo $gender; ?>' style="width:75%;" disabled>
 				</div>
 			</div><br />
 			<div class="w3-row">
 				<div class="w3-third">
-					<label>Age:</label>
+					<label>Usia:</label>
 					<input class="w3-input" type="text" value='<?php echo $age; ?>' style="width:75%;" disabled>
 				</div>
 				<div class="w3-third">
-					<label>Signup Date:</label>
+					<label>Tgl Register:</label>
 					<input class="w3-input" type="text" value='<?php echo $signup_date; ?>' style="width:75%;" disabled>
 				</div>
 			</div>
