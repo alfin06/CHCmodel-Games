@@ -23,7 +23,7 @@
       padding: 0;
       margin: 0;
       outline: none;
-      font-family: 'Grandstander', cursive;
+      font-family: "Comic Sans MS", cursive, sans-serif;
       font-size: 20px;
       color: #eee;
       }

@@ -22,14 +22,19 @@
 	html, body {
       min-height: 100%;
       background-image: url("images/bg1.png");
-      background-color: #cccccc;
+      /* Full height */
+      height: 100%;
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 	
     body, div, form, input, select, p { 
       padding: 0;
       margin: 0;
       outline: none;
-      font-family: 'Grandstander', cursive;
+      font-family: "Comic Sans MS", cursive, sans-serif;
       font-size: 20px;
       color: black;
     }
@@ -39,8 +44,14 @@
 	 }
 	 .dv_tableresult{
 	 	background-color: #ff5f5f;
-  border-radius: 25px;
-  border:10px solid #ffd065;
+		  border-radius: 25px;
+		  border:10px solid #ffd065;
+	 }
+
+	 .title{
+	 	text-align: center;
+	 	font-size: 30px;
+	 	 font-family: "Comic Sans MS", cursive, sans-serif;
 	 }
 </style>
 <body>
@@ -53,17 +64,17 @@
 </div>
 
 <!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+<div class="w3-content w3-padding" style="max-width:1564px; margin-top: 20px;">
 
   <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Results</h3>
+  <div class="w3-container w3-padding-32 w3-margin-32" id="projects">
+    <h3 class="title">Results</h3>
   </div>
 
   <form method="POST">
   <div class="w3-row-padding">
     <div class="w3-col m12 w3-margin-bottom">
-      <div class="w3-display-container">
+      <div class="w3-display-container" style="overflow-x:auto;">
 		<table class="w3-table-all w3-hoverable dv_tableresult ">
 			<thead>
 				<tr class="w3-pale-yellow">

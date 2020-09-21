@@ -32,13 +32,18 @@
       html, body {
       min-height: 100%;
       background-image: url("images/bg1.png");
-      background-color: #cccccc;
+      /* Full height */
+      height: 100%;
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       }
       body, div, form, input, select, p { 
       padding: 0;
       margin: 0;
       outline: none;
-      font-family: 'Grandstander', cursive;
+      font-family: "Comic Sans MS", cursive, sans-serif;
       font-size: 20px;
       color: #eee;
       }
@@ -242,7 +247,7 @@
 
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#" class="w3-bar-item"><b>SPPAS</b></a>
+    <a href="#" class="w3-bar-item">SPASS</a>
     <div class="w3-dropdown-click w3-right w3-hover-none">
       <button class="w3-button" onclick="myFunction()" style="color:black; font-size: 18px;">
         Admin Login <i class="fa fa-caret-down"></i>
