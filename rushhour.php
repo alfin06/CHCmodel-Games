@@ -22,16 +22,16 @@
     <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="menu.php" class="w3-bar-item w3-button"><b>Menu</b></a>
+    <a href="menu.php" class="w3-bar-item w3-button"><i class="fa fa-arrow-left"></i></a>
   </div>
 </div>
 
     <div class="main-container">
       <div class="instructions-container">
         <h1 class="title">Rush Hour</h1>
-        <h1 class="instructions">Get the red ferrari to the exit!</h1>
-        <h1 class="instructions">Click to select car; use your keyboard ▲ ▼ ◀ ▶ to move</h1>
-        <h1 class="instructions-note">Note that cars can only move backwards or forwards in their orientation</h1>
+        <h1 class="instructions">Arahkan kotak merah ke exit!</h1>
+        <h1 class="instructions">Klik kotak yang dituju; gunakan arah panah di keyboard ▲ ▼ ◀ ▶ untuk menjalankan kotak</h1>
+        <h1 class="instructions-note">Catatan: Kotak hanya akan berpindah maju/mundur sesuai arah</h1>
       </div>
       <div class="game-container">
         <div class="controls">
@@ -40,19 +40,18 @@
         </div>
         <div id="rush-hour"></div>
         <div class="win-phrase">
-          Great job,  <?php echo $name; ?>!<br />
-         <a href="menu.php"> <button class="btn_back">Back to Menu</button></a>
+          Good job,  <?php echo $name; ?>!<br />
+         <a href="menu.php"> <button class="btn_back">Kembali ke Menu</button></a>
 
         </div>
       </div>
       <div class="levels-container">
         <div class="levels">
-          <button class="easy-button">Easy</button>
-          <button class="medium-button">Medium</button>
-          <button class="hard-button">Hard</button>
+          <button class="easy-button" >Easy</button>
+          <button class="medium-button" >Medium</button>
+          <button class="hard-button" >Hard</button>
         </div>
       </div>
-
     </div>
 
 

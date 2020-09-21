@@ -39,7 +39,7 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.php" class="w3-bar-item w3-button"><i class="fas fa-home"></i></a>
+    <a href="index.php" class="w3-bar-item w3-button"><i class="fa fa-arrow-left"></i> </a>
   </div>
 </div>
 
@@ -47,218 +47,206 @@
 <header class="w3-display-container w3-content w3-wide" style="max-width:1250px; min-height:300px;" id="home">
  <!--  <img class="w3-image" src="images/background.jpg" alt="Architecture" width="1500" height="800"> -->
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Welcome, <?php echo $name; ?>!</b></span> 
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Halo, <?php echo $name; ?>!</b></span> 
 	<br/>
-	<span class="w3-hide-small w3-text-light-grey">Select a game below to start!</span></h1>
+	<span class="w3-hide-small w3-text-light-grey">Pilih Permainan dibawah ini!</span></h1>
   </div>
 </header>
 
-<!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
-
-  <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Fluid Reasoning (GF)</h3>
+<div class="w3-container">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Fluid Reasoning (GF)</h3>
+<div class="w3-cell-row">
+  <div class="w3-container w3-cell">
+<?php
+    // Check if the game is available
+    $qry ="SELECT game1_screenshot
+        FROM account
+         WHERE id =".$login_session;
+         
+    $result = $db->query($qry);// or die(mysql_error());
+    
+    while($r = mysqli_fetch_array($result))
+    {
+      $isavailable  = $r['game1_screenshot'] != "" ? "N" : "Y";
+    }
+    
+    if ($isavailable == "N")
+    {
+    ?>
+      <button onclick="window.location.href='game1.php';" disabled style="width:200px; height:200px;"><img src="images/rushhour.png" style="width:150px; height:150px;"> Rush Hour </button>
+    <?php
+    }
+    else
+    {
+    ?>
+      <button onclick="window.location.href='game1.php';" style="width:200px; height:200px;"><img src="images/rushhour.png" style="width:150px; height:150px;"> Rush Hour </button>
+    <?php
+    }
+    ?>
   </div>
 
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-		<?php
-		// Check if the game is available
-		$qry ="SELECT game1_screenshot
-				FROM account
-			   WHERE id =".$login_session;
-			   
-		$result = $db->query($qry);// or die(mysql_error());
-		
-		while($r = mysqli_fetch_array($result))
-		{
-			$isavailable  = $r['game1_screenshot'] != "" ? "N" : "Y";
-		}
-		
-		if ($isavailable == "N")
-		{
-		?>
-			<button onclick="window.location.href='game1.php';" class="w3-display-topleft w3-black w3-padding" disabled>Rush Hour</button>
-		<?php
-		}
-		else
-		{
-		?>
-			<button onclick="window.location.href='game1.php';" class="w3-display-topleft w3-black w3-padding">Rush Hour</button>
-		<?php
-		}
-		?>
-      </div>
-    </div>
-	<div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-		<?php
-		// Check if the game is available
-		$qry ="SELECT game2_screenshot
-				FROM account
-			   WHERE id =".$login_session;
-			   
-		$result = $db->query($qry);// or die(mysql_error());
-		
-		while($r = mysqli_fetch_array($result))
-		{
-			$isavailable  = $r['game2_screenshot'] != "" ? "N" : "Y";
-		}
-		
-		if ($isavailable == "N")
-		{
-		?>
-			<button onclick="window.location.href='game2.php';" class="w3-display-topleft w3-black w3-padding" disabled>Bait</button>
-		<?php
-		}
-		else
-		{
-		?>
-			<button onclick="window.location.href='game2.php';" class="w3-display-topleft w3-black w3-padding">Bait</button>
-		<?php
-		}
-		?>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Memory (GWM)</h3>
+  <div class="w3-container w3-cell">
+    <?php
+    // Check if the game is available
+    $qry ="SELECT game2_screenshot
+        FROM account
+         WHERE id =".$login_session;
+         
+    $result = $db->query($qry);// or die(mysql_error());
+    
+    while($r = mysqli_fetch_array($result))
+    {
+      $isavailable  = $r['game2_screenshot'] != "" ? "N" : "Y";
+    }
+    
+    if ($isavailable == "N")
+    {
+    ?>
+      <button onclick="window.location.href='game2.php';" disabled style="width:200px; height:200px;"><img src="images/bait.png" style="width:150px; height:150px;"> Bait</button>
+    <?php
+    }
+    else
+    {
+    ?>
+     <button onclick="window.location.href='game2.php';" style="width:200px; height:200px;"><img src="images/bait.png" style="width:150px; height:150px;"> Bait</button>
+    <?php
+    }
+    ?>
   </div>
 
-  <div class="w3-row-padding">
-   <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-		<?php
-		// Check if the game is available
-		$qry ="SELECT game3_screenshot
-				FROM account
-			   WHERE id =".$login_session;
-			   
-		$result = $db->query($qry);// or die(mysql_error());
-		
-		while($r = mysqli_fetch_array($result))
-		{
-			$isavailable  = $r['game3_screenshot'] != "" ? "N" : "Y";
-		}
-		
-		if ($isavailable == "N")
-		{
-		?>
-			<button onclick="window.location.href='game3.php';" class="w3-display-topleft w3-black w3-padding" disabled>Digit</button>
-		<?php
-		}
-		else
-		{
-		?>
-			<button onclick="window.location.href='game3.php';" class="w3-display-topleft w3-black w3-padding">Digit</button>
-		<?php
-		}
-		?>
-      </div>
-    </div>
-	<div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-		<?php
-		// Check if the game is available
-		$qry ="SELECT game4_screenshot
-				FROM account
-			   WHERE id =".$login_session;
-			   
-		$result = $db->query($qry);// or die(mysql_error());
-		
-		while($r = mysqli_fetch_array($result))
-		{
-			$isavailable  = $r['game4_screenshot'] != "" ? "N" : "Y";
-		}
-		
-		if ($isavailable == "N")
-		{
-		?>
-			<button onclick="window.location.href='game4.php';" class="w3-display-topleft w3-black w3-padding" disabled>Moving Memory</button>
-		<?php
-		}
-		else
-		{
-		?>
-			<button onclick="window.location.href='game4.php';" class="w3-display-topleft w3-black w3-padding">Moving Memory</button>
-		<?php
-		}
-		?>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Speed (GS)</h3>
+</div>
+</div>
+
+
+<div class="w3-container">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Memory (GWM)</h3>
+<div class="w3-cell-row">
+  <div class="w3-container w3-cell">
+<?php
+    // Check if the game is available
+    $qry ="SELECT game3_screenshot
+        FROM account
+         WHERE id =".$login_session;
+         
+    $result = $db->query($qry);// or die(mysql_error());
+    
+    while($r = mysqli_fetch_array($result))
+    {
+      $isavailable  = $r['game3_screenshot'] != "" ? "N" : "Y";
+    }
+    
+    if ($isavailable == "N")
+    {
+    ?>
+      <button onclick="window.location.href='game3.php';" disabled style="width:200px; height:200px;"><img src="images/digit.png" style="width:150px; height:150px;"> Digit</button>
+    <?php
+    }
+    else
+    {
+    ?>
+      <button onclick="window.location.href='game3.php';" style="width:200px; height:200px;"><img src="images/digit.png" style="width:150px; height:150px;"> Digit </button>
+    <?php
+    }
+    ?>
   </div>
 
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-		<?php
-		// Check if the game is available
-		$qry ="SELECT game5_screenshot
-				FROM account
-			   WHERE id =".$login_session;
-			   
-		$result = $db->query($qry);// or die(mysql_error());
-		
-		while($r = mysqli_fetch_array($result))
-		{
-			$isavailable  = $r['game5_screenshot'] != "" ? "N" : "Y";
-		}
-		
-		if ($isavailable == "N")
-		{
-		?>
-			<button onclick="window.location.href='game5.php';" class="w3-display-topleft w3-black w3-padding" disabled>Flip</button>
-		<?php
-		}
-		else
-		{
-		?>
-			<button onclick="window.location.href='game5.php';" class="w3-display-topleft w3-black w3-padding">Flip</button>
-		<?php
-		}
-		?>
-      </div>
-    </div>
-	<div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-		<?php
-		// Check if the game is available
-		$qry ="SELECT game6_screenshot
-				FROM account
-			   WHERE id =".$login_session;
-			   
-		$result = $db->query($qry);// or die(mysql_error());
-		
-		while($r = mysqli_fetch_array($result))
-		{
-			$isavailable  = $r['game6_screenshot'] != "" ? "N" : "Y";
-		}
-		
-		if ($isavailable == "N")
-		{
-		?>
-			<button onclick="window.location.href='game6.php';" class="w3-display-topleft w3-black w3-padding" disabled>Post</button>
-		<?php
-		}
-		else
-		{
-		?>
-			<button onclick="window.location.href='game6.php';" class="w3-display-topleft w3-black w3-padding">Post</button>
-		<?php
-		}
-		?>
-      </div>
-    </div>
+  <div class="w3-container w3-cell">
+    <?php
+    // Check if the game is available
+    $qry ="SELECT game4_screenshot
+        FROM account
+         WHERE id =".$login_session;
+         
+    $result = $db->query($qry);// or die(mysql_error());
+    
+    while($r = mysqli_fetch_array($result))
+    {
+      $isavailable  = $r['game4_screenshot'] != "" ? "N" : "Y";
+    }
+    
+    if ($isavailable == "N")
+    {
+    ?>
+      <button onclick="window.location.href='game4.php';" disabled style="width:200px; height:200px;"><img src="images/moving.png" style="width:150px; height:150px;"> Moving Memory</button>
+    <?php
+    }
+    else
+    {
+    ?>
+     <button onclick="window.location.href='game4.php';" style="width:200px; height:200px;"><img src="images/moving.png" style="width:150px; height:150px;"> Moving Memory</button>
+    <?php
+    }
+    ?>
   </div>
+
+</div>
+</div>
+
+<div class="w3-container">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Speed (GS)</h3>
+<div class="w3-cell-row">
+  <div class="w3-container w3-cell">
+<?php
+    // Check if the game is available
+    $qry ="SELECT game5_screenshot
+        FROM account
+         WHERE id =".$login_session;
+         
+    $result = $db->query($qry);// or die(mysql_error());
+    
+    while($r = mysqli_fetch_array($result))
+    {
+      $isavailable  = $r['game5_screenshot'] != "" ? "N" : "Y";
+    }
+    
+    if ($isavailable == "N")
+    {
+    ?>
+      <button onclick="window.location.href='game5.php';" disabled style="width:200px; height:200px;"><img src="images/flip.png" style="width:150px; height:150px;"> Flip</button>
+    <?php
+    }
+    else
+    {
+    ?>
+      <button onclick="window.location.href='game5.php';" style="width:200px; height:200px;"><img src="images/flip.png" style="width:150px; height:150px;"> Flip </button>
+    <?php
+    }
+    ?>
+  </div>
+
+  <div class="w3-container w3-cell">
+    <?php
+    // Check if the game is available
+    $qry ="SELECT game6_screenshot
+        FROM account
+         WHERE id =".$login_session;
+         
+    $result = $db->query($qry);// or die(mysql_error());
+    
+    while($r = mysqli_fetch_array($result))
+    {
+      $isavailable  = $r['game6_screenshot'] != "" ? "N" : "Y";
+    }
+    
+    if ($isavailable == "N")
+    {
+    ?>
+      <button onclick="window.location.href='game6.php';" disabled style="width:200px; height:200px;"><img src="images/post.png" style="width:150px; height:150px;"> Post</button>
+    <?php
+    }
+    else
+    {
+    ?>
+     <button onclick="window.location.href='game6.php';" style="width:200px; height:200px;"><img src="images/post.png" style="width:150px; height:150px;"> Post</button>
+    <?php
+    }
+    ?>
+  </div>
+
+</div>
+</div>
+
+
 
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">

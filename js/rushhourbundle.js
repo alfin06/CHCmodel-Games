@@ -58,10 +58,12 @@
 	
 	var _view2 = _interopRequireDefault(_view);
 	
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	$(function () {
 	  var $container = $('#rush-hour');
+
 	  var easyCars = function easyCars() {
 	    return [new _car2.default(2, "red", [2, 1], "right"), new _car2.default(3, "yellow", [2, 3], "down"), new _car2.default(2, "green", [5, 1], "down"), new _car2.default(2, "orange", [5, 3], "right"), new _car2.default(2, "blue", [5, 5], "right")];
 	  };
@@ -83,12 +85,12 @@
 	  }, 10);
 	
 	  $('.easy-button').click(function () {
+	  	console.log("test");
 	    $container.empty();
 	    $(".win-phrase").removeClass("show");
 	    $(".current-level").removeClass("current-level");
 	    $(".easy-button").addClass("current-level");
 	    setUpGame(easyCars(), $container);
-	    cars = easyCars;
 	  });
 	
 	  $('.medium-button').click(function () {
@@ -291,6 +293,9 @@
 	    value: function isWon() {
 	      if (this.cars[0].segments[0][1] === 5) {
 	        //if the red car's head is on the right edge
+	        // $('.easy-button').prop('disabled', true);
+	        // $('.medium-button').prop('disabled', true);
+	        // $('.hard-button').prop('disabled', true);
 	        return true;
 	      }
 	      return false;
@@ -321,7 +326,6 @@
 	    var _this = this;
 	
 	    _classCallCheck(this, View);
-	
 	    this.$container = $container;
 	    this.board = board;
 	    window.moveCount = 0;

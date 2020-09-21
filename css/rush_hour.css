@@ -3,26 +3,20 @@
   padding: 0;
   border: 0;
   font: inherit;
-  color: inherit;
   text-align: inherit;
   height: inherit;
   width: inherit;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
   box-sizing: border-box;
   position: relative;
+
 }
 
 button {
   outline: none;
 }
 
-body {
-      background-color: #b82bcd8;;
-    font-family: 'Fredoka One', cursive;
-      font-size: 20px;
-}
 
 .main-container {
   display: flex;
@@ -37,7 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #82bcd8;
   border-radius: 10px;
   padding: 10px;
 }
@@ -175,7 +169,6 @@ li {
 .show {
   display: block;
 }
-
 
 
 @keyframes fadetext {
