@@ -247,7 +247,7 @@
 
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#" class="w3-bar-item">SPASS</a>
+    <a href="#" class="w3-bar-item"><b>SPGPAS</b></a>
     <div class="w3-dropdown-click w3-right w3-hover-none">
       <button class="w3-button" onclick="myFunction()" style="color:black; font-size: 18px;">
         Admin Login <i class="fa fa-caret-down"></i>
