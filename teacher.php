@@ -34,7 +34,7 @@
       margin: 0;
       outline: none;
       font-family: "Comic Sans MS", cursive, sans-serif;
-      font-size: 16px;
+      font-size: 20px;
       color: black;
     }
 	
@@ -54,6 +54,7 @@
 	 	background-color: #ff5f5f;
 		  border-radius: 25px;
 		  border:10px solid #ffd065;
+		  font-size: 16px;
 	 }
 
 	 .title{
@@ -63,8 +64,14 @@
 	 }
 	 
 	 .form-control{
-		width: 25%;
+		width: 35%;
 	 }
+
+	 @media (max-width: 700px) {
+ .form-control{
+		width: 90%;
+	 }
+}
     </style>
   </head>
   <body>
@@ -105,7 +112,7 @@
     <!-- Page content -->
 	<form method="POST" id="screen1" style="display: block;">
 	<div class="w3-content w3-padding" style="max-width:1564px; margin-top: 20px;">
-	  <div class="w3-container w3-padding-32 w3-margin-32" id="projects">
+	  <div class="w3-container w3-padding-64 w3-margin-16" id="projects">
 		<br />
 		<h3>Data Diri</h3>
 		<br />
@@ -318,7 +325,7 @@
 
 	<!-- End page content -->
 	
-	  <div class="w3-row-padding">
+	  <div class="w3-row-padding w3-padding-32">
 		<p><small><i>
 			Cutoff Score:<br/>
 			Pemeriksa Orang tua	> 30<br/>
