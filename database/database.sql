@@ -44,14 +44,38 @@ CREATE TABLE IF NOT EXISTS `account` (
   PRIMARY KEY (`id`) USING BTREE
 );
 
--- Dumping data for table thesis.account: 3 rows
-/*!40000 ALTER TABLE `account` DISABLE KEYS */;
-INSERT INTO `account` (`id`, `signup_date`, `name`, `gender`, `age`, `game1_start`, `game1_screenshot`, `game1_end`, `game2_start`, `game2_screenshot`, `game2_end`, `game3_start`, `game3_screenshot`, `game3_end`, `game4_start`, `game4_screenshot`, `game4_end`, `game5_start`, `game5_screenshot`, `game5_end`, `game6_start`, `game6_screenshot`, `game6_end`) VALUES
-	(1, '2020-09-17 19:56:01', 'Test', 'B', 7, '2020-09-17 20:59:13', '', '2020-09-17 19:56:01', '2020-09-17 21:00:06', '', '2020-09-17 19:56:01', '2020-09-17 21:00:17', '', '2020-09-17 19:56:01', '2020-09-17 21:00:28', '', '2020-09-17 19:56:01', '2020-09-17 21:00:57', '', '2020-09-17 19:56:01', '2020-09-17 21:01:06', '', '2020-09-17 19:56:01'),
-	(2, '2020-09-18 21:53:04', 'Cek 123', 'B', 8, '2020-09-18 21:53:04', '', '2020-09-18 21:53:04', '2020-09-18 21:53:04', '', '2020-09-18 21:53:04', '2020-09-18 21:53:04', '', '2020-09-18 21:53:04', '2020-09-18 21:53:04', '', '2020-09-18 21:53:04', '2020-09-18 21:53:04', '', '2020-09-18 21:53:04', '2020-09-18 21:53:04', '', '2020-09-18 21:53:04'),
-	(3, '2020-09-19 15:49:02', 'Hi Test', 'B', 10, '2020-09-19 15:49:02', '', '2020-09-19 15:49:02', '2020-09-19 15:49:02', '', '2020-09-19 15:49:02', '2020-09-19 15:49:02', '', '2020-09-19 15:49:02', '2020-09-19 15:49:02', '', '2020-09-19 15:49:02', '2020-09-19 15:49:02', '', '2020-09-19 15:49:02', '2020-09-19 15:49:02', '', '2020-09-19 15:49:02'),
-	(4, '2020-09-21 20:54:45', 'test 123', 'B', 7, '2020-09-21 20:54:45', '', '2020-09-21 20:54:45', '2020-09-21 20:54:45', '', '2020-09-21 20:54:45', '2020-09-21 20:54:45', '', '2020-09-21 20:54:45', '2020-09-21 20:54:45', '', '2020-09-21 20:54:45', '2020-09-21 20:54:45', '', '2020-09-21 20:54:45', '2020-09-21 20:54:45', '', '2020-09-21 20:54:45');
-/*!40000 ALTER TABLE `account` ENABLE KEYS */;
+-- Data exporting was unselected.
+
+-- Dumping structure for table thesis.survey
+CREATE TABLE IF NOT EXISTS `survey` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `signup_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `name` varchar(100)  DEFAULT NULL,
+  `school` varchar(100)  DEFAULT NULL,
+  `question1` varchar(1)  DEFAULT NULL,
+  `question2` varchar(1)  DEFAULT NULL,
+  `question3` varchar(1)  DEFAULT NULL,
+  `question4` varchar(1)  DEFAULT NULL,
+  `question5` varchar(1)  DEFAULT NULL,
+  `question6` varchar(1)  DEFAULT NULL,
+  `question7` varchar(1)  DEFAULT NULL,
+  `question8` varchar(1)  DEFAULT NULL,
+  `question9` varchar(1)  DEFAULT NULL,
+  `question10` varchar(1)  DEFAULT NULL,
+  `question11` varchar(1)  DEFAULT NULL,
+  `question12` varchar(1)  DEFAULT NULL,
+  `question13` varchar(1)  DEFAULT NULL,
+  `question14` varchar(1)  DEFAULT NULL,
+  `question15` varchar(1)  DEFAULT NULL,
+  `question16` varchar(1)  DEFAULT NULL,
+  `question17` varchar(1)  DEFAULT NULL,
+  `question18` varchar(1)  DEFAULT NULL,
+  `question19` varchar(1)  DEFAULT NULL,
+  `question20` varchar(1)  DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+);
+
+-- Data exporting was unselected.
 
 -- Dumping structure for table thesis.user
 CREATE TABLE IF NOT EXISTS `user` (
@@ -61,11 +85,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`id`) USING BTREE
 );
 
--- Dumping data for table thesis.user: 1 rows
-/*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` (`id`, `username`, `password`) VALUES
-	(1, 'admin', 'asdf');
-/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
