@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <title>Rush Hour</title>
     <link rel="stylesheet" type="text/css" href="./css/rush_hour.css">
+	<link rel="icon" type="image/x-icon" href="images/logo4.jpg" />
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Skranji:400,700" rel="stylesheet">

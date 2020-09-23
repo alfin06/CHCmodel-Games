@@ -9,6 +9,7 @@
     <title>SPGPAS - Games</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="images/logo4.jpg" />
     
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -291,7 +292,7 @@
           </form>
           <div style="text-align: center;padding:50px;">
            <img src="images/logo4.jpg" style="width:150px; height:150px;"><br />
-           <b>S</b>kala <b>P</b>enilaian <b>G</b>uru <b>P</b>erilaku <b>A</b>tentif
+           <b>S</b>kala <b>P</b>enilaian <b>G</b>uru <b>P</b>erilaku <b>A</b>tentif <b>S</b>iswa
            </div>
         </div>
 
