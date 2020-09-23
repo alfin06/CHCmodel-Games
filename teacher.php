@@ -82,11 +82,11 @@
 
 	// Insert data
 	if (isset($_POST['insert']))
-	{
-		$result = $db->query("INSERT INTO survey(signup_date, name, school, question1, question2, question3, question4, question5,
-												 question6, question7, question8, question9, question10, question11, question12, question13,
+	{	
+		$result = $db->query("INSERT INTO survey(signup_date, name, grade, student_name, email, phone, question1, question2, question3, question4, 
+												 question5, question6, question7, question8, question9, question10, question11, question12, question13,
 												 question14, question15, question16, question17, question18, question19, question20)
-									  VALUES ('".$date."', '".$_POST['name']."', '".$_POST['school']."', '".$_POST['question1']."', '".$_POST['question2']."', '".$_POST['question3']."', '".$_POST['question4']."', '".$_POST['question5']."', '".$_POST['question6']."', '".$_POST['question7']."', '".$_POST['question8']."', '".$_POST['question9']."', '".$_POST['question10']."', '".$_POST['question11']."', '".$_POST['question12']."', '".$_POST['question13']."', '".$_POST['question14']."', '".$_POST['question15']."', '".$_POST['question16']."', '".$_POST['question17']."', '".$_POST['question18']."', '".$_POST['question19']."', '".$_POST['question20']."')");
+									  VALUES ('".$date."', '".$_POST['name']."', '".$_POST['grade']."', '".$_POST['student']."', '".$_POST['email']."', '".$_POST['phone']."', '".$_POST['question1']."', '".$_POST['question2']."', '".$_POST['question3']."', '".$_POST['question4']."', '".$_POST['question5']."', '".$_POST['question6']."', '".$_POST['question7']."', '".$_POST['question8']."', '".$_POST['question9']."', '".$_POST['question10']."', '".$_POST['question11']."', '".$_POST['question12']."', '".$_POST['question13']."', '".$_POST['question14']."', '".$_POST['question15']."', '".$_POST['question16']."', '".$_POST['question17']."', '".$_POST['question18']."', '".$_POST['question19']."', '".$_POST['question20']."')");
 									  
 		if ($result === TRUE) 
 		{
@@ -119,12 +119,32 @@
 		<br />
 		<form>
 		  <div class="form-group">
-			<label for="name">Nama Lengkap</label>
+			<label for="name">Nama/Inisial Guru</label>
 			<input type="text" class="form-control" id="name" name="name" placeholder="" required>
 		  </div>
 		  <div class="form-group">
-			<label for="exampleInputPassword1">Nama Sekolah</label>
-			<input type="text" class="form-control" id="school" placeholder="" required>
+			<label for="exampleInputPassword1">Kelas yang di ajar</label>
+			<select class="form-control" id="grade" name="grade" required>
+				<option value="" disabled selected>Pilih Kelas</option>
+				<option value="SD Kelas 1">SD Kelas 1</option>
+				<option value="SD Kelas 2">SD Kelas 2</option>
+				<option value="SD Kelas 3">SD Kelas 3</option>
+				<option value="SD Kelas 4">SD Kelas 4</option>
+				<option value="SD Kelas 5">SD Kelas 5</option>
+				<option value="SD Kelas 6">SD Kelas 6</option>
+			</select>
+		  </div>
+		  <div class="form-group">
+			<label for="name">Nama/Inisial Siswa</label>
+			<input type="text" class="form-control" id="student" name="student" placeholder="" required>
+		  </div>
+		  <div class="form-group">
+			<label for="name">Email</label>
+			<input type="email" class="form-control" id="email" name="email" placeholder="">
+		  </div>
+		  <div class="form-group">
+			<label for="name">No. HP</label>
+			<input type="text" class="form-control" id="phone" name="phone" placeholder="">
 		  </div>
 		</form>
 	  </div>
