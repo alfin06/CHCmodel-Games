@@ -1,6 +1,11 @@
 <?php
 	include("config.php");
 	session_start();
+	
+	if (!isset($_SESSION['student_id']))
+	{
+		header("location:result.php");
+	}
 ?>
 
 <!DOCTYPE html>
