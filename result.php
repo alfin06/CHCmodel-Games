@@ -64,6 +64,12 @@
 	 	font-size: 30px;
 	 	 font-family: "Comic Sans MS", cursive, sans-serif;
 	 }
+	 
+	 .data {
+		 margin: auto;
+         padding: 10px;
+		 text-align: center;
+	 }
 </style>
 <body>
 
@@ -82,7 +88,7 @@
     <h3 class="title">Results</h3>
   </div>
   
-  <div class="data">
+  <div class="w3-container w3-padding-32 w3-margin-32 data">
 	  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapseExample">Data Siswa</button>
 		
 	  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2">
