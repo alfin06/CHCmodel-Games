@@ -154,11 +154,11 @@
 			<li>Klik tombol <b>Start</b> untuk memulai permainan. Layar baru akan muncul di browser kamu.</li>
 			<li>Ikuti instruksi di halaman permainan dan selesaikan permainannya.</li>
 			<li>Setelah selesai permainannya, mohon login.</li>
-			<li>Setelah login, akan muncul hasil permainannya. Dimohon untuk mengambil screenshot hasil permainan kamu dan simpan dalam format <b>JPG/PNG</b> (kamu bisa menggunakan snipping tool untuk pengguna windows atau tekan dan tahan tombol Shift, Command, dan 4 secara bersamaan untuk pengguna mac).</li>
+			<li>Setelah login, akan muncul hasil permainannya. Dimohon untuk mengambil screenshot hasil permainan kamu dan simpan dalam format <b>JPG/PNG</b> (kamu bisa menggunakan tekan tombol "Windows" + "Shift" + "s" secara bersamaan untuk pengguna windows atau tekan tombol "Shift" + "Command" + "4" secara bersamaan untuk pengguna mac).</li>
 			<li>Logout dari akun kamu setelah menggambil screenshot. Kemudian, tutup layar permainan dan segera kembali ke halaman ini.</li>
 			<li>Unggah hasil screenshot kamu ke tempat pengunggahan di bawah ini dengan menekan kotak putih yang tersedia.</li>
 			<li>Pilih file screenshot kamu.</li>
-			<li>Dan terakhir, tekan tombol <b>Unggah Gambar</b>. Tunggu beberapa detik sampai kamu kembali ke halaman menu game.</li>		
+			<li>Dan terakhir, tekan tombol <b>Unggah Gambar</b>. Tunggu beberapa detik sampai kamu kembali ke halaman menu game.</li>	
 		</ol>
       </div>
     </div>
