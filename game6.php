@@ -144,22 +144,18 @@
   <br />
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Baca dan ikuti instruksi di bawah ini</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan F: Post</h3>
   </div>
 
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom">
       <div class="w3-display-container">
-        <ol>
-			<li>Klik tombol <b>Start</b> untuk memulai permainan. Layar baru akan muncul di browser kamu.</li>
-			<li>Ikuti instruksi di halaman permainan dan selesaikan permainannya.</li>
-			<li>Setelah selesai permainannya, mohon login.</li>
-			<li>Setelah login, akan muncul hasil permainannya. Dimohon untuk mengambil screenshot hasil permainan kamu dan simpan dalam format <b>JPG/PNG</b> (kamu bisa menggunakan tekan tombol "Windows" + "Shift" + "s" secara bersamaan untuk pengguna windows atau tekan tombol "Shift" + "Command" + "4" secara bersamaan untuk pengguna mac).</li>
-			<li>Logout dari akun kamu setelah menggambil screenshot. Kemudian, tutup layar permainan dan segera kembali ke halaman ini.</li>
-			<li>Unggah hasil screenshot kamu ke tempat pengunggahan di bawah ini dengan menekan kotak putih yang tersedia.</li>
-			<li>Pilih file screenshot kamu.</li>
-			<li>Dan terakhir, tekan tombol <b>Unggah Gambar</b>. Tunggu beberapa detik sampai kamu kembali ke halaman menu game.</li>
-		</ol>
+        <p>Perhatikan dengan teliti di bagian atas, bagaimana kamu harus menyortir/mengelompokkan surat yang ada:</p>
+		<ul>
+			<li>Sort by text: mengikut tulisan pada amplop surat.</li>
+			<li>Sort by color: mengikuti warna amplop suratnya.</li>
+		</ul>
+		<p>Bermainlah secepat dan setepat yang kamu bisa. Selamat mengelompokkan surat-surat ya!</p>
       </div>
     </div>
   </div>
@@ -168,7 +164,7 @@
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom">
       <div class="w3-display-container">
-		<button type="submit" name="start" id="start" class="btn btn-success btn-lg">Start</button>
+		<button type="submit" name="start" id="start" class="btn btn-success btn-lg">Mulai Permainan</button>
       </div>
     </div>
   </div>

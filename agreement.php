@@ -1,12 +1,11 @@
 <?php
-	include("config.php");
-	session_start();
+	include("session.php");
 ?>
 
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SPGPAS - Games</title>
+    <title>Games - Agreement</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="images/logo4.jpg" />
@@ -164,6 +163,11 @@
       height: calc(100% - 50px);
       }
       }
+	  
+div#scroll {
+	height: 500px;
+	overflow-Y: scroll;
+}
 
 
     </style>
@@ -173,140 +177,76 @@
 	error_reporting(E_ALL^(E_NOTICE | E_WARNING));
 	set_time_limit(0);
 
-	$name = $_POST['name'];
-	$gender = $_POST['gender'];
-	$age = $_POST['age'];
-	$grade = "SD Kelas " . (intval($_POST['grade'])-1);
+	$parent_name = $_POST['parent_name'];
+	$parent_age = $_POST['parent_age'];
 	
 	date_default_timezone_set('Asia/Bangkok');
 	$date = date("Y-m-d G:i:s");
 
 	// Insert data
-	if (isset($_POST['insert']))
+	if (isset($_POST['btnAgree']))
 	{
-		$result = $db->query("INSERT INTO account(name, gender, age, signup_date, grade)
-									  VALUES ('".$name."', '".$gender."', ".$age.", '".$date."', '".$grade."')");
+		$query="UPDATE account 
+				   SET parent_name = '".$parent_name."',
+				       parent_age  = ".$parent_age.",
+					   consent     = 'Y'
+				 WHERE id = ".$login_session;
+				 
+		$result = $db->query($query);
 									  
 		if ($result === TRUE) 
-		{
-			$_SESSION['login_user'] = $name;
-			
+		{	
 			echo "<script>";
-			echo "window.open('agreement.php', '_SELF');";
+			echo "window.open('menu.php', '_SELF');";
 			echo "</script>";
-		}
-	}
-	
-	// Continue
-	if (isset($_POST['continue']))
-	{
-		echo "<script>";
-		echo "window.open('menu.php', '_SELF');";
-		echo "</script>";
-	}
-	
-	// Login
-	if (isset($_POST['login']))
-	{
-		$qry ="SELECT COUNT(*) AS found
-				FROM user
-			   WHERE password ='".$_POST['password']."'";
-			   
-		$result = $db->query($qry);// or die(mysql_error());
-		
-		while($r = mysqli_fetch_array($result))
-		{
-			$found  = $r['found'];
-		}
-		
-		if (intval($found) > 0)
-		{
-			echo "<script>";
-			echo "window.open('result.php', '_SELF');";
-			echo "</script>";
-		}
-		else
-		{
-		?>
-			<script type="text/javascript">
-				alert('Password salah.');
-			</script> 
-		<?php
 		}
 	}
 ?>
 
-  <script type="text/javascript">
-    function myFunction() {
-  var x = document.getElementById("demo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-  </script>
-
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
     <a href="#" class="w3-bar-item"><img src="images/logo3.jpg" style="width:150px; height:50px;"></a>
-    <div class="w3-dropdown-click w3-right w3-hover-none">
-      <button class="w3-button" onclick="myFunction()" style="color:black; font-size: 18px;">
-        Admin Login <i class="fa fa-caret-down"></i>
-      </button>
-      <div id="demo" class="w3-dropdown-content dv_adminlogin" style="right:0">
- <form method="post" >
-        <a href="#" class="w3-bar-item w3-mobile"><span>Password:</span><br/>
-                      <input type="password" name="password" id="password" style="color:black;border:1px solid"/>
-                      <button type="submit" id="login" name="login" class="btn_login" style="width:70px;" formnovalidate>Login</button></a>
-                      </form>
-      </div>
-    </div>
   </div>
 </div>
 
     <div class="main-block">
         <div class="dv_form">
-          <form method="post">
-			<?php
-			if (isset($_SESSION['login_user']))
-			{
-			?>
-			<button type="submit" id="continue" name="continue" style="background:green;" formnovalidate>Lanjutkan Permainan</button>
-			<?php
-			}
-			else
-			{
-			?>
-			<div class="title">
-              <i class="fas fa-pencil-alt"></i>
-              <h2>Lengkapi data :</h2>
-            </div>
-            <div class="info">
-              <input class="fname" type="text" name="name" id="name" placeholder="Nama Lengkap" required>
-		          <select name="gender" id="gender" required>
-                <option value="" selected disabled>Jenis Kelamin</option>
-                <option value="B">Laki-laki</option>
-                <option value="G">Perempuan</option>
-              </select>
-              <input type="number" name="age" id="age" placeholder="Usia" required>
-			  <select id="grade" name="grade" placeholder="Kelas" required>
-				<option value="" disabled selected>Pilih kelas</option>
-				<option value="3">SD Kelas 3</option>
-				<option value="4">SD Kelas 4</option>
-				<option value="5">SD Kelas 5</option>
-				<option value="6">SD Kelas 6</option>
-			  </select>
-            </div>
-            <button type="submit" id="insert" name="insert">Daftar</button>
-			<?php
-			}
-			?>
-          </form>
-          <div style="text-align: center;padding:50px;">
+		  <!--<div style="text-align: center;padding:50px;">
            <img src="images/logo4.jpg" style="width:150px; height:150px;"><br />
            <b>S</b>kala <b>P</b>enilaian <b>P</b>erilaku <b>A</b>tentif <b>S</b>iswa
-           </div>
+          </div>-->
+          <form method="post">
+			<div id="scroll">
+				<p>Salam sejahtera dan sehat selalu,</p><br/>
+				<p>Perkenalkan, saya Antania Djuwita, mahasiswi Magister Profesi Psikologi Pendidikan dari Universitas Tarumanagara-Jakarta</p> 
+				<p>(NPM: 717191027). Saya sedang melakukan penelitian dengan topik Pengembangan Skala Penilaian Perilaku Atentif Siswa</p>
+				<p>bekerja sama dengan SDK Ketapang 1 (Jakarta), SDK Ketapang 3 (Cibubur), PT. Melintas Cakrawala Indonesia</p> 
+				<p>(selaku pengembang AJT CogTest) serta memperoleh ijin seorang pakar atensi (konsentrasi) dari salah satu klinik tumbuh</p> 
+				<p>kembang anak di Jakarta.</p>
+				<br/>
+				<p>Saya mengharapkan kesediaan Ayah/Bunda agar mengijinkan putra/putrinya untuk berpartisipasi dalam penelitian ini</p> 
+				<p>dengan cara, mengerjakan penugasan singkat (20 menit) berupa permainan secara virtual yang akan dipandu melalui</p> 
+				<p>website penelitian saya. Partisipasi Ayah/Bunda melalui putra/putri tercinta akan sangat bermanfaat untuk pengembangan</p> 
+				<p>pendidikan, yaitu bagi sekolah, guru, siswa serta Ayah/Bunda sebagai orangtua. Peneliti menjamin kerahasiaan identitas</p> 
+				<p>dan jawaban putra/putri Ayah/Bunda, karena hasil jawaban sepenuhnya hanya digunakan untuk kepentingan penelitian.</p>
+				<br/>
+				<p>Apabila Ayah/Bunda berkenan untuk putra/putrinya turut berpartisipasi dalam penelitian ini, mohon kesediannya agar terlebih</p> 
+				<p>dahulu melengkapi data diri dan memberikan tanda (.) pada pernyataan “Ya, saya setuju” di bagian bawah halaman ini.</p> 
+				<p>Partisipasi ini bersifat sukarela sehingga Ayah/Bunda berhak mengurungkan niat untuk berpartisipasi tanpa konsekuensi apapun.</p>
+				<br/>
+				<p>Apabila ada hal-hal yang ingin Ayah/Bunda tanyakan sekaligus dan ingin mengetahui hasil penelitian ini di kemudian hari,</p> 
+				<p>silahkan dapat menghubungi saya melalui email: a.djuwita@gmail.com atau WA (pesan teks-chat) +6281807149296.</p> 
+				<p>Terima kasih atas Ayah/Bunda dan adik-adik terkasih atas semangat dan dukungannya. Tuhan memberkati!</p>
+				<br/>
+			</div>
+			<br/>
+			<h1>Informed Consent</h1>
+			<p>Saya, <input type="text" id="parent_name" name="parent_name" style="width:250px;" placeholder="(diisi inisial nama)" required />, usia: 
+			   <input type="text" id="parent_age" name="parent_age" style="width:100px;" required />tahun,</p> 
+			<p>ayah/bunda dari putra/putri <b><?php echo $user_check; ?></b> dengan ini menyatakan bahwa saya sudah membaca dan memahami penjelasan penelitian.</p> 
+			<p>Saya bersedia untuk berpartisipasi dalam penelitian ini.</p>
+			<button type="submit" id="btnAgree" class="btn btn-success" name="btnAgree">Saya setuju</button>
+          </form>
         </div>
 
 

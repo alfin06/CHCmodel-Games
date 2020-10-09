@@ -48,16 +48,39 @@
 <header class="w3-display-container w3-content w3-wide" style="max-width:1250px; min-height:300px;" id="home">
  <!--  <img class="w3-image" src="images/background.jpg" alt="Architecture" width="1500" height="800"> -->
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Halo, <?php echo $name; ?>!</b></span> 
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Selamat datang <?php echo $name; ?>!</b></span></h1>
 	<br/>
-	<span class="w3-hide-small w3-text-light-grey">Pilih Permainan dibawah ini!</span></h1>
+	<span class="w3-hide-small w3-text-light-grey">Mari bergabung dalam serangkaian permainan ketangkasan otak berikut ini.</span>
   </div>
 </header>
 
 <div class="w3-container">
-  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Fluid Reasoning (GF)</h3>
+	<div class="w3-full">
+		<span>Petunjuk Utama (WAJIB DIBACA sebelum mulai):</span>
+		<ol>
+			<li>Selama lebih kurang 60 menit ke depan, kamu akan menyelesaikan serangkaian tugas permainan, jadi tetaplah tinggal di dalam website ini.</li>
+			<li>Bermainlah secara berurutan sesuai nomornya (A sampai F) dengan mengikuti alur seperti pada instruksi nomor 3&4 berikut ini.</li>
+			<li>Setiap kali selesai bermain, mohon login ke website brain gymner dengan akun ? untuk mendokumentasikan skor kamu dengan cara screenshot tampilan skor kamu pada permainan tersebut.
+				<br />Shortcut screenshot:
+				<ul>
+					<li>Bagi pengguna Windows: dengan menekan tombol (pakai simbol) Windows, Shift, s kemudian simpan di desktop kamu.</li>
+					<li>Bagi pengguna Mac: dengan menekan tombol (pakai simbol) Shift, command, 4 kemudian simpan di desktop kamu.</li>
+				</ul>
+			</li>
+			<li>Setelah kamu upload skor permainan A, kamu harus logout dari brain gymmer. Lalu kembali ke halaman website SPPAS untuk unggah (upload) screenshot skor permainan kamu pada bagian yang sudah disediakan.
+				Ulangi alur yang sama untuk permainan B,C,D,E dan F.
+			</li>
+			<li>Kamu hanya diberikan satu kali kesempatan dalam setiap permainan, jadi bermainlah sebaik dan secepat yang kamu bisa sampai selesai/tuntas pada setiap permainan.</li>
+			<li>Silahkan menyimak video turorial di bawah ini agar semakin jelas alur bermain & cara mendokumentasi (screenshot) skor kamu pada setiap permainan.</li>
+		</ol> 
+	</div>
+</div>
+
+<div class="w3-container">
+  
 <div class="w3-cell-row">
   <div class="w3-container w3-cell">
+	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan A</h3>
 <?php
     // Check if the game is available
     $qry ="SELECT game1_screenshot
@@ -87,6 +110,7 @@
   </div>
 
   <div class="w3-container w3-cell">
+	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan B</h3>
     <?php
     // Check if the game is available
     $qry ="SELECT game2_screenshot
@@ -120,9 +144,9 @@
 
 
 <div class="w3-container">
-  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Memory (GWM)</h3>
 <div class="w3-cell-row">
   <div class="w3-container w3-cell">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan C</h3>
 <?php
     // Check if the game is available
     $qry ="SELECT game3_screenshot
@@ -152,6 +176,7 @@
   </div>
 
   <div class="w3-container w3-cell">
+	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan D</h3>
     <?php
     // Check if the game is available
     $qry ="SELECT game4_screenshot
@@ -184,9 +209,9 @@
 </div>
 
 <div class="w3-container">
-  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Speed (GS)</h3>
 <div class="w3-cell-row">
   <div class="w3-container w3-cell">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan E</h3>
 <?php
     // Check if the game is available
     $qry ="SELECT game5_screenshot
@@ -216,6 +241,7 @@
   </div>
 
   <div class="w3-container w3-cell">
+	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan F</h3>
     <?php
     // Check if the game is available
     $qry ="SELECT game6_screenshot

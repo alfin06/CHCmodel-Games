@@ -119,15 +119,13 @@
 		<br />
 		<form>
 		  <div class="form-group">
-			<label for="name">Nama/Inisial Guru</label>
+			<label for="name">Nama lengkap guru</label>
 			<input type="text" class="form-control" id="name" name="name" placeholder="" required>
 		  </div>
 		  <div class="form-group">
-			<label for="exampleInputPassword1">Kelas yang di ajar</label>
+			<label for="exampleInputPassword1">Tahun lalu mengajar kelas</label>
 			<select class="form-control" id="grade" name="grade" required>
-				<option value="" disabled selected>Pilih Kelas</option>
-				<option value="SD Kelas 1">SD Kelas 1</option>
-				<option value="SD Kelas 2">SD Kelas 2</option>
+				<option value="" disabled selected>Pilih kelas</option>
 				<option value="SD Kelas 3">SD Kelas 3</option>
 				<option value="SD Kelas 4">SD Kelas 4</option>
 				<option value="SD Kelas 5">SD Kelas 5</option>
@@ -135,7 +133,7 @@
 			</select>
 		  </div>
 		  <div class="form-group">
-			<label for="name">Nama/Inisial Siswa</label>
+			<label for="name">Nama lengkap siswa yang diberi penilaian</label>
 			<input type="text" class="form-control" id="student" name="student" placeholder="" required>
 		  </div>
 		  <div class="form-group">
@@ -143,7 +141,7 @@
 			<input type="email" class="form-control" id="email" name="email" placeholder="">
 		  </div>
 		  <div class="form-group">
-			<label for="name">No. HP</label>
+			<label for="name">No. handphone</label>
 			<input type="text" class="form-control" id="phone" name="phone" placeholder="">
 		  </div>
 		</form>
@@ -151,7 +149,7 @@
 
 	  <!-- Project Section -->
 	  <div class="w3-container w3-padding-32 w3-margin-32" id="projects">
-		<h3>Questionnaire</h3>
+		<h3>Skala Penilaian Guru</h3>
 		<br />
 		<p>
 			Di bawah ini ada butir-butir masalah perilaku pada anak umumnya. Silahkan isi tiap butir menurut perilaku anak/ murid pada enam bulan terakhir. Pada setiap butir, tanyakan diri anda "Berapa banyak masalah ini terjadi dalam enam bulan teakhir?", dan beri tanda (&#8226;) pada salah satu kolom yang paling tepat. Jika sama sekali tidak dan sangat jarang, anda dapat memberi tanda (&#8226;) kolom 1. Jika selalu demikian, anda dapat memberi tanda (&#8226;) kolom 4. Anda dapat memberi tanda (&#8226;) kolom 2 untuk kadang-kadang dan kolom 3 untuk seringkali. Mohon semua butir diisi.

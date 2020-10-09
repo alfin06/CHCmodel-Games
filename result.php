@@ -85,14 +85,16 @@
 
   <!-- Project Section -->
   <div class="w3-container w3-padding-32 w3-margin-32" id="projects">
-    <h3 class="title">Results</h3>
+    <h3 class="title">Selamat Datang di Halaman Admin!</h3>
   </div>
   
   <div class="w3-container w3-padding-32 w3-margin-32 data">
-	  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapseExample">Data Siswa</button>
+	  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapseExample">
+		Skala Penilaian Perilaku Atentif Siswa
+	  </button>
 		
 	  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2">
-		Data Guru
+		Skala Penilaian Guru
 	  </button>
   </div>
   <br />
@@ -114,7 +116,7 @@
 				<tbody>
 					<?php
 					// Show data
-					$qry ="SELECT id, name, gender, age, DATE_FORMAT(signup_date, '%d/%m/%Y at %H:%i') AS signup_date
+					$qry ="SELECT id, name, gender, age, DATE_FORMAT(signup_date, '%d/%m/%Y at %H:%i') AS tgl_signup
 							FROM account
 							ORDER BY signup_date DESC";
 						   
@@ -136,7 +138,7 @@
 						echo $r['age'] . " thn";
 						echo "</td>";
 						echo "<td>";
-						echo $r['signup_date'];
+						echo $r['tgl_signup'];
 						echo "</td>";
 						echo "</tr>";
 					}
@@ -181,7 +183,7 @@
 					$qry ="SELECT id, name, grade, student_name, 
 								  (question1+question2+question3+question4+question5+question6+question7+question8+question9+question10+question11
 								       +question12+question13+question14+question15+question16+question17+question18+question19+question20) AS skor,
-								   DATE_FORMAT(signup_date, '%d/%m/%Y at %H:%i') AS signup_date
+								   DATE_FORMAT(signup_date, '%d/%m/%Y at %H:%i') AS tgl_signup
 							FROM survey
 							ORDER BY signup_date DESC";
 						   
@@ -206,7 +208,7 @@
 						echo $r['skor'];
 						echo "</td>";
 						echo "<td>";
-						echo $r['signup_date'];
+						echo $r['tgl_signup'];
 						echo "</td>";
 						echo "</tr>";
 					}
