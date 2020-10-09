@@ -85,7 +85,7 @@
 	date_default_timezone_set('Asia/Bangkok');
 	$date = date("Y-m-d G:i:s");
 
-	$result = $db->query("SELECT signup_date, name, grade, student_name, email, phone, question1, question2, question3, question4, 
+	$result = $db->query("SELECT DATE_FORMAT(signup_date, '%d/%m/%Y at %H:%i') AS tgl_signup, name, grade, student_name, email, phone, question1, question2, question3, question4, 
 								 question5, question6, question7, question8, question9, question10, question11, question12, question13,
 								 question14, question15, question16, question17, question18, question19, question20
 							FROM survey
@@ -94,7 +94,7 @@
 	while($r = mysqli_fetch_array($result))
 	{
 		$name = $r['name'];
-		$signup_date = $r['signup_date'];
+		$signup_date = $r['tgl_signup'];
 		$grade = $r['grade'];
 		$student_name = $r['student_name'];
 		$email = $r['email'];
