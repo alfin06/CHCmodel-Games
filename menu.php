@@ -70,7 +70,7 @@
 			<li>Setelah kamu upload skor permainan A, kamu harus logout dari brain gymmer. Lalu kembali ke halaman website SPPAS untuk unggah (upload) screenshot skor permainan kamu pada bagian yang sudah disediakan.
 				Ulangi alur yang sama untuk permainan B,C,D,E dan F.
 			</li>
-			<li>Kamu hanya diberikan satu kali kesempatan dalam setiap permainan, jadi bermainlah sebaik dan secepat yang kamu bisa sampai selesai/tuntas pada setiap permainan.</li>
+			<li>Kamu hanya diberikan satu kali kesempatan dalam setiap permainan, jadi bermainlah <b>sebaik</b> dan <b>secepat</b> yang kamu bisa sampai selesai/tuntas pada setiap permainan.</li>
 			<li>Silahkan menyimak video turorial di bawah ini agar semakin jelas alur bermain & cara mendokumentasi (screenshot) skor kamu pada setiap permainan.</li>
 		</ol> 
 	</div>
