@@ -110,13 +110,14 @@
 						<th>Nama Lengkap</th>
 						<th>Jenis Kelamin</th>
 						<th>Usia</th>
+						<th>Tahun Lalu Kelas</th>
 						<th>Tgl Register</th>
 					</tr>
 				</thead>
 				<tbody>
 					<?php
 					// Show data
-					$qry ="SELECT id, name, gender, age, DATE_FORMAT(signup_date, '%d/%m/%Y at %H:%i') AS tgl_signup
+					$qry ="SELECT id, name, gender, age, DATE_FORMAT(signup_date, '%d/%m/%Y at %H:%i') AS tgl_signup, grade
 							FROM account
 							ORDER BY signup_date DESC";
 						   
@@ -136,6 +137,9 @@
 						echo "</td>";
 						echo "<td>";
 						echo $r['age'] . " thn";
+						echo "</td>";
+						echo "<td>";
+						echo $r['grade'];
 						echo "</td>";
 						echo "<td>";
 						echo $r['tgl_signup'];

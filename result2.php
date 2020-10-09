@@ -81,7 +81,8 @@
 					  DATE_FORMAT(game5_start, '%d/%m/%Y at %H:%i') AS game5_start, game5_screenshot,
 					  DATE_FORMAT(game5_end, '%d/%m/%Y at %H:%i') AS game5_end,
 					  DATE_FORMAT(game6_start, '%d/%m/%Y at %H:%i') AS game6_start, game6_screenshot,
-					  DATE_FORMAT(game6_end, '%d/%m/%Y at %H:%i') AS game6_end
+					  DATE_FORMAT(game6_end, '%d/%m/%Y at %H:%i') AS game6_end,
+					  parent_name, parent_age, consent
 				 FROM account
 				WHERE id = ".$_SESSION['student_id'];
 			   
@@ -111,6 +112,9 @@
 			$game6_start = $r['game6_start'];
 			$game6_screenshot = $r['game6_screenshot'];
 			$game6_end = $r['game6_end'];
+			$parent_name = $r['parent_name'];
+			$parent_age = $r['parent_age'];
+			$consent = $r['consent'];
 		}
 		?>
 		
@@ -135,6 +139,22 @@
 					<input class="w3-input" type="text" value='<?php echo $signup_date; ?>' style="width:75%;" disabled>
 				</div>
 			</div>
+			<div class="w3-row">
+				<div class="w3-third">
+					<label>Nama Inisial Orang Tua:</label>
+					<input class="w3-input" type="text" value='<?php echo $parent_name; ?>' style="width:75%;" disabled>
+				</div>
+				<div class="w3-third">
+					<label>Usia Orang Tua:</label>
+					<input class="w3-input" type="text" value='<?php echo $parent_age; ?>' style="width:75%;" disabled>
+				</div>
+			</div>
+			<div class="w3-row">
+				<div class="w3-half">
+					<label>Informed Consent: <?php echo $consent=='Y'? 'Setuju':'Tidak'; ?></label>
+				</div>
+			</div>
+			
 		</form>
 		<br />
 		<form class="w3-container">

@@ -136,15 +136,15 @@
 		<br />
 		<form>
 		  <div class="form-group">
-			<label for="name">Nama/Inisial Guru</label>
+			<label for="name">Nama lengkap guru</label>
 			<input type="text" class="form-control" id="name" name="name" value='<?php echo $name;?>' disabled>
 		  </div>
 		  <div class="form-group">
-			<label for="exampleInputPassword1">Kelas yang di ajar</label>
+			<label for="exampleInputPassword1">Tahun lalu mengajar kelas</label>
 			<input type="text" class="form-control" id="grade" name="grade" value='<?php echo $grade;?>' disabled>
 		  </div>
 		  <div class="form-group">
-			<label for="name">Nama/Inisial Siswa</label>
+			<label for="name">Nama lengkap siswa yang diberi penilaian</label>
 			<input type="text" class="form-control" id="student" name="student" value='<?php echo $student_name;?>' disabled>
 		  </div>
 		  <div class="form-group">
@@ -152,7 +152,7 @@
 			<input type="email" class="form-control" id="email" name="email" value='<?php echo $email;?>' disabled>
 		  </div>
 		  <div class="form-group">
-			<label for="name">No. HP</label>
+			<label for="name">No. handphone</label>
 			<input type="text" class="form-control" id="phone" name="phone" value='<?php echo $phone;?>' disabled>
 		  </div>
 		  <div class="form-group">
@@ -164,7 +164,7 @@
 
 	  <!-- Project Section -->
 	  <div class="w3-container w3-padding-32 w3-margin-32" id="projects">
-		<h3>Questionnaire</h3>
+		<h3>Skala Penilaian Guru</h3>
 		<br />
 		<p>
 			Di bawah ini ada butir-butir masalah perilaku pada anak umumnya. Silahkan isi tiap butir menurut perilaku anak/ murid pada enam bulan terakhir. Pada setiap butir, tanyakan diri anda "Berapa banyak masalah ini terjadi dalam enam bulan teakhir?", dan beri tanda (&#8226;) pada salah satu kolom yang paling tepat. Jika sama sekali tidak dan sangat jarang, anda dapat memberi tanda (&#8226;) kolom 1. Jika selalu demikian, anda dapat memberi tanda (&#8226;) kolom 4. Anda dapat memberi tanda (&#8226;) kolom 2 untuk kadang-kadang dan kolom 3 untuk seringkali. Mohon semua butir diisi.
