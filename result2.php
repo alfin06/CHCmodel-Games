@@ -45,6 +45,13 @@
   border-radius: 25px;
   border:10px solid #ffd065;
 	 }
+	 
+  #statement {
+	height: 100px;
+	width: 500px;
+	overflow-Y: scroll;
+	background-color: white;
+  }
 </style>
 <body>
 
@@ -82,7 +89,7 @@
 					  DATE_FORMAT(game5_end, '%d/%m/%Y at %H:%i') AS game5_end,
 					  DATE_FORMAT(game6_start, '%d/%m/%Y at %H:%i') AS game6_start, game6_screenshot,
 					  DATE_FORMAT(game6_end, '%d/%m/%Y at %H:%i') AS game6_end,
-					  parent_name, parent_age, consent
+					  parent_name, parent_age, consent, grade
 				 FROM account
 				WHERE id = ".$_SESSION['student_id'];
 			   
@@ -115,6 +122,7 @@
 			$parent_name = $r['parent_name'];
 			$parent_age = $r['parent_age'];
 			$consent = $r['consent'];
+			$grade = $r['grade'];
 		}
 		?>
 		
@@ -138,7 +146,7 @@
 					<label>Tgl Register:</label>
 					<input class="w3-input" type="text" value='<?php echo $signup_date; ?>' style="width:75%;" disabled>
 				</div>
-			</div>
+			</div><br />
 			<div class="w3-row">
 				<div class="w3-third">
 					<label>Nama Inisial Orang Tua:</label>
@@ -148,19 +156,28 @@
 					<label>Usia Orang Tua:</label>
 					<input class="w3-input" type="text" value='<?php echo $parent_age; ?>' style="width:75%;" disabled>
 				</div>
-			</div>
+			</div><br />
 			<div class="w3-row">
-				<div class="w3-half">
-					<label>Informed Consent: <?php echo $consent=='Y'? 'Setuju':'Tidak'; ?></label>
+				<div class="w3-third">
+					<label>Kelas tahun lalu:</label>
+					<input class="w3-input" type="text" value='<?php echo $grade; ?>' style="width:75%;" disabled>
 				</div>
-			</div>
+				<div class="w3-third">
+					<label>Informed Consent: <input type="checkbox" <?php echo $consent=='Y'? 'checked':''; ?> /></label>
+					<div id="statement">
+						Saya, <?php echo $parent_name ?>, usia: <?php echo $parent_age ?> tahun, ayah/bunda dari putra/putri 
+						<b><?php echo $name; ?></b> dengan ini menyatakan bahwa saya sudah membaca dan memahami penjelasan penelitian.
+						Saya bersedia untuk berpartisipasi dalam penelitian ini.
+					</div>
+				</div>
+			</div><br />
 			
 		</form>
 		<br />
 		<form class="w3-container">
 			<div class="w3-row">
 				<div class="w3-full">
-					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Fluid Reasoning (GF)</h3>
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan A: Rush Hour</h3>
 				</div>
 			</div>
 			<div class="w3-row">
@@ -183,6 +200,11 @@
 					<?php
 					}
 					?>
+				</div>
+			</div>
+			<div class="w3-row">
+				<div class="w3-full">
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan B: Bait</h3>
 				</div>
 			</div>
 			<div class="w3-row">
@@ -212,7 +234,7 @@
 		<form class="w3-container">
 			<div class="w3-row">
 				<div class="w3-full">
-					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Working Memory (GWM)</h3>
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan C: Digit</h3>
 				</div>
 			</div>
 			<div class="w3-row">
@@ -235,6 +257,11 @@
 					<?php
 					}
 					?>
+				</div>
+			</div>
+			<div class="w3-row">
+				<div class="w3-full">
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan D: Moving</h3>
 				</div>
 			</div>
 			<div class="w3-row">
@@ -264,7 +291,7 @@
 		<form class="w3-container">
 			<div class="w3-row">
 				<div class="w3-full">
-					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Speed (GS)</h3>
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan E: Flip</h3>
 				</div>
 			</div>
 			<div class="w3-row">
@@ -287,6 +314,11 @@
 					<?php
 					}
 					?>
+				</div>
+			</div>
+			<div class="w3-row">
+				<div class="w3-full">
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan F: Post</h3>
 				</div>
 			</div>
 			<div class="w3-row">

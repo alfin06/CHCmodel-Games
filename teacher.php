@@ -134,7 +134,24 @@
 		  </div>
 		  <div class="form-group">
 			<label for="name">Nama lengkap siswa yang diberi penilaian</label>
-			<input type="text" class="form-control" id="student" name="student" placeholder="" required>
+			<select class="form-control" id="student" name="student" required>
+				<option value="" disabled selected>Pilih siswa</option>
+				<?php
+					$qry ="SELECT DISTINCT name
+							 FROM account
+							WHERE consent = 'Y'
+							ORDER BY name ASC";
+							 
+					$result = $db->query($qry);// or die(mysql_error());
+					
+					while($r = mysqli_fetch_array($result))
+					{
+						echo "<option value='".$r['name']."'>";
+						echo $r['name'];
+						echo "</option>";
+					}
+				?>
+			</select>
 		  </div>
 		  <div class="form-group">
 			<label for="name">Email</label>

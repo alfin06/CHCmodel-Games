@@ -41,7 +41,7 @@
         <div id="rush-hour"></div>
         <div class="win-phrase">
           Good job,  <?php echo $name; ?>!<br />
-         <a href="menu.php"> <button class="btn_back">Kembali ke Menu</button></a>
+         <a href="javascript: close();"> <button class="btn_back">Kembali ke Menu</button></a>
 
         </div>
       </div>
@@ -53,8 +53,6 @@
         </div>
       </div>
     </div>
-
-
 
 
   </body>

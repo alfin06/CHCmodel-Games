@@ -216,6 +216,7 @@ div#scroll {
            <b>S</b>kala <b>P</b>enilaian <b>P</b>erilaku <b>A</b>tentif <b>S</b>iswa
           </div>-->
           <form method="post">
+			<h1>Tentang Saya</h1>
 			<div id="scroll">
 				<p>Salam sejahtera dan sehat selalu,</p><br/>
 				<p>Perkenalkan, saya Antania Djuwita, mahasiswi Magister Profesi Psikologi Pendidikan dari Universitas Tarumanagara-Jakarta</p> 
