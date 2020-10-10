@@ -200,9 +200,29 @@
 	// Continue
 	if (isset($_POST['continue']))
 	{
-		echo "<script>";
-		echo "window.open('menu.php', '_SELF');";
-		echo "</script>";
+		$qry ="SELECT consent
+				FROM account
+			   WHERE name ='".$_SESSION['login_user']."'";
+			   
+		$result = $db->query($qry);
+			   
+		while($r = mysqli_fetch_array($result))
+		{
+			$consent = $r['consent'];
+		}
+		
+		if (trim($consent) == 'Y')
+		{
+			echo "<script>";
+			echo "window.open('menu.php', '_SELF');";
+			echo "</script>";
+		}
+		else
+		{
+			echo "<script>";
+			echo "window.open('agreement.php', '_SELF');";
+			echo "</script>";
+		}
 	}
 	
 	// Login
