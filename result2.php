@@ -52,6 +52,18 @@
 	overflow-Y: scroll;
 	background-color: white;
   }
+  
+  .zoom {
+	  transition: transform .2s;
+	  width: 350px;
+	  height: 450px;
+	}
+
+	.zoom:hover {
+	  -ms-transform: scale(1.5); /* IE 9 */
+	  -webkit-transform: scale(1.5); /* Safari 3-8 */
+	  transform: scale(1.5); 
+	}
 </style>
 <body>
 
@@ -77,7 +89,7 @@
 		<?php
 		// Show data
 		$qry ="SELECT id, name, gender, age, DATE_FORMAT(signup_date, '%d/%m/%Y at %H:%i') AS signup_date,
-					  DATE_FORMAT(game1_start, '%d/%m/%Y at %H:%i') AS game1_start, game1_screenshot,
+					  DATE_FORMAT(game1_start, '%d/%m/%Y at %H:%i') AS game1_start, game1_screenshot, game1b_screenshot, game1c_screenshot,
 					  DATE_FORMAT(game1_end, '%d/%m/%Y at %H:%i') AS game1_end,
 					  DATE_FORMAT(game2_start, '%d/%m/%Y at %H:%i') AS game2_start, game2_screenshot,
 					  DATE_FORMAT(game2_end, '%d/%m/%Y at %H:%i') AS game2_end,
@@ -103,6 +115,8 @@
 			$signup_date = $r['signup_date'];
 			$game1_start = $r['game1_start'];
 			$game1_screenshot = $r['game1_screenshot'];
+			$game1b_screenshot = $r['game1b_screenshot'];
+			$game1c_screenshot = $r['game1c_screenshot'];
 			$game1_end = $r['game1_end'];
 			$game2_start = $r['game2_start'];
 			$game2_screenshot = $r['game2_screenshot'];
@@ -194,11 +208,32 @@
 			</div>
 			<br/>
 			<div class="w3-row">
-				<div class="w3-full">
+				<div class="w3-third">
+					<p>Easy</p>
 					<?php
 					if ($game1_screenshot != '') {
 					?>
-					<img src='<?php echo "images/upload/".$game1_screenshot;?>' class="w3-round" alt="game1">
+					<img class="zoom" src='<?php echo "images/upload/".$game1_screenshot;?>' class="w3-round" alt="game1">
+					<?php
+					}
+					?>
+				</div>
+				<div class="w3-third">
+					<p>Medium</p>
+					<?php
+					if ($game1b_screenshot != '') {
+					?>
+					<img class="zoom" src='<?php echo "images/upload/".$game1b_screenshot;?>' class="w3-round" alt="game1">
+					<?php
+					}
+					?>
+				</div>
+				<div class="w3-third">
+					<p>Hard</p>
+					<?php
+					if ($game1c_screenshot != '') {
+					?>
+					<img class="zoom" src='<?php echo "images/upload/".$game1c_screenshot;?>' class="w3-round" alt="game1">
 					<?php
 					}
 					?>
