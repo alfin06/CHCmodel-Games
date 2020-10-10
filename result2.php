@@ -165,9 +165,11 @@
 				<div class="w3-third">
 					<label>Informed Consent: <input type="checkbox" <?php echo $consent=='Y'? 'checked':''; ?> /></label>
 					<div id="statement">
+						<?php if ($consent=='Y') { ?>
 						Saya, <?php echo $parent_name ?>, usia: <?php echo $parent_age ?> tahun, ayah/bunda dari putra/putri 
 						<b><?php echo $name; ?></b> dengan ini menyatakan bahwa saya sudah membaca dan memahami penjelasan penelitian.
 						Saya bersedia untuk berpartisipasi dalam penelitian ini.
+						<?php } ?>
 					</div>
 				</div>
 			</div><br />
