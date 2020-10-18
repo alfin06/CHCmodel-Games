@@ -116,7 +116,7 @@
 		{
 			?>
 			<script>
-				window.open('https://www.braingymmer.com/en/brain-games/moving_memory/play/', '_blank');
+				window.open('https://www.braingymmer.com/en/brain-games/flip/play/', '_blank');
 			</script>
 			<?php
 		}
@@ -144,14 +144,15 @@
   <br />
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan D: Moving</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan D: Flip</h3>
   </div>
 
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom">
       <div class="w3-display-container">
-        <p>Ayo fokuskan dirimu untuk mengingat pasangan kotak harta karun mana yang berisi</p>
-		<p>benda yang sama. Semakin cepat dan tepat jawaban kamu, semakin baik skor kamu.</p>
+        <p>Kamu harus perhatikan baik-baik potongan-potongan daging dan sate barbekiu</p> 
+		<p>yang sedang dipanggang. Klik setiap daging dan sate barbekiu segera setelah</p> 
+		<p>indikator kematangan berwarna jingga (orange). Hati-hati, jangan sampai dagingnya belum matang atau malah gosong!</p> 
       </div>
     </div>
   </div>

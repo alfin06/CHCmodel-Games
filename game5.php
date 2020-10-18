@@ -107,7 +107,7 @@
 	if (isset($_POST['start']))
 	{
 		$query="UPDATE account 
-				   SET game5_start = '".$date."'
+				   SET game5_start = '".$date."' 
 				 WHERE id=".$login_session;
 
 		$result = $db->query($query);
@@ -116,7 +116,7 @@
 		{
 			?>
 			<script>
-				window.open('https://www.braingymmer.com/en/brain-games/flip/play/', '_blank');
+				window.open('https://www.braingymmer.com/en/brain-games/post/play/', '_blank');
 			</script>
 			<?php
 		}
@@ -134,7 +134,7 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="menu.php" class="w3-bar-item w3-button"><i class="fas fa-arrow-left"></i></a>
+    <a href="menu.php" class="w3-bar-item w3-button"><i class="fas fa-arrow-left"></i></b></a>
   </div>
 </div>
 
@@ -144,15 +144,18 @@
   <br />
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan E: Flip</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan E: Post</h3>
   </div>
 
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom">
       <div class="w3-display-container">
-        <p>Kamu harus perhatikan baik-baik potongan-potongan daging dan sate barbekiu</p> 
-		<p>yang sedang dipanggang. Klik setiap daging dan sate barbekiu segera setelah</p> 
-		<p>indikator kematangan berwarna jingga (orange). Hati-hati, jangan sampai dagingnya belum matang atau malah gosong!</p> 
+        <p>Perhatikan dengan teliti di bagian atas, bagaimana kamu harus menyortir/mengelompokkan surat yang ada:</p>
+		<ul>
+			<li>Sort by text: mengikut tulisan pada amplop surat.</li>
+			<li>Sort by color: mengikuti warna amplop suratnya.</li>
+		</ul>
+		<p>Bermainlah secepat dan setepat yang kamu bisa. Selamat mengelompokkan surat-surat ya!</p>
       </div>
     </div>
   </div>

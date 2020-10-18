@@ -84,8 +84,8 @@
 <?php
     // Check if the game is available
     $qry ="SELECT game1_screenshot
-        FROM account
-         WHERE id =".$login_session;
+             FROM account
+            WHERE id =".$login_session;
          
     $result = $db->query($qry);// or die(mysql_error());
     
@@ -97,13 +97,13 @@
     if ($isavailable == "N")
     {
     ?>
-      <button onclick="window.location.href='game1.php';" disabled style="width:150px; height:150px;"><img src="images/rushhour.png" style="width:100px; height:100px;"> Rush Hour </button>
+      <button onclick="window.location.href='game1.php';" disabled style="width:150px; height:150px;"><img src="images/bait.png" style="width:100px; height:100px;"> Bait</button>
     <?php
     }
     else
     {
     ?>
-      <button onclick="window.location.href='game1.php';" style="width:150px; height:150px;"><img src="images/rushhour.png" style="width:100px; height:100px;"> Rush Hour </button>
+      <button onclick="window.location.href='game1.php';" style="width:150px; height:150px;"><img src="images/bait.png" style="width:100px; height:100px;"> Bait</button>
     <?php
     }
     ?>
@@ -113,27 +113,28 @@
 	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan B</h3>
     <?php
     // Check if the game is available
-    $qry ="SELECT game2_screenshot
-        FROM account
-         WHERE id =".$login_session;
+    $qry ="SELECT game1_screenshot, game2_screenshot
+			 FROM account
+            WHERE id =".$login_session;
          
     $result = $db->query($qry);// or die(mysql_error());
     
     while($r = mysqli_fetch_array($result))
     {
       $isavailable  = $r['game2_screenshot'] != "" ? "N" : "Y";
+	  $game1        = $r['game1_screenshot'] != "" ? "N" : "Y";
     }
     
-    if ($isavailable == "N")
+    if ($isavailable == "N" || $game1 == "Y")
     {
     ?>
-      <button onclick="window.location.href='game2.php';" disabled style="width:150px; height:150px;"><img src="images/bait.png" style="width:100px; height:100px;"> Bait</button>
+      <button onclick="window.location.href='game2.php';" disabled style="width:150px; height:150px;"><img src="images/digit.png" style="width:100px; height:100px;"> Digit</button>
     <?php
     }
     else
     {
     ?>
-     <button onclick="window.location.href='game2.php';" style="width:150px; height:150px;"><img src="images/bait.png" style="width:100px; height:100px;"> Bait</button>
+     <button onclick="window.location.href='game2.php';" style="width:150px; height:150px;"><img src="images/digit.png" style="width:100px; height:100px;"> Digit</button>
     <?php
     }
     ?>
@@ -149,7 +150,7 @@
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan C</h3>
 <?php
     // Check if the game is available
-    $qry ="SELECT game3_screenshot
+    $qry ="SELECT game2_screenshot, game3_screenshot
         FROM account
          WHERE id =".$login_session;
          
@@ -158,18 +159,19 @@
     while($r = mysqli_fetch_array($result))
     {
       $isavailable  = $r['game3_screenshot'] != "" ? "N" : "Y";
+      $game2  = $r['game2_screenshot'] != "" ? "N" : "Y";
     }
     
-    if ($isavailable == "N")
+    if ($isavailable == "N" || $game2 == "Y")
     {
     ?>
-      <button onclick="window.location.href='game3.php';" disabled style="width:150px; height:150px;"><img src="images/digit.png" style="width:100px; height:100px;"> Digit</button>
+      <button onclick="window.location.href='game3.php';" disabled style="width:150px; height:150px;"><img src="images/moving.png" style="width:100px; height:100px;"> Moving</button>
     <?php
     }
     else
     {
     ?>
-      <button onclick="window.location.href='game3.php';" style="width:150px; height:150px;"><img src="images/digit.png" style="width:100px; height:100px;"> Digit </button>
+      <button onclick="window.location.href='game3.php';" style="width:150px; height:150px;"><img src="images/moving.png" style="width:100px; height:100px;"> Moving </button>
     <?php
     }
     ?>
@@ -179,7 +181,7 @@
 	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan D</h3>
     <?php
     // Check if the game is available
-    $qry ="SELECT game4_screenshot
+    $qry ="SELECT game3_screenshot, game4_screenshot
         FROM account
          WHERE id =".$login_session;
          
@@ -188,18 +190,19 @@
     while($r = mysqli_fetch_array($result))
     {
       $isavailable  = $r['game4_screenshot'] != "" ? "N" : "Y";
+      $game3  = $r['game3_screenshot'] != "" ? "N" : "Y";
     }
     
-    if ($isavailable == "N")
+    if ($isavailable == "N" || $game3 == "Y")
     {
     ?>
-      <button onclick="window.location.href='game4.php';" disabled style="width:150px; height:150px;"><img src="images/moving.png" style="width:100px; height:100px;">Moving</button>
+      <button onclick="window.location.href='game4.php';" disabled style="width:150px; height:150px;"><img src="images/flip.png" style="width:100px; height:100px;"> Flip</button>
     <?php
     }
     else
     {
     ?>
-     <button onclick="window.location.href='game4.php';" style="width:150px; height:150px;"><img src="images/moving.png" style="width:100px; height:100px;">Moving</button>
+     <button onclick="window.location.href='game4.php';" style="width:150px; height:150px;"><img src="images/flip.png" style="width:100px; height:100px;"> Flip</button>
     <?php
     }
     ?>
@@ -214,7 +217,7 @@
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan E</h3>
 <?php
     // Check if the game is available
-    $qry ="SELECT game5_screenshot
+    $qry ="SELECT game4_screenshot, game5_screenshot
         FROM account
          WHERE id =".$login_session;
          
@@ -223,18 +226,19 @@
     while($r = mysqli_fetch_array($result))
     {
       $isavailable  = $r['game5_screenshot'] != "" ? "N" : "Y";
+      $game4  = $r['game4_screenshot'] != "" ? "N" : "Y";
     }
     
-    if ($isavailable == "N")
+    if ($isavailable == "N" || $game4 == "Y")
     {
     ?>
-      <button onclick="window.location.href='game5.php';" disabled style="width:150px; height:150px;"><img src="images/flip.png" style="width:100px; height:100px;"> Flip</button>
+      <button onclick="window.location.href='game5.php';" disabled style="width:150px; height:150px;"><img src="images/post.png" style="width:100px; height:100px;"> Post</button>
     <?php
     }
     else
     {
     ?>
-      <button onclick="window.location.href='game5.php';" style="width:150px; height:150px;"><img src="images/flip.png" style="width:100px; height:100px;"> Flip </button>
+      <button onclick="window.location.href='game5.php';" style="width:150px; height:150px;"><img src="images/post.png" style="width:100px; height:100px;"> Post</button>
     <?php
     }
     ?>
@@ -244,7 +248,7 @@
 	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan F</h3>
     <?php
     // Check if the game is available
-    $qry ="SELECT game6_screenshot
+    $qry ="SELECT game5_screenshot, game6_screenshot
         FROM account
          WHERE id =".$login_session;
          
@@ -253,18 +257,19 @@
     while($r = mysqli_fetch_array($result))
     {
       $isavailable  = $r['game6_screenshot'] != "" ? "N" : "Y";
+      $game5  = $r['game5_screenshot'] != "" ? "N" : "Y";
     }
     
-    if ($isavailable == "N")
+    if ($isavailable == "N" || $game5 == "Y")
     {
     ?>
-      <button onclick="window.location.href='game6.php';" disabled style="width:150px; height:150px;"><img src="images/post.png" style="width:100px; height:100px;"> Post</button>
+      <button onclick="window.location.href='game6.php';" disabled style="width:150px; height:150px;"><img src="images/rushhour.png" style="width:100px; height:100px;"> Rush Hour</button>
     <?php
     }
     else
     {
     ?>
-     <button onclick="window.location.href='game6.php';" style="width:150px; height:150px;"><img src="images/post.png" style="width:100px; height:100px;"> Post</button>
+     <button onclick="window.location.href='game6.php';" style="width:150px; height:150px;"><img src="images/rushhour.png" style="width:100px; height:100px;"> Rush Hour</button>
     <?php
     }
     ?>

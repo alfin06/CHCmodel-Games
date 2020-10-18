@@ -116,7 +116,7 @@
 		{
 			?>
 			<script>
-				window.open('https://www.braingymmer.com/en/brain-games/bait/play/', '_blank');
+				window.open('https://www.braingymmer.com/en/brain-games/digit/play/', '_blank');
 			</script>
 			<?php
 		}
@@ -144,18 +144,15 @@
   <br />
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan B: Bait</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan B: Digit</h3>
   </div>
 
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom">
       <div class="w3-display-container">
-        <p>Saat awal bermain kamu akan dapat kesempatan untuk mencoba jawab terlebih dahulu. Barulah setelah itu</p> 
-		<p>siapkan dirimu untuk langsung bermain ya!</p>
-		<br/>
-		<p>Yuk, tunjukkan menggunakan tombol arah atas/bawah/kiri/kanan, ikan yang berada di bagian tengah dari</p>
-		<p>sekumpulan ikan setiap kali mereka muncul di layar kamu. Jawablah secepat & setepat yang kamu bisa,</p> 
-		<p>jangan sampai si ikan hiu besar lewat berenang di layarmu!</p>
+        <p>Kamu harus mengingat posisi kartu-kartu angka yang ada di layarmu, lalu klik</p> 
+		<p>secara berurutan satu per satu kartu-kartu tersebut mulai dari angka yang terkecil</p> 
+		<p>sampa yang paling besar. Bermainlah secepat & setepat yang kamu bisa.</p>
       </div>
     </div>
   </div>
