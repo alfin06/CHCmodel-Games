@@ -32,6 +32,29 @@
 	  button {
 		cursor: pointer;  
 	  }
+
+
+.petunjuk{
+padding-left:100px;
+padding-right:100px;
+}
+.gamelist{
+padding-left:100px;
+padding-right:100px;
+}
+
+    @media (max-width: 600px){
+  .petunjuk {
+    padding-left:10px;
+padding-right:10px;
+  }
+  .gamelist{
+    padding-left:10px;
+padding-right:10px;
+  }
+}
+
+
     </style>
 
 </head>
@@ -54,7 +77,7 @@
   </div>
 </header>
 
-<div class="w3-container">
+<div class="w3-container petunjuk">
 	<div class="w3-full">
 		<span>Petunjuk Utama (WAJIB DIBACA sebelum mulai):</span>
 		<ol>
@@ -76,7 +99,7 @@
 	</div>
 </div>
 
-<div class="w3-container">
+<div class="w3-container gamelist">
   
 <div class="w3-cell-row">
   <div class="w3-container w3-cell">
@@ -144,7 +167,7 @@
 </div>
 
 
-<div class="w3-container">
+<div class="w3-container gamelist">
 <div class="w3-cell-row">
   <div class="w3-container w3-cell">
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan C</h3>
@@ -211,7 +234,7 @@
 </div>
 </div>
 
-<div class="w3-container">
+<div class="w3-container gamelist">
 <div class="w3-cell-row">
   <div class="w3-container w3-cell">
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan E</h3>
