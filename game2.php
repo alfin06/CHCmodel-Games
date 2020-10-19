@@ -150,9 +150,9 @@
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom">
       <div class="w3-display-container">
-        <p>Kamu harus mengingat posisi kartu-kartu angka yang ada di layarmu, lalu klik</p> 
-		<p>secara berurutan satu per satu kartu-kartu tersebut mulai dari angka yang terkecil</p> 
-		<p>sampa yang paling besar. Bermainlah secepat & setepat yang kamu bisa.</p>
+        <p>Kamu harus mengingat posisi kartu-kartu angka yang ada di layarmu, 
+		   lalu klik secara berurutan satu per satu kartu-kartu tersebut mulai dari angka yang terkecil 
+		   sampai yang paling besar. Bermainlah secepat & setepat yang kamu bisa.</p>
       </div>
     </div>
   </div>

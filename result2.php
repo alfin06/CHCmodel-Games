@@ -193,7 +193,7 @@
 		<form class="w3-container">
 			<div class="w3-row">
 				<div class="w3-full">
-					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan A: Rush Hour</h3>
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan A: Bait</h3>
 				</div>
 			</div>
 			<div class="w3-row">
@@ -218,30 +218,10 @@
 					}
 					?>
 				</div>
-				<div class="w3-third">
-					<p>Medium</p>
-					<?php
-					if ($game1b_screenshot != '') {
-					?>
-					<img class="zoom" src='<?php echo "images/upload/".$game1b_screenshot;?>' class="w3-round" alt="game1">
-					<?php
-					}
-					?>
-				</div>
-				<div class="w3-third">
-					<p>Hard</p>
-					<?php
-					if ($game1c_screenshot != '') {
-					?>
-					<img class="zoom" src='<?php echo "images/upload/".$game1c_screenshot;?>' class="w3-round" alt="game1">
-					<?php
-					}
-					?>
-				</div>
 			</div>
 			<div class="w3-row">
 				<div class="w3-full">
-					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan B: Bait</h3>
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan B: Digit</h3>
 				</div>
 			</div>
 			<div class="w3-row">
@@ -271,7 +251,7 @@
 		<form class="w3-container">
 			<div class="w3-row">
 				<div class="w3-full">
-					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan C: Digit</h3>
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan C: Moving</h3>
 				</div>
 			</div>
 			<div class="w3-row">
@@ -298,7 +278,7 @@
 			</div>
 			<div class="w3-row">
 				<div class="w3-full">
-					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan D: Moving</h3>
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan D: Flip</h3>
 				</div>
 			</div>
 			<div class="w3-row">
@@ -328,7 +308,7 @@
 		<form class="w3-container">
 			<div class="w3-row">
 				<div class="w3-full">
-					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan E: Flip</h3>
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan E: Post</h3>
 				</div>
 			</div>
 			<div class="w3-row">
@@ -355,7 +335,7 @@
 			</div>
 			<div class="w3-row">
 				<div class="w3-full">
-					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan F: Post</h3>
+					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan F: Rush Hour</h3>
 				</div>
 			</div>
 			<div class="w3-row">
@@ -370,11 +350,31 @@
 			</div>
 			<br/>
 			<div class="w3-row">
-				<div class="w3-full">
+				<div class="w3-third">
 					<?php
 					if ($game6_screenshot != '') {
 					?>
 					<img src='<?php echo "images/upload/".$game6_screenshot;?>' class="w3-round" alt="game6">
+					<?php
+					}
+					?>
+				</div>
+				<div class="w3-third">
+					<p>Medium</p>
+					<?php
+					if ($game6b_screenshot != '') {
+					?>
+					<img class="zoom" src='<?php echo "images/upload/".$game1b_screenshot;?>' class="w3-round" alt="game1">
+					<?php
+					}
+					?>
+				</div>
+				<div class="w3-third">
+					<p>Hard</p>
+					<?php
+					if ($game6c_screenshot != '') {
+					?>
+					<img class="zoom" src='<?php echo "images/upload/".$game1c_screenshot;?>' class="w3-round" alt="game1">
 					<?php
 					}
 					?>
