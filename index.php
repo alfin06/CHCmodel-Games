@@ -19,6 +19,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dekko&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
   <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -44,7 +50,7 @@
       padding: 0;
       margin: 0;
       outline: none;
-      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-family: 'Coming Soon', cursive;
       font-size: 20px;
       color: #eee;
       }
@@ -133,9 +139,9 @@
 .dv_form{
   position:absolute;
   top:20%;
-  background-color: #ff5f5f;
-  border-radius: 25px;
-  border:10px solid #ffd065;
+  background-color: #546f70;
+  border-radius: 5px;
+  border:15px solid #ffd065;
 }
 .btn_login{
   color: rgb(175,238,238);
@@ -155,17 +161,13 @@
   color:black!important;
 }
 
-      @media (min-width: 568px) {
-      html, body {
-      height: 100%;
-      }
-      .main-block {
-      flex-direction: row;
-      height: calc(100% - 50px);
-      }
-      }
+      
 
 
+ .footer{
+      background-color: #9df2e6;
+      color:white;
+    }
     </style>
   </head>
   <body>
@@ -284,7 +286,6 @@
     </div>
   </div>
 </div>
-
     <div class="main-block">
         <div class="dv_form">
           <form method="post">
@@ -292,7 +293,7 @@
 			if (isset($_SESSION['login_user']))
 			{
 			?>
-			<button type="submit" id="continue" name="continue" style="background:green;" formnovalidate>Lanjutkan Permainan</button>
+			<button type="submit" id="continue" name="continue" style="background:#5fa2ae;" formnovalidate>Lanjutkan Permainan</button>
 			<?php
 			}
 			else
@@ -324,12 +325,19 @@
 			?>
           </form>
           <div style="text-align: center;padding:50px;">
-           <img src="images/logo4.jpg" style="width:150px; height:150px;"><br />
+           <img src="images/logo5.png" style="width:150px; height:150px;"><br />
            <b>S</b>kala <b>P</b>enilaian <b>P</b>erilaku <b>A</b>tentif <b>S</b>iswa
            </div>
         </div>
 
 
     </div>
+
+
+<!-- Footer -->
+<footer class="w3-center footer">
+  <i class="fa fa-copyright" aria-hidden="true"></i>copyright reserverd 2020 - Developed by FINNIX
+</footer>
+
   </body>
 </html>

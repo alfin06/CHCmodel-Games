@@ -17,6 +17,12 @@
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dekko&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+
 
   <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -30,20 +36,19 @@
 	
     <style>
       html, body {
-      min-height: 100%;
       background-image: url("images/bg1.png");
       /* Full height */
       height: 100%;
       /* Center and scale the image nicely */
       background-position: center;
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       background-size: cover;
       }
       body, div, form, input, select, p { 
       padding: 0;
       margin: 0;
       outline: none;
-      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-family: 'Coming Soon', cursive;
       font-size: 20px;
       color: #eee;
       }
@@ -57,8 +62,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100%;
       padding: 25px;
+      height: 100%;
+  position: relative;
       }
       .left-part, form {
       padding: 25px;
@@ -132,9 +138,10 @@
 .dv_form{
   position:absolute;
   top:20%;
-  background-color: #ff5f5f;
-  border-radius: 25px;
-  border:10px solid #ffd065;
+ background-color: #546f70;
+  border-radius: 5px;
+  border:15px solid #ffd065;
+  margin-bottom: 60px;
 }
 .btn_login{
   color: rgb(175,238,238);
@@ -158,16 +165,25 @@
       html, body {
       height: 100%;
       }
-      .main-block {
+   /*   .main-block {
       flex-direction: row;
       height: calc(100% - 50px);
-      }
+      }*/
       }
 	  
 div#scroll {
 	height: 500px;
 	overflow-Y: scroll;
 }
+   .footer{
+      background-color: #9df2e6;
+      color:white;
+      width: 100%;
+  height: 50px;
+    position: absolute;
+  bottom: 0;
+  left: 0;
+    }
 
 
     </style>
@@ -250,7 +266,7 @@ div#scroll {
           </form>
         </div>
 
-
     </div>
+    
   </body>
 </html>
