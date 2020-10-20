@@ -129,6 +129,11 @@ background-color: white;
 }
 
 
+	  .instruction {
+		font-size: 10pt;
+		margin-right: 50%;
+	  }
+
     </style>
 
 </head>
@@ -156,20 +161,39 @@ background-color: white;
 	<div class="w3-full">
 		<span class="petunjukTitle">Petunjuk Utama (<b>WAJIB DIBACA</b> sebelum mulai):</span>
 		<ol>
-			<li>Selama lebih kurang 60 menit ke depan, kamu akan menyelesaikan serangkaian tugas permainan, jadi tetaplah tinggal di dalam website ini.</li>
-			<li>Bermainlah secara berurutan sesuai nomornya (A sampai F) dengan mengikuti alur seperti pada instruksi nomor 3&4 berikut ini.</li>
-			<li>Setiap kali selesai bermain, mohon login ke website brain gymner dengan akun ? untuk mendokumentasikan skor kamu dengan cara screenshot tampilan skor kamu pada permainan tersebut.
-				<br />Shortcut screenshot:
+			<li>Siapkan laptop/ PC kamu untuk mengikuti serangkaian penugasan berupa permainan ketangkasan otak selama ±60 menit ke depan, jadi tetaplah tinggal di dalam website ini.</li>
+			<li>Buatlah folder baru di desktop kamu dan beri nama Penugasan Siswa untuk menyimpan dokumentasi selama penugasan berlangsung</li>
+			<li>Saat akan mulai bermain kamu tidak perlu login ke website braingymmer, tapi setiap kali selesai bermain 1 permainan, kamu harus login ya. Bermainlah secara berurutan sesuai dengan urutan huruf (A sampai E) dengan mengikuti alur seperti pada instruksi nomor 6.</li>
+			<li>Setiap kali selesai bermain, kamu harus login ke website braingymmer untuk dapat melihat hasil skornya menggunakan email dan password yang sudah kamu buat sebelumnya pada waktu ‘register’, lalu dokumentasikan skor kamu dengan cara screenshot tampilan skor kamu pada permainan tersebut.
+				<br />Cara screenshot:
 				<ul>
-					<li>Bagi pengguna Windows: dengan menekan tombol (pakai simbol) Windows, Shift, s kemudian simpan di desktop kamu.</li>
-					<li>Bagi pengguna Mac: dengan menekan tombol (pakai simbol) Shift, command, 4 kemudian simpan di desktop kamu.</li>
+					<li>*Tekan tombol print screen pada keyboard kamu, lalu buka program <b>Paint</b> pada laptop/PC kamu, 
+					    paste di sana (dengan menekan tombol Ctrl dan V secara bersamaan pada keyboard kamu. 
+						Kemudian simpan file dengan format <b>JPEG</b> di folder yang tadi sudah kamu buat di desktop dengan 
+						nama masing-masing permainan.</li>
 				</ul>
 			</li>
-			<li>Setelah kamu upload skor permainan A, kamu harus logout dari brain gymmer. Lalu kembali ke halaman website SPPAS untuk unggah (upload) screenshot skor permainan kamu pada bagian yang sudah disediakan.
-				Ulangi alur yang sama untuk permainan B,C,D,E dan F.
+			<li>Setelah menyimpan screenshot hasil skor kamu, silahkan kembali ke halaman SPPAS untuk unggah (upload) 
+			    screenshot skor permainan kamu pada bagian yang sudah disediakan.</li>
+			<li>Sebelum kamu melanjutkan ke permainan B, <b>ingat kamu harus logout dari website brain gymmer.</b> 
+				<br/>Begini alurnya: 
+				<ol type="a">
+					<li>bermain (tanpa login ke website braingymmer)</li>
+					<li>login ke website braingymmer untuk dapat melihat dan screenshot hasil skor permainannya</li>
+					<li>logout untuk dapat melanjutkan bermain ke permainan berikutnya.   
+						Ulangi alur yang sama untuk permainan B,C,D dan E.</li>
+				</ol>
 			</li>
-			<li>Kamu hanya diberikan satu kali kesempatan dalam setiap permainan, jadi bermainlah <b>sebaik</b> dan <b>secepat</b> yang kamu bisa sampai selesai/tuntas pada setiap permainan.</li>
-			<li>Silahkan menyimak video turorial di bawah ini agar semakin jelas alur bermain & cara mendokumentasi (screenshot) skor kamu pada setiap permainan.</li>
+			<li>Kamu hanya diberikan satu kali kesempatan dalam setiap permainan, jadi bermainlah sebaik dan secepat yang kamu bisa sampai selesai.</li>
+			<li>Untuk permainan F (Rush Hour), kamu akan bermain sebanyak 3 kali mulai dari tingkat kesulitan easy, medium, 
+			    lalu hard. Setiap kali berhasil menyelesaikan satu level permainan, segera screenshot, kemudian simpan dengan 
+				format <b>JPEG</b> di desktop dengan nama:<br/>
+				RH1 untuk level easy, RH2 untuk level medium, RH3 untuk level hard. Setelah    
+				selesai bermain ketiga level tersebut, kembali ke halaman SPPAS untuk unggah  
+				(upload) screenshot hasil permainanmu.
+			</li>
+			<li>Silahkan menyimak video tutorial berikut ini agar semakin jelas alur bermain dan cara mendokumentasikan 
+			    (screenshot) skor kamu pada setiap permainan.</li>
 		</ol> 
 	</div>
 </div>

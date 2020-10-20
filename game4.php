@@ -229,9 +229,9 @@
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom" style="width:100%;text-align: center;">
       <div class="w3-display-container gameInstruction"><img src="images/flip.png" style="width:200px; height:200px;margin-bottom: 20px;">
-        <p>Kamu harus perhatikan baik-baik potongan-potongan daging dan sate barbekiu</p> 
-		<p>yang sedang dipanggang. Klik setiap daging dan sate barbekiu segera setelah</p> 
-		<p>indikator kematangan berwarna jingga (orange). Hati-hati, jangan sampai dagingnya belum matang atau malah gosong!</p> 
+       <p>Kamu harus perhatikan baik-baik potongan-potongan daging dan sate barbekiu yang sedang dipanggang. 
+		   Klik setiap daging dan sate barbekiu segera setelah lingkaran penunjuk kematangan berwarna jingga (orange). 
+		   Hati-hati, jangan sampai dagingnya belum matang atau malah gosong!</p> 
       </div>
     </div>
   </div>

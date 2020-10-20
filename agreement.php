@@ -142,6 +142,8 @@
   border-radius: 5px;
   border:15px solid #ffd065;
   margin-bottom: 60px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .btn_login{
   color: rgb(175,238,238);
@@ -234,34 +236,40 @@ div#scroll {
           <form method="post">
 			<h1>Prolog Singkat</h1>
 			<div> <!-- id="scroll" -->
-				<p>Salam sejahtera dan sehat selalu,</p><br/>
-				<p>Perkenalkan, saya Antania Djuwita, mahasiswi Magister Profesi Psikologi Pendidikan dari Universitas Tarumanagara-Jakarta</p> 
-				<p>(NPM: 717191027). Saya sedang melakukan penelitian dengan topik Pengembangan Skala Penilaian Perilaku Atentif Siswa</p>
-				<p>bekerja sama dengan SDK Ketapang 1 (Jakarta), SDK Ketapang 3 (Cibubur), PT. Melintas Cakrawala Indonesia</p> 
-				<p>(selaku pengembang AJT CogTest) serta memperoleh ijin seorang pakar atensi (konsentrasi) dari salah satu klinik tumbuh</p> 
-				<p>kembang anak di Jakarta.</p>
+				<p>Salam sejahtera dan sehat selalu.</p><br/>
+				<p>Perkenalkan, saya Antania Djuwita, mahasiswi Magister Psikologi Profesi bidang Psikologi 
+				   Pendidikan dari Universitas Tarumanagara (Untar), Jakarta (NPM: 717191027). Saya sedang melakukan 
+				   penelitian dengan topik Pengembangan Skala Penilaian Perilaku Atentif Siswa.  Saya bekerja sama dengan 
+				   SDK Ketapang 1 (Jakarta) dan SDK Ketapang 3 (Cibubur) serta memperoleh ijin seorang pakar atensi 
+				   (konsentrasi) dari salah satu klinik tumbuh kembang anak di Jakarta.</p>
 				<br/>
-				<p>Saya mengharapkan kesediaan Ayah/Bunda agar mengijinkan putra/putrinya untuk berpartisipasi dalam penelitian ini</p> 
-				<p>dengan cara, mengerjakan penugasan singkat (20 menit) berupa permainan secara virtual yang akan dipandu melalui</p> 
-				<p>website penelitian saya. Partisipasi Ayah/Bunda melalui putra/putri tercinta akan sangat bermanfaat untuk pengembangan</p> 
-				<p>pendidikan, yaitu bagi sekolah, guru, siswa serta Ayah/Bunda sebagai orangtua. Peneliti menjamin kerahasiaan identitas</p> 
-				<p>dan jawaban putra/putri Ayah/Bunda, karena hasil jawaban sepenuhnya hanya digunakan untuk kepentingan penelitian.</p>
+				<p>Besar harapan saya, kiranya Ayah/Bunda berkenan mengizinkan putra/putrinya untuk berpartisipasi 
+				   dalam penelitian ini. Bentuk partisipasi putra/putri Ayah/Bunda adalah dengan cara, Penugasan Siswa 
+				   (selama ±60 menit). Tugas yang dikerjakan berupa enam buah permainan ketangkasan otak secara virtual 
+				   yang akan dipandu dalam website ini. Partisipasi putra/putri dalam penelitian ini akan menjadi pengalaman 
+				   berharga dan memperluas wawasan mengenai berbagai tugas yang memerlukan perhatian penuh. Hasil penelitian 
+				   ini bermanfaat bagi pengembangan ilmu di bidang Psikologi Pendidikan.</p>
 				<br/>
-				<p>Apabila Ayah/Bunda berkenan untuk putra/putrinya turut berpartisipasi dalam penelitian ini, mohon kesediannya agar terlebih</p> 
-				<p>dahulu melengkapi data diri dan memberikan tanda (.) pada pernyataan “Ya, saya setuju” di bagian bawah halaman ini.</p> 
-				<p>Partisipasi ini bersifat sukarela sehingga Ayah/Bunda berhak mengurungkan niat untuk berpartisipasi tanpa konsekuensi apapun.</p>
+				<p>Peneliti menjamin kerahasiaan identitas dan jawaban putra/putri Ayah/Bunda, karena hasil pengerjaan tugas 
+				   sepenuhnya hanya digunakan untuk kepentingan penelitian.</p>
 				<br/>
-				<p>Apabila ada hal-hal yang ingin Ayah/Bunda tanyakan sekaligus dan ingin mengetahui hasil penelitian ini di kemudian hari,</p> 
-				<p>silahkan dapat menghubungi saya melalui email: a.djuwita@gmail.com atau WA (pesan teks-chat) +6281807149296.</p> 
-				<p>Terima kasih atas Ayah/Bunda dan adik-adik terkasih atas semangat dan dukungannya. Tuhan memberkati!</p>
+				<p>Apabila Ayah/Bunda berkenan mengizinkan putra/putrinya turut berpartisipasi dalam penelitian ini, 
+				   saya mohon kesediaan Ayah/Bunda untuk melengkapi data diri, dan mengklik pernyataan “Ya, saya setuju” 
+				   di bagian bawah halaman ini. Partisipasi ini bersifat sukarela sehingga Ayah/Bunda berhak mengurungkan 
+				   niat untuk berpartisipasi tanpa konsekuensi apapun.</p>
+				<p>Apabila ada hal-hal yang ingin ditanyakan berkaitan dengan penelitian ini, Ayah/Bunda dapat menghubungi 
+				   saya di alamat email antania.717191027@stu.untar.ac.id. Apabila Ayah/Bunda bermaksud mengetahui hasil 
+				   penelitian ini di kemudian hari, Ayah/Bunda dapat menghubungi pihak sekolah, karena hasil penelitian akan 
+				   saya sampaikan kepada pihak sekolah. Terima kasih atas kesediaan Ayah/Bunda untuk berpartisipasi dalam penelitian ini.</p>
 				<br/>
 			</div>
 			<br/>
 			<h1>Informed Consent</h1>
-			<p>Saya, <input type="text" id="parent_name" name="parent_name" style="width:250px;" placeholder="(diisi inisial nama)" required />, usia: 
+			<p>Saya, <input type="text" id="parent_name" name="parent_name" style="width:450px;" placeholder="(diisi nama orang tua/wali)" required />, usia: 
 			   <input type="text" id="parent_age" name="parent_age" style="width:100px;" required />tahun,</p> 
-			<p>ayah/bunda dari putra/putri <b><?php echo $user_check; ?></b> dengan ini menyatakan bahwa saya sudah membaca dan memahami penjelasan penelitian.</p> 
-			<p>Saya bersedia untuk berpartisipasi dalam penelitian ini.</p>
+			<p>selaku orang tua/wali dari <b><?php echo $user_check; ?></b> bahwa saya memahami penjelasan penelitian, 
+			   dan saya bersedia untuk berpartisipasi dalam penelitian dengan topik Pengembangan Skala Penilaian Perilaku 
+			   Atentif Siswa yang dilaksanakan oleh Antania Djuwita dari Untar.</p>
 			<button type="submit" id="btnAgree" class="btn btn-success" name="btnAgree">Saya setuju</button>
           </form>
         </div>

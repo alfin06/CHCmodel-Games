@@ -229,8 +229,8 @@
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom" style="width:100%;text-align: center;">
       <div class="w3-display-container gameInstruction"><img src="images/moving.png" style="width:200px; height:200px;margin-bottom: 20px;">
-        <p>Ayo fokuskan dirimu untuk mengingat pasangan kotak harta karun mana yang berisi</p>
-		<p>benda yang sama. Semakin cepat dan tepat jawaban kamu, semakin baik skor kamu.</p>
+        <p>Ayo fokuskan dirimu untuk mengingat pasangan <b>kotak harta karun mana yang berisi benda yang sama.</b>
+		   Semakin cepat dan tepat jawaban kamu,maka semakin baik skor kamu.</p>
       </div>
     </div>
   </div>
