@@ -101,7 +101,6 @@
 					  DATE_FORMAT(game5_end, '%d/%m/%Y at %H:%i') AS game5_end,
 					  DATE_FORMAT(game6_start, '%d/%m/%Y at %H:%i') AS game6_start, game6_screenshot,
 					  DATE_FORMAT(game6_end, '%d/%m/%Y at %H:%i') AS game6_end,
-					  game6b_screenshot, game6c_screenshot,
 					  parent_name, parent_age, consent, grade
 				 FROM account
 				WHERE id = ".$_SESSION['student_id'];
@@ -131,8 +130,6 @@
 			$game5_end = $r['game5_end'];
 			$game6_start = $r['game6_start'];
 			$game6_screenshot = $r['game6_screenshot'];
-			$game6b_screenshot = $r['game6b_screenshot'];
-			$game6c_screenshot = $r['game6c_screenshot'];
 			$game6_end = $r['game6_end'];
 			$parent_name = $r['parent_name'];
 			$parent_age = $r['parent_age'];
@@ -182,9 +179,7 @@
 					<div id="statement">
 						<?php if ($consent=='Y') { ?>
 						Saya, <?php echo $parent_name ?>, usia: <?php echo $parent_age ?> tahun, selaku orang tua/wali dari
-						<b><?php echo $name; ?></b>, bahwa saya memahami penjelasan penelitian, dan saya bersedia untuk 
-						berpartisipasi dalam penelitian dengan topik Pengembangan Skala Penilaian Perilaku Atentif Siswa yang 
-						dilaksanakan oleh Antania Djuwita dari Untar.
+						<b><?php echo $name; ?></b>, bahwa saya memahami penjelasan penelitian, dan saya bersedia untuk berpartisipasi dalam penelitian dengan topik Pengembangan Skala Penilaian Perilaku Atentif Siswa (SPPAS) yang dilaksanakan oleh Antania Djuwita dari Untar.
 						<?php } ?>
 					</div>
 				</div>
@@ -209,6 +204,7 @@
 				</div>
 			</div>
 			<br/>
+			<!--
 			<div class="w3-row">
 				<div class="w3-third">
 					<p>Easy</p>
@@ -221,6 +217,7 @@
 					?>
 				</div>
 			</div>
+			-->
 			<div class="w3-row">
 				<div class="w3-full">
 					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan B: Digit</h3>
@@ -237,6 +234,7 @@
 				</div>
 			</div>
 			<br/>
+			<!--
 			<div class="w3-row">
 				<div class="w3-full">
 					<?php
@@ -248,6 +246,7 @@
 					?>
 				</div>
 			</div>
+			-->
 		</form>
 		<hr />
 		<form class="w3-container">
@@ -267,6 +266,7 @@
 				</div>
 			</div>
 			<br/>
+			<!--
 			<div class="w3-row">
 				<div class="w3-full">
 					<?php
@@ -278,6 +278,7 @@
 					?>
 				</div>
 			</div>
+			-->
 			<div class="w3-row">
 				<div class="w3-full">
 					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan D: Flip</h3>
@@ -294,6 +295,7 @@
 				</div>
 			</div>
 			<br/>
+			<!--
 			<div class="w3-row">
 				<div class="w3-full">
 					<?php
@@ -305,6 +307,7 @@
 					?>
 				</div>
 			</div>
+			-->
 		</form>
 		<hr />
 		<form class="w3-container">
@@ -324,6 +327,7 @@
 				</div>
 			</div>
 			<br/>
+			<!--
 			<div class="w3-row">
 				<div class="w3-full">
 					<?php
@@ -335,6 +339,7 @@
 					?>
 				</div>
 			</div>
+			-->
 			<div class="w3-row">
 				<div class="w3-full">
 					<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Permainan F: Rush Hour</h3>
@@ -351,6 +356,7 @@
 				</div>
 			</div>
 			<br/>
+			<!--
 			<div class="w3-row">
 				<div class="w3-third">
 					<?php
@@ -382,6 +388,7 @@
 					?>
 				</div>
 			</div>
+			-->
 		</form>
       </div>
     </div>

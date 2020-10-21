@@ -97,15 +97,15 @@
   }
 
   .btnUpload{
-  	background-color: #edb535;
-  	height:50px;
-  	width:200px;
+  	background-color: #008000;
+  	height:100px;
+  	width:300px;
   	color:white;
-  	font-size: 18px;
-  	border-radius: 15px;
-  	border:3px solid white;
+  	font-size: 27px;
+  	border-radius: 25px;
+  	border:5px solid white;
   	font-family: 'Fredoka One', cursive;
-  	margin-top: 10px;
+  	margin-bottom: 20px;
   }
 
   .btnUpload:hover{
@@ -131,28 +131,27 @@
 	if (isset($_POST['upload']))
 	{
 		
-		$nagambaradd = $_FILES['nagaadd']['name'];
-		$ukurangambar = $_FILES['nagaadd']['size'];//lihat ukuran gambar
-		$typegambar = $_FILES['nagaadd']['type']; // lihat type gambar
-		$file_tmp = $_FILES['nagaadd']['tmp_name'];
+		//$nagambaradd = $_FILES['nagaadd']['name'];
+		//$ukurangambar = $_FILES['nagaadd']['size'];//lihat ukuran gambar
+		//$typegambar = $_FILES['nagaadd']['type']; // lihat type gambar
+		//$file_tmp = $_FILES['nagaadd']['tmp_name'];
 		
-		$nagambaradd_temp = explode(".", $nagambaradd);
+		//$nagambaradd_temp = explode(".", $nagambaradd);
 		
-		$extension = end($nagambaradd_temp);
-		$namaakhir = $login_session;
-		$namaakhir = "game1_".$namaakhir.".".$extension;
+		//$extension = end($nagambaradd_temp);
+		//$namaakhir = $login_session;
+		//$namaakhir = "game1_".$namaakhir.".".$extension;
 		
-		if(($typegambar == "image/jpeg" || $typegambar == "image/png" || $typegambar == "image/jpg") && 
-			$nagambaradd !="" && $ukurangambar < 1000000 )
-		{
+		//if(($typegambar == "image/jpeg" || $typegambar == "image/png" || $typegambar == "image/jpg") && 
+		//	$nagambaradd !="" && $ukurangambar < 1000000 )
+		//{
 			$a="UPDATE account 
-				   SET game1_screenshot = '".$namaakhir."',
-				       game1_end = '".$date."'
+				   SET game1_end = '".$date."'
 				 WHERE id=".$login_session;
 
 			$result = $db->query($a);	
 
-			move_uploaded_file($file_tmp,"images/upload/".$namaakhir);
+		//	move_uploaded_file($file_tmp,"images/upload/".$namaakhir);
 			
 			if ($result === TRUE) 
 			{
@@ -170,15 +169,15 @@
 				</script> 
 	<?php
 			}
-		}
-		else
-		{
+		//}
+		//else
+		//{
 	?>
 			<script type="text/javascript">
 				alert('Ada kesalahan pada gambar.');
 			</script> 
 	<?php
-		}
+		//}
 	}
 	
 	// Go to game page
@@ -242,20 +241,26 @@
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom" style="width:100%;text-align: center;">
       <div class="w3-display-container">
-		<button type="submit" name="start" id="start" class="btn btnStart">Mulai Permainan <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+		<button type="submit" name="start" id="start" class="btn btnStart">Mulai Permainan</button>
       </div>
+	  <div class="w3-display-container">
+		<button type="submit" class="btn btnUpload" name="upload" id="upload">Selesai Permainan </button>
+	  </div>
     </div>
   </div>
+  
   
   <div class="w3-row-padding">
 	<div class="w3-col l3 m6 w3-margin-bottom uploadScreenshot">
       <div class="w3-display-container">
+	  &nbsp;
+	  <!--
         <label for="input-file-now-custom-1">Unggah hasil screenshot di bawah ini:</label>
 		<input type="hidden" value="<?php echo $login_session;?>" name="kode" />      
 
 		<input type="file" name="nagaadd" id="input-file-now-custom-1" class="dropify" data-default-file="images/upload/<?php if ($gambar==""){echo "";}else{echo $gambar;}?>"  />
-
-		<button type="submit" class="btn btnUpload" name="upload" id="upload">Unggah Gambar <i class="fa fa-upload" aria-hidden="true"></i></button>
+		-->
+		
       </div>
     </div>
   </div>

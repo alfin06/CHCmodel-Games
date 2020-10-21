@@ -98,15 +98,15 @@
   }
 
   .btnUpload{
-  	background-color: #edb535;
-  	height:50px;
-  	width:200px;
+  	background-color: #008000;
+  	height:100px;
+  	width:300px;
   	color:white;
-  	font-size: 18px;
-  	border-radius: 15px;
-  	border:3px solid white;
+  	font-size: 27px;
+  	border-radius: 25px;
+  	border:5px solid white;
   	font-family: 'Fredoka One', cursive;
-  	margin-top: 10px;
+  	margin-bottom: 20px;
   }
 
   .btnUpload:hover{
@@ -132,72 +132,69 @@
 	if (isset($_POST['upload']))
 	{
 		// Gambar 1
-		$nagambaradd = $_FILES['nagaadd']['name'];
-		$ukurangambar = $_FILES['nagaadd']['size'];//lihat ukuran gambar
-		$typegambar = $_FILES['nagaadd']['type']; // lihat type gambar
-		$file_tmp = $_FILES['nagaadd']['tmp_name'];
+		//$nagambaradd = $_FILES['nagaadd']['name'];
+		//$ukurangambar = $_FILES['nagaadd']['size'];//lihat ukuran gambar
+		//$typegambar = $_FILES['nagaadd']['type']; // lihat type gambar
+		//$file_tmp = $_FILES['nagaadd']['tmp_name'];
 		
-		$nagambaradd_temp = explode(".", $nagambaradd);
+		//$nagambaradd_temp = explode(".", $nagambaradd);
 		
-		$extension = end($nagambaradd_temp);
-		$namaakhir = $login_session;
-		$namaakhir = "game6_".$namaakhir.".".$extension;
+		//$extension = end($nagambaradd_temp);
+		//$namaakhir = $login_session;
+		//$namaakhir = "game6_".$namaakhir.".".$extension;
 		
 		// Gambar 2
-		$nagambaradd2 = $_FILES['nagaadd2']['name'];
-		$ukurangambar2 = $_FILES['nagaadd2']['size'];//lihat ukuran gambar
-		$typegambar2 = $_FILES['nagaadd2']['type']; // lihat type gambar
-		$file_tmp2 = $_FILES['nagaadd2']['tmp_name'];
+		//$nagambaradd2 = $_FILES['nagaadd2']['name'];
+		//$ukurangambar2 = $_FILES['nagaadd2']['size'];//lihat ukuran gambar
+		//$typegambar2 = $_FILES['nagaadd2']['type']; // lihat type gambar
+		//$file_tmp2 = $_FILES['nagaadd2']['tmp_name'];
 		
-		$nagambaradd_temp2 = explode(".", $nagambaradd2);
+		//$nagambaradd_temp2 = explode(".", $nagambaradd2);
 		
-		$extension2 = end($nagambaradd_temp2);
-		$namaakhir2 = $login_session;
-		$namaakhir2 = "game6b_".$namaakhir2.".".$extension2;
+		//$extension2 = end($nagambaradd_temp2);
+		//$namaakhir2 = $login_session;
+		//$namaakhir2 = "game6b_".$namaakhir2.".".$extension2;
 		
 		// Gambar 3
-		$nagambaradd3 = $_FILES['nagaadd3']['name'];
-		$ukurangambar3 = $_FILES['nagaadd3']['size'];//lihat ukuran gambar
-		$typegambar3 = $_FILES['nagaadd3']['type']; // lihat type gambar
-		$file_tmp3 = $_FILES['nagaadd3']['tmp_name'];
+		//$nagambaradd3 = $_FILES['nagaadd3']['name'];
+		//$ukurangambar3 = $_FILES['nagaadd3']['size'];//lihat ukuran gambar
+		//$typegambar3 = $_FILES['nagaadd3']['type']; // lihat type gambar
+		//$file_tmp3 = $_FILES['nagaadd3']['tmp_name'];
 		
-		$nagambaradd_temp3 = explode(".", $nagambaradd3);
+		//$nagambaradd_temp3 = explode(".", $nagambaradd3);
 		
-		$extension3 = end($nagambaradd_temp3);
-		$namaakhir3 = $login_session;
-		$namaakhir3 = "game6c_".$namaakhir3.".".$extension3;
+		//$extension3 = end($nagambaradd_temp3);
+		//$namaakhir3 = $login_session;
+		//$namaakhir3 = "game6c_".$namaakhir3.".".$extension3;
 		
-		if ($nagambaradd == "" || $nagambaradd2 == "" || $nagambaradd3 == "")
-		{
+		//if ($nagambaradd == "" || $nagambaradd2 == "" || $nagambaradd3 == "")
+		//{
 		?>
 			<script type="text/javascript">
 				alert('Mohon upload semua screenshot secara bersamaan.');
 			</script> 
 		<?php	
-		}
-		else if((($typegambar == "image/jpeg" || $typegambar == "image/png" || $typegambar == "image/jpg") && 
-			$nagambaradd !="" && $ukurangambar < 1000000 ) && (($typegambar2 == "image/jpeg" || $typegambar2 == "image/png" || $typegambar2 == "image/jpg") && 
-			$nagambaradd2 !="" && $ukurangambar2 < 1000000 ) && (($typegambar3 == "image/jpeg" || $typegambar3 == "image/png" || $typegambar3 == "image/jpg") && 
-			$nagambaradd3 !="" && $ukurangambar3 < 1000000 ))
-		{
+		//}
+		//else if((($typegambar == "image/jpeg" || $typegambar == "image/png" || $typegambar == "image/jpg") && 
+		//	$nagambaradd !="" && $ukurangambar < 1000000 ) && (($typegambar2 == "image/jpeg" || $typegambar2 == "image/png" || //$typegambar2 == "image/jpg") && 
+		//	$nagambaradd2 !="" && $ukurangambar2 < 1000000 ) && (($typegambar3 == "image/jpeg" || $typegambar3 == "image/png" || //$typegambar3 == "image/jpg") && 
+		//	$nagambaradd3 !="" && $ukurangambar3 < 1000000 ))
+		//{
 			$a="UPDATE account 
-				   SET game6_screenshot = '".$namaakhir."',
-				       game6b_screenshot = '".$namaakhir2."',
-				       game6c_screenshot = '".$namaakhir3."',
-				       game6_end = '".$date."'
+				   SET game6_end = '".$date."'
 				 WHERE id=".$login_session;
 
 			$result = $db->query($a);	
 
-			move_uploaded_file($file_tmp,"images/upload/".$namaakhir);
-			move_uploaded_file($file_tmp2,"images/upload/".$namaakhir2);
-			move_uploaded_file($file_tmp3,"images/upload/".$namaakhir3);
+		//	move_uploaded_file($file_tmp,"images/upload/".$namaakhir);
+		//	move_uploaded_file($file_tmp2,"images/upload/".$namaakhir2);
+		//	move_uploaded_file($file_tmp3,"images/upload/".$namaakhir3);
 			
 			if ($result === TRUE) 
 			{
 	?>
 				<script type="text/javascript">
-					window.open('menu.php', '_self');
+					window.open('end.php', '_self');
 				</script> 
 	<?php
 			} 
@@ -209,15 +206,15 @@
 				</script> 
 	<?php
 			}
-		}
-		else
-		{
+		//}
+		//else
+		//{
 	?>
 			<script type="text/javascript">
 				alert('Ada kesalahan pada gambar.');
 			</script> 
 	<?php
-		}
+		//}
 	}
 	
 	// Go to game page
@@ -281,12 +278,17 @@
       <div class="w3-display-container">
 		<button type="submit" name="start" id="start" class="btn btnStart">Mulai Permainan</button>
       </div>
+	  <div class="w3-display-container">
+		<button type="submit" class="btn btnUpload" name="upload" id="upload">Selesai Permainan </button>
+	  </div>
     </div>
   </div>
   
   <div class="w3-row-padding">
 	<div class="w3-col l3 m6 w3-margin-bottom uploadScreenshot">
       <div class="w3-display-container">
+		&nbsp;
+		<!--
         <label for="input-file-now-custom-1">Unggah hasil screenshot dibawah ini:</label>
 		<input type="hidden" value="<?php echo $login_session;?>" name="kode" />      
 		
@@ -298,7 +300,8 @@
 		<input type="file" name="nagaadd3" id="input-file-now-custom-1" class="dropify" data-default-file="images/upload/<?php if ($gambar3==""){echo "";}else{echo $gambar3;}?>"  />
 
 		<button type="submit" class="btn btnUpload" name="upload" id="upload">Unggah Gambar</button>
-      </div>
+		-->
+	  </div>
     </div>
   </div>
   </form>

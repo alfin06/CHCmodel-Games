@@ -210,7 +210,7 @@ background-color: white;
 	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 gameTitle">Permainan A</h3>
 <?php
     // Check if the game is available
-    $qry ="SELECT game1_screenshot
+    $qry ="SELECT game1_end
              FROM account
             WHERE id =".$login_session;
          
@@ -218,7 +218,7 @@ background-color: white;
     
     while($r = mysqli_fetch_array($result))
     {
-      $isavailable  = $r['game1_screenshot'] != "" ? "N" : "Y";
+      $isavailable  = $r['game1_end'] != null ? "N" : "Y";
     }
     
     if ($isavailable == "N")
@@ -240,7 +240,7 @@ background-color: white;
 	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 gameTitle">Permainan B</h3>
     <?php
     // Check if the game is available
-    $qry ="SELECT game1_screenshot, game2_screenshot
+    $qry ="SELECT game1_end, game2_end
 			 FROM account
             WHERE id =".$login_session;
          
@@ -248,8 +248,8 @@ background-color: white;
     
     while($r = mysqli_fetch_array($result))
     {
-      $isavailable  = $r['game2_screenshot'] != "" ? "N" : "Y";
-	  $game1        = $r['game1_screenshot'] != "" ? "N" : "Y";
+      $isavailable  = $r['game2_end'] != null ? "N" : "Y";
+	  $game1        = $r['game1_end'] != null ? "N" : "Y";
     }
     
     if ($isavailable == "N" || $game1 == "Y")
@@ -277,7 +277,7 @@ background-color: white;
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 gameTitle">Permainan C</h3>
 <?php
     // Check if the game is available
-    $qry ="SELECT game2_screenshot, game3_screenshot
+    $qry ="SELECT game2_end, game3_end
         FROM account
          WHERE id =".$login_session;
          
@@ -285,8 +285,8 @@ background-color: white;
     
     while($r = mysqli_fetch_array($result))
     {
-      $isavailable  = $r['game3_screenshot'] != "" ? "N" : "Y";
-      $game2  = $r['game2_screenshot'] != "" ? "N" : "Y";
+      $isavailable  = $r['game3_end'] != null ? "N" : "Y";
+      $game2  = $r['game2_end'] != null ? "N" : "Y";
     }
     
     if ($isavailable == "N" || $game2 == "Y")
@@ -308,7 +308,7 @@ background-color: white;
 	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 gameTitle">Permainan D</h3>
     <?php
     // Check if the game is available
-    $qry ="SELECT game3_screenshot, game4_screenshot
+    $qry ="SELECT game3_end, game4_end
         FROM account
          WHERE id =".$login_session;
          
@@ -316,8 +316,8 @@ background-color: white;
     
     while($r = mysqli_fetch_array($result))
     {
-      $isavailable  = $r['game4_screenshot'] != "" ? "N" : "Y";
-      $game3  = $r['game3_screenshot'] != "" ? "N" : "Y";
+      $isavailable  = $r['game4_end'] != null ? "N" : "Y";
+      $game3  = $r['game3_end'] != null ? "N" : "Y";
     }
     
     if ($isavailable == "N" || $game3 == "Y")
@@ -344,7 +344,7 @@ background-color: white;
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 gameTitle">Permainan E</h3>
 <?php
     // Check if the game is available
-    $qry ="SELECT game4_screenshot, game5_screenshot
+    $qry ="SELECT game4_end, game5_end
         FROM account
          WHERE id =".$login_session;
          
@@ -352,8 +352,8 @@ background-color: white;
     
     while($r = mysqli_fetch_array($result))
     {
-      $isavailable  = $r['game5_screenshot'] != "" ? "N" : "Y";
-      $game4  = $r['game4_screenshot'] != "" ? "N" : "Y";
+      $isavailable  = $r['game5_end'] != null ? "N" : "Y";
+      $game4  = $r['game4_end'] != null ? "N" : "Y";
     }
     
     if ($isavailable == "N" || $game4 == "Y")
@@ -375,7 +375,7 @@ background-color: white;
 	<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 gameTitle">Permainan F</h3>
     <?php
     // Check if the game is available
-    $qry ="SELECT game5_screenshot, game6_screenshot
+    $qry ="SELECT game5_end, game6_end
         FROM account
          WHERE id =".$login_session;
          
@@ -383,8 +383,8 @@ background-color: white;
     
     while($r = mysqli_fetch_array($result))
     {
-      $isavailable  = $r['game6_screenshot'] != "" ? "N" : "Y";
-      $game5  = $r['game5_screenshot'] != "" ? "N" : "Y";
+      $isavailable  = $r['game6_end'] != null ? "N" : "Y";
+      $game5  = $r['game5_end'] != null ? "N" : "Y";
     }
     
     if ($isavailable == "N" || $game5 == "Y")

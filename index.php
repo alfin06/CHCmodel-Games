@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SPGPAS - Games</title>
+    <title>SPPAS - Games</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="images/logo4.jpg" />
@@ -202,7 +202,7 @@
 	// Continue
 	if (isset($_POST['continue']))
 	{
-		$qry ="SELECT consent
+		$qry ="SELECT consent, game6_end
 				FROM account
 			   WHERE name ='".$_SESSION['login_user']."'";
 			   
@@ -211,12 +211,19 @@
 		while($r = mysqli_fetch_array($result))
 		{
 			$consent = $r['consent'];
+			$game6  = $r['game6_end'] != "" ? "Y" : "N";
 		}
 		
 		if (trim($consent) == 'Y')
 		{
 			echo "<script>";
 			echo "window.open('menu.php', '_SELF');";
+			echo "</script>";
+		}
+		else if($game6 == "Y")
+		{
+			echo "<script>";
+			echo "window.open('end.php', '_SELF');";
 			echo "</script>";
 		}
 		else

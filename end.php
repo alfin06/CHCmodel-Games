@@ -2,6 +2,8 @@
 	include("session.php");
 	
 	$gambar = "";
+	$gambar2 = "";
+	$gambar3 = "";
 	
 	date_default_timezone_set('Asia/Bangkok');
 	$date = date("Y-m-d G:i:s");
@@ -36,22 +38,22 @@
 	<style>
 	html, body {
       min-height: 100%;
-      background-color: #82bcd8;;
+      background-color: #82bcd8;
+	  background: url("images/background2.png");
     }
     body, div, form, input, select, p { 
       padding: 0;
       margin: 0;
       outline: none;
-     font-family: 'Coming Soon', cursive;
+      font-family: 'Coming Soon', cursive;
       font-size: 20px;
       color: #eee;
     }
-
-       .footer{
+	
+	   .footer{
       background-color: #9df2e6;
       color:white;
     }
-	
 	 button {
 		cursor: pointer; 
 	 }
@@ -130,7 +132,7 @@
 	//upload gambar
 	if (isset($_POST['upload']))
 	{
-		
+		// Gambar 1
 		//$nagambaradd = $_FILES['nagaadd']['name'];
 		//$ukurangambar = $_FILES['nagaadd']['size'];//lihat ukuran gambar
 		//$typegambar = $_FILES['nagaadd']['type']; // lihat type gambar
@@ -140,18 +142,54 @@
 		
 		//$extension = end($nagambaradd_temp);
 		//$namaakhir = $login_session;
-		//$namaakhir = "game5_".$namaakhir.".".$extension;
+		//$namaakhir = "game6_".$namaakhir.".".$extension;
 		
-		//if(($typegambar == "image/jpeg" || $typegambar == "image/png" || $typegambar == "image/jpg") && 
-		//	$nagambaradd !="" && $ukurangambar < 1000000 )
+		// Gambar 2
+		//$nagambaradd2 = $_FILES['nagaadd2']['name'];
+		//$ukurangambar2 = $_FILES['nagaadd2']['size'];//lihat ukuran gambar
+		//$typegambar2 = $_FILES['nagaadd2']['type']; // lihat type gambar
+		//$file_tmp2 = $_FILES['nagaadd2']['tmp_name'];
+		
+		//$nagambaradd_temp2 = explode(".", $nagambaradd2);
+		
+		//$extension2 = end($nagambaradd_temp2);
+		//$namaakhir2 = $login_session;
+		//$namaakhir2 = "game6b_".$namaakhir2.".".$extension2;
+		
+		// Gambar 3
+		//$nagambaradd3 = $_FILES['nagaadd3']['name'];
+		//$ukurangambar3 = $_FILES['nagaadd3']['size'];//lihat ukuran gambar
+		//$typegambar3 = $_FILES['nagaadd3']['type']; // lihat type gambar
+		//$file_tmp3 = $_FILES['nagaadd3']['tmp_name'];
+		
+		//$nagambaradd_temp3 = explode(".", $nagambaradd3);
+		
+		//$extension3 = end($nagambaradd_temp3);
+		//$namaakhir3 = $login_session;
+		//$namaakhir3 = "game6c_".$namaakhir3.".".$extension3;
+		
+		//if ($nagambaradd == "" || $nagambaradd2 == "" || $nagambaradd3 == "")
+		//{
+		?>
+			<script type="text/javascript">
+				alert('Mohon upload semua screenshot secara bersamaan.');
+			</script> 
+		<?php	
+		//}
+		//else if((($typegambar == "image/jpeg" || $typegambar == "image/png" || $typegambar == "image/jpg") && 
+		//	$nagambaradd !="" && $ukurangambar < 1000000 ) && (($typegambar2 == "image/jpeg" || $typegambar2 == "image/png" || //$typegambar2 == "image/jpg") && 
+		//	$nagambaradd2 !="" && $ukurangambar2 < 1000000 ) && (($typegambar3 == "image/jpeg" || $typegambar3 == "image/png" || //$typegambar3 == "image/jpg") && 
+		//	$nagambaradd3 !="" && $ukurangambar3 < 1000000 ))
 		//{
 			$a="UPDATE account 
-				   SET game5_end = '".$date."'
+				   SET game6_end = '".$date."'
 				 WHERE id=".$login_session;
 
 			$result = $db->query($a);	
 
 		//	move_uploaded_file($file_tmp,"images/upload/".$namaakhir);
+		//	move_uploaded_file($file_tmp2,"images/upload/".$namaakhir2);
+		//	move_uploaded_file($file_tmp3,"images/upload/".$namaakhir3);
 			
 			if ($result === TRUE) 
 			{
@@ -184,7 +222,7 @@
 	if (isset($_POST['start']))
 	{
 		$query="UPDATE account 
-				   SET game5_start = '".$date."' 
+				   SET game6_start = '".$date."'
 				 WHERE id=".$login_session;
 
 		$result = $db->query($query);
@@ -193,7 +231,7 @@
 		{
 			?>
 			<script>
-				window.open('https://www.braingymmer.com/en/brain-games/post/play/', '_blank');
+				window.open('rushhour.php', '_blank');
 			</script>
 			<?php
 		}
@@ -211,7 +249,7 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="menu.php" class="w3-bar-item w3-button"><i class="fas fa-arrow-left"></i></b></a>
+    <!--<a href="menu.php" class="w3-bar-item w3-button"><i class="fas fa-arrow-left"></i></a>-->
   </div>
 </div>
 
@@ -221,24 +259,20 @@
   <br />
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 gameTitle">Permainan E: Post</h3>
+    <!--<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 gameTitle">Permainan F: Rush Hour</h3>-->
   </div>
 
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom" style="width:100%;text-align: center;">
-      <div class="w3-display-container gameInstruction"><img src="images/post.png" style="width:200px; height:200px;margin-bottom: 20px;">
-        <p>Perhatikan dengan teliti di bagian atas, bagaimana kamu harus menyortir/mengelompokkan surat yang ada:</p>
-		<ul>
-			<li>Sort by text: mengikut tulisan pada amplop surat.</li>
-			<li>Sort by color: mengikuti warna amplop suratnya.</li>
-		</ul>
-		<p>Bermainlah secepat dan setepat yang kamu bisa. Selamat mengelompokkan surat-surat ya!</p>
+      <div class="w3-display-container gameInstruction"><img src="images/logo5.png" style="width:200px; height:200px;margin-bottom: 20px;">
+        <h3>Terima kasih sudah berpartisipasi!</h3> 
       </div>
     </div>
   </div>
   
   <form class="validation-wizard" method="post" enctype="multipart/form-data">
   <div class="w3-row-padding">
+	<!--
     <div class="w3-col m8 l9 w3-margin-bottom" style="width:100%;text-align: center;">
       <div class="w3-display-container">
 		<button type="submit" name="start" id="start" class="btn btnStart">Mulai Permainan</button>
@@ -247,23 +281,43 @@
 		<button type="submit" class="btn btnUpload" name="upload" id="upload">Selesai Permainan </button>
 	  </div>
     </div>
+	-->
   </div>
   
   <div class="w3-row-padding">
 	<div class="w3-col l3 m6 w3-margin-bottom uploadScreenshot">
       <div class="w3-display-container">
 		&nbsp;
-        <!--
-		<label for="input-file-now-custom-1">Unggah hasil screenshot di bawah ini:</label>
+		<!--
+        <label for="input-file-now-custom-1">Unggah hasil screenshot dibawah ini:</label>
 		<input type="hidden" value="<?php echo $login_session;?>" name="kode" />      
-
+		
+		<p>Easy</p>
 		<input type="file" name="nagaadd" id="input-file-now-custom-1" class="dropify" data-default-file="images/upload/<?php if ($gambar==""){echo "";}else{echo $gambar;}?>"  />
+		<p>Medium</p>
+		<input type="file" name="nagaadd2" id="input-file-now-custom-1" class="dropify" data-default-file="images/upload/<?php if ($gambar2==""){echo "";}else{echo $gambar2;}?>"  />
+		<p>Hard</p>
+		<input type="file" name="nagaadd3" id="input-file-now-custom-1" class="dropify" data-default-file="images/upload/<?php if ($gambar3==""){echo "";}else{echo $gambar3;}?>"  />
 
 		<button type="submit" class="btn btnUpload" name="upload" id="upload">Unggah Gambar</button>
 		-->
 	  </div>
     </div>
   </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
   </form>
 
 <!-- End page content -->
