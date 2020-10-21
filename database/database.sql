@@ -1,6 +1,6 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server version:               5.7.26 - MySQL Community Server (GPL)
+-- Server version:               8.0.18 - MySQL Community Server - GPL
 -- Server OS:                    Win64
 -- HeidiSQL Version:             11.0.0.5919
 -- --------------------------------------------------------
@@ -13,113 +13,86 @@
 
 
 -- Dumping database structure for thesis
-CREATE DATABASE IF NOT EXISTS `thesis` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+CREATE DATABASE IF NOT EXISTS `thesis` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `thesis`;
 
 -- Dumping structure for table thesis.account
 CREATE TABLE IF NOT EXISTS `account` (
   `id` int(5) NOT NULL AUTO_INCREMENT,
   `signup_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `name` varchar(100) DEFAULT NULL,
-  `gender` varchar(1) DEFAULT NULL,
+  `name` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `gender` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `age` int(11) NOT NULL DEFAULT '0',
-  `grade` varchar(10) NOT NULL DEFAULT '',
-  `consent` varchar(1) NOT NULL DEFAULT 'N',
-  `parent_name` varchar(50) NOT NULL DEFAULT '',
-  `parent_age` int(11) NOT NULL DEFAULT '0',
   `game1_start` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `game1_screenshot` varchar(15) NOT NULL DEFAULT '',
+  `game1_screenshot` varchar(15) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
   `game1_end` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `game2_start` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `game2_screenshot` varchar(15) NOT NULL DEFAULT '',
+  `game2_screenshot` varchar(15) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
   `game2_end` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `game3_start` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `game3_screenshot` varchar(15) NOT NULL DEFAULT '',
+  `game3_screenshot` varchar(15) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
   `game3_end` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `game4_start` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `game4_screenshot` varchar(15) NOT NULL DEFAULT '',
+  `game4_screenshot` varchar(15) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
   `game4_end` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `game5_start` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `game5_screenshot` varchar(15) NOT NULL DEFAULT '',
+  `game5_screenshot` varchar(15) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
   `game5_end` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `game6_start` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `game6_screenshot` varchar(15) NOT NULL DEFAULT '',
-  `game6b_screenshot` varchar(15) NOT NULL DEFAULT '',
-  `game6c_screenshot` varchar(15) NOT NULL DEFAULT '',
+  `game6_screenshot` varchar(15) COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
   `game6_end` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table thesis.account: 20 rows
+-- Dumping data for table thesis.account: 1 rows
 /*!40000 ALTER TABLE `account` DISABLE KEYS */;
-INSERT INTO `account` (`id`, `signup_date`, `name`, `gender`, `age`, `grade`, `consent`, `parent_name`, `parent_age`, `game1_start`, `game1_screenshot`, `game1_end`, `game2_start`, `game2_screenshot`, `game2_end`, `game3_start`, `game3_screenshot`, `game3_end`, `game4_start`, `game4_screenshot`, `game4_end`, `game5_start`, `game5_screenshot`, `game5_end`, `game6_start`, `game6_screenshot`, `game6b_screenshot`, `game6c_screenshot`, `game6_end`) VALUES
-	(1, '2020-09-18 07:41:51', 'anta', 'G', 10, '', 'N', '', 0, '2020-10-01 18:55:08', '', '2020-09-18 07:41:51', '2020-09-18 09:43:01', '', '2020-09-18 07:41:51', '2020-09-18 07:41:51', '', '2020-09-18 07:41:51', '2020-09-18 07:41:51', '', '2020-09-18 07:41:51', '2020-09-18 07:41:51', '', '2020-09-18 07:41:51', '2020-09-18 07:41:51', '', '', '', '2020-09-18 07:41:51'),
-	(2, '2020-09-18 13:04:42', 'Test Coba', 'B', 9, '', 'N', '', 0, '2020-09-18 13:05:38', 'game1_2.PNG', '2020-09-18 13:10:24', '2020-09-18 13:14:26', 'game2_2.PNG', '2020-09-18 13:24:55', '2020-09-18 13:25:43', 'game3_2.PNG', '2020-09-18 13:29:22', '2020-09-18 13:21:51', 'game4_2.PNG', '2020-09-18 13:24:46', '2020-09-18 13:32:50', 'game5_2.PNG', '2020-09-18 13:37:32', '2020-09-18 13:37:40', 'game6_2.PNG', '', '', '2020-09-18 13:42:36'),
-	(3, '2020-09-18 14:56:23', 'Cek 123', 'B', 8, '', 'N', '', 0, '2020-09-18 14:59:23', '', '2020-09-18 14:56:23', '2020-09-18 14:56:23', '', '2020-09-18 14:56:23', '2020-09-18 14:56:23', '', '2020-09-18 14:56:23', '2020-09-18 14:56:23', '', '2020-09-18 14:56:23', '2020-09-18 14:56:23', '', '2020-09-18 14:56:23', '2020-09-18 14:56:23', '', '', '', '2020-09-18 14:56:23'),
-	(4, '2020-09-18 22:02:46', 'Okay', 'B', 6, '', 'N', '', 0, '2020-09-18 15:02:46', '', '2020-09-18 15:02:46', '2020-09-18 22:23:06', '', '2020-09-18 15:02:46', '2020-09-18 15:02:46', '', '2020-09-18 15:02:46', '2020-09-18 15:02:46', '', '2020-09-18 15:02:46', '2020-09-18 15:02:46', '', '2020-09-18 15:02:46', '2020-09-18 15:02:46', '', '', '', '2020-09-18 15:02:46'),
-	(5, '2020-09-22 23:15:26', 'Nike', 'G', 5, '', 'N', '', 0, '2020-09-22 16:15:26', '', '2020-09-22 16:15:26', '2020-09-22 16:15:26', '', '2020-09-22 16:15:26', '2020-09-22 16:15:26', '', '2020-09-22 16:15:26', '2020-09-22 16:15:26', '', '2020-09-22 16:15:26', '2020-09-22 16:15:26', '', '2020-09-22 16:15:26', '2020-09-22 16:15:26', '', '', '', '2020-09-22 16:15:26'),
-	(6, '2020-09-26 22:24:12', 'Nathan', 'B', 9, '', 'N', '', 0, '2020-09-26 15:24:12', '', '2020-09-26 15:24:12', '2020-09-26 15:24:12', '', '2020-09-26 15:24:12', '2020-09-26 15:24:12', '', '2020-09-26 15:24:12', '2020-09-26 15:24:12', '', '2020-09-26 15:24:12', '2020-09-26 15:24:12', '', '2020-09-26 15:24:12', '2020-09-26 15:24:12', '', '', '', '2020-09-26 15:24:12'),
-	(7, '2020-10-01 18:50:41', 'anta', 'G', 11, '', 'N', '', 0, '2020-10-01 11:50:41', '', '2020-10-01 11:50:41', '2020-10-01 11:50:41', '', '2020-10-01 11:50:41', '2020-10-01 11:50:41', '', '2020-10-01 11:50:41', '2020-10-01 11:50:41', '', '2020-10-01 11:50:41', '2020-10-01 11:50:41', '', '2020-10-01 11:50:41', '2020-10-01 11:50:41', '', '', '', '2020-10-01 11:50:41'),
-	(8, '2020-10-01 19:40:51', 'anta', 'G', 12, '', 'N', '', 0, '2020-10-01 12:40:51', '', '2020-10-01 12:40:51', '2020-10-01 12:40:51', '', '2020-10-01 12:40:51', '2020-10-01 12:40:51', '', '2020-10-01 12:40:51', '2020-10-01 12:40:51', '', '2020-10-01 12:40:51', '2020-10-01 12:40:51', '', '2020-10-01 12:40:51', '2020-10-01 12:40:51', '', '', '', '2020-10-01 12:40:51'),
-	(9, '2020-10-05 17:12:53', 'antania djuwita', 'G', 11, '', 'N', '', 0, '2020-10-07 14:23:45', '', '2020-10-05 10:12:53', '2020-10-07 14:26:29', '', '2020-10-05 10:12:53', '2020-10-05 10:12:53', '', '2020-10-05 10:12:53', '2020-10-05 10:12:53', '', '2020-10-05 10:12:53', '2020-10-05 10:12:53', '', '2020-10-05 10:12:53', '2020-10-05 17:15:54', 'game6_9.png', '', '', '2020-10-05 17:24:59'),
-	(10, '2020-10-06 19:59:17', 'antania djuwita', 'G', 14, '', 'N', '', 0, '2020-10-06 12:59:17', '', '2020-10-06 12:59:17', '2020-10-06 12:59:17', '', '2020-10-06 12:59:17', '2020-10-06 12:59:17', '', '2020-10-06 12:59:17', '2020-10-06 12:59:17', '', '2020-10-06 12:59:17', '2020-10-06 12:59:17', '', '2020-10-06 12:59:17', '2020-10-06 12:59:17', '', '', '', '2020-10-06 12:59:17'),
-	(11, '2020-10-06 22:58:56', 'ethan', 'B', 9, '', 'N', '', 0, '2020-10-06 22:59:08', '', '2020-10-06 15:58:56', '2020-10-06 15:58:56', '', '2020-10-06 15:58:56', '2020-10-06 15:58:56', '', '2020-10-06 15:58:56', '2020-10-06 15:58:56', '', '2020-10-06 15:58:56', '2020-10-06 15:58:56', '', '2020-10-06 15:58:56', '2020-10-06 15:58:56', '', '', '', '2020-10-06 15:58:56'),
-	(12, '2020-10-07 14:15:20', 'antania djuwita', 'G', 10, '', 'N', '', 0, '2020-10-07 07:15:20', '', '2020-10-07 07:15:20', '2020-10-07 07:15:20', '', '2020-10-07 07:15:20', '2020-10-07 07:15:20', '', '2020-10-07 07:15:20', '2020-10-07 07:15:20', '', '2020-10-07 07:15:20', '2020-10-07 07:15:20', '', '2020-10-07 07:15:20', '2020-10-07 07:15:20', '', '', '', '2020-10-07 07:15:20'),
-	(13, '2020-10-07 17:50:57', 'antania djuwita', 'G', 11, '', 'N', '', 0, '2020-10-07 10:50:57', '', '2020-10-07 10:50:57', '2020-10-07 10:50:57', '', '2020-10-07 10:50:57', '2020-10-07 10:50:57', '', '2020-10-07 10:50:57', '2020-10-07 10:50:57', '', '2020-10-07 10:50:57', '2020-10-07 10:50:57', '', '2020-10-07 10:50:57', '2020-10-07 10:50:57', '', '', '', '2020-10-07 10:50:57'),
-	(14, '2020-10-09 01:52:09', 'evan', 'B', 10, '', 'N', '', 0, '2020-10-08 18:52:09', '', '2020-10-08 18:52:09', '2020-10-09 01:52:19', '', '2020-10-08 18:52:09', '2020-10-09 02:09:23', '', '2020-10-08 18:52:09', '2020-10-09 02:26:33', '', '2020-10-08 18:52:09', '2020-10-09 02:31:49', '', '2020-10-08 18:52:09', '2020-10-08 18:52:09', '', '', '', '2020-10-08 18:52:09'),
-	(15, '2020-10-09 16:58:03', 'antania djuwita', 'G', 11, '', 'N', '', 0, '2020-10-09 09:58:03', '', '2020-10-09 09:58:03', '2020-10-09 09:58:03', '', '2020-10-09 09:58:03', '2020-10-09 09:58:03', '', '2020-10-09 09:58:03', '2020-10-09 09:58:03', '', '2020-10-09 09:58:03', '2020-10-09 09:58:03', '', '2020-10-09 09:58:03', '2020-10-09 09:58:03', '', '', '', '2020-10-09 09:58:03'),
-	(16, '2020-10-09 21:10:31', 'Kuy', 'B', 11, 'SD Kelas 3', 'Y', 'AyahIbu', 51, '2020-10-09 21:10:31', '', '2020-10-09 21:10:31', '2020-10-09 21:10:31', '', '2020-10-09 21:10:31', '2020-10-09 21:10:31', '', '2020-10-09 21:10:31', '2020-10-09 21:10:31', '', '2020-10-09 21:10:31', '2020-10-09 21:10:31', '', '2020-10-09 21:10:31', '2020-10-09 21:10:31', '', '', '', '2020-10-09 21:10:31'),
-	(17, '2020-10-10 11:10:51', 'Budi', 'B', 11, 'SD Kelas 4', 'Y', 'Ayah', 52, '2020-10-10 11:19:51', 'game1_17.PNG', '2020-10-10 22:13:23', '2020-10-10 11:10:51', '', '2020-10-10 11:10:51', '2020-10-10 11:10:51', '', '2020-10-10 11:10:51', '2020-10-10 11:10:51', '', '2020-10-10 11:10:51', '2020-10-10 11:10:51', '', '2020-10-10 11:10:51', '2020-10-10 11:10:51', '', '', '', '2020-10-10 11:10:51'),
-	(19, '2020-10-17 18:29:31', 'Test', 'G', 12, 'SD Kelas 5', 'N', '', 0, '2020-10-17 18:29:31', '', '2020-10-17 18:29:31', '2020-10-17 18:29:31', '', '2020-10-17 18:29:31', '2020-10-17 18:29:31', '', '2020-10-17 18:29:31', '2020-10-17 18:29:31', '', '2020-10-17 18:29:31', '2020-10-17 18:29:31', '', '2020-10-17 18:29:31', '2020-10-17 18:29:31', '', '', '', '2020-10-17 18:29:31'),
-	(20, '2020-10-18 14:48:28', 'Hi test', 'B', 8, 'SD Kelas 3', 'Y', 'Banu', 52, '2020-10-18 14:48:28', '', '2020-10-18 14:48:28', '2020-10-18 14:48:28', '', '2020-10-18 14:48:28', '2020-10-18 14:48:28', '', '2020-10-18 14:48:28', '2020-10-18 14:48:28', '', '2020-10-18 14:48:28', '2020-10-18 14:48:28', '', '2020-10-18 14:48:28', '2020-10-18 14:48:28', '', '', '', '2020-10-18 14:48:28'),
-	(21, '2020-10-19 20:30:33', 'Alfin', 'B', 9, 'SD Kelas 3', 'Y', 'Ayah', 62, '2020-10-19 20:30:33', '', '2020-10-19 20:30:33', '2020-10-19 20:30:33', '', '2020-10-19 20:30:33', '2020-10-19 20:30:33', '', '2020-10-19 20:30:33', '2020-10-19 20:30:33', '', '2020-10-19 20:30:33', '2020-10-19 20:30:33', '', '2020-10-19 20:30:33', '2020-10-19 20:30:33', '', '', '', '2020-10-19 20:30:33');
+INSERT INTO `account` (`id`, `signup_date`, `name`, `gender`, `age`, `game1_start`, `game1_screenshot`, `game1_end`, `game2_start`, `game2_screenshot`, `game2_end`, `game3_start`, `game3_screenshot`, `game3_end`, `game4_start`, `game4_screenshot`, `game4_end`, `game5_start`, `game5_screenshot`, `game5_end`, `game6_start`, `game6_screenshot`, `game6_end`) VALUES
+	(1, '2020-10-01 18:02:16', 'Siswa', 'B', 8, '2020-10-01 18:02:16', '', '2020-10-01 18:02:16', '2020-10-01 18:02:16', '', '2020-10-01 18:02:16', '2020-10-01 18:02:16', '', '2020-10-01 18:02:16', '2020-10-01 18:02:16', '', '2020-10-01 18:02:16', '2020-10-01 18:02:16', '', '2020-10-01 18:02:16', '2020-10-01 18:02:16', '', '2020-10-01 18:02:16');
 /*!40000 ALTER TABLE `account` ENABLE KEYS */;
 
 -- Dumping structure for table thesis.survey
 CREATE TABLE IF NOT EXISTS `survey` (
   `id` int(5) NOT NULL AUTO_INCREMENT,
   `signup_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `name` varchar(100) DEFAULT NULL,
-  `grade` varchar(10) DEFAULT NULL,
-  `student_name` varchar(100) DEFAULT NULL,
-  `email` varchar(100) DEFAULT NULL,
-  `phone` varchar(15) DEFAULT NULL,
-  `question1` varchar(1) DEFAULT NULL,
-  `question2` varchar(1) DEFAULT NULL,
-  `question3` varchar(1) DEFAULT NULL,
-  `question4` varchar(1) DEFAULT NULL,
-  `question5` varchar(1) DEFAULT NULL,
-  `question6` varchar(1) DEFAULT NULL,
-  `question7` varchar(1) DEFAULT NULL,
-  `question8` varchar(1) DEFAULT NULL,
-  `question9` varchar(1) DEFAULT NULL,
-  `question10` varchar(1) DEFAULT NULL,
-  `question11` varchar(1) DEFAULT NULL,
-  `question12` varchar(1) DEFAULT NULL,
-  `question13` varchar(1) DEFAULT NULL,
-  `question14` varchar(1) DEFAULT NULL,
-  `question15` varchar(1) DEFAULT NULL,
-  `question16` varchar(1) DEFAULT NULL,
-  `question17` varchar(1) DEFAULT NULL,
-  `question18` varchar(1) DEFAULT NULL,
-  `question19` varchar(1) DEFAULT NULL,
-  `question20` varchar(1) DEFAULT NULL,
+  `name` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `grade` varchar(10) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `student_name` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `email` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `phone` varchar(15) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question1` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question2` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question3` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question4` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question5` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question6` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question7` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question8` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question9` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question10` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question11` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question12` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question13` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question14` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question15` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question16` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question17` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question18` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question19` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `question20` varchar(1) COLLATE utf8mb4_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table thesis.survey: 1 rows
+-- Dumping data for table thesis.survey: 0 rows
 /*!40000 ALTER TABLE `survey` DISABLE KEYS */;
-INSERT INTO `survey` (`id`, `signup_date`, `name`, `grade`, `student_name`, `email`, `phone`, `question1`, `question2`, `question3`, `question4`, `question5`, `question6`, `question7`, `question8`, `question9`, `question10`, `question11`, `question12`, `question13`, `question14`, `question15`, `question16`, `question17`, `question18`, `question19`, `question20`) VALUES
-	(1, '2020-09-26 15:16:59', 'Test', 'SD Kelas 4', 'Siswa', 'test@gmail.com', '0812954512', '1', '1', '1', '2', '2', '2', '3', '3', '3', '4', '4', '4', '4', '4', '4', '4', '4', '4', '4', '4');
 /*!40000 ALTER TABLE `survey` ENABLE KEYS */;
 
 -- Dumping structure for table thesis.user
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(5) NOT NULL AUTO_INCREMENT,
-  `username` varchar(100) DEFAULT NULL,
-  `password` varchar(10) DEFAULT NULL,
+  `username` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `password` varchar(10) COLLATE utf8mb4_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table thesis.user: 1 rows
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
