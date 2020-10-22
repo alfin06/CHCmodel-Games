@@ -41,7 +41,9 @@
         <div id="rush-hour"></div>
         <div class="win-phrase">
           Good job,  <?php echo $name; ?>!<br />
-         <a href="javascript: close();"> <button class="btn_back">Kembali ke Menu</button></a>
+          <span style="font-size:25px;">Jangan Lupa PrintScreen ya!</span>
+
+         <button class="btn_back" onclick="location.href='rushhour.php';">Main kembali</button>
 
         </div>
       </div>

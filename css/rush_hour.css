@@ -6,7 +6,6 @@
   text-align: inherit;
   height: inherit;
   width: inherit;
-  font-size: 100%;
   vertical-align: baseline;
   box-sizing: border-box;
   position: relative;
@@ -157,7 +156,7 @@ li {
   position: absolute;
   z-index: 1;
   color: #fff;
-  font-size: 60px;
+  font-size: 20px;
   top: 0px;
   left: 0px;
   width:100%;
