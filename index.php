@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SPPAS - Games</title>
+    <title>SPPAS - Skala Penilaian Perilaku Atentif Siswa</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="images/logo4.jpg" />
@@ -162,7 +162,11 @@
 }
 
       
-
+.logo{
+  font-family: 'Fredoka One', cursive;
+  font-weight: bold;
+  color:#630100;
+}
 
  .footer{
       background-color: #9df2e6;
@@ -278,7 +282,7 @@
 
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#" class="w3-bar-item"><img src="images/logo3.jpg" style="width:150px; height:50px;"></a>
+    <a href="#" class="w3-bar-item logo"><img src="images/logo3.jpg" style="width:150px; height:50px;"> - Skala Penilaian Perilaku Atentif Siswa</a> 
     <div class="w3-dropdown-click w3-right w3-hover-none">
       <button class="w3-button" onclick="myFunction()" style="color:black; font-size: 18px;">
         Admin Login <i class="fa fa-caret-down"></i>

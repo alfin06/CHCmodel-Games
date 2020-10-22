@@ -128,7 +128,11 @@ background-color: white;
   font-family: 'Walter Turncoat', cursive;
 }
 
-
+.logo{
+  font-family: 'Fredoka One', cursive;
+  font-weight: bold;
+  color:#630100;
+}
 	  .instruction {
 		font-size: 10pt;
 		margin-right: 50%;
@@ -143,7 +147,7 @@ background-color: white;
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
     <a href="index.php" class="w3-bar-item w3-button"><i class="fa fa-arrow-left"></i> </a>
-  <a href="#" class="w3-bar-item"><img src="images/logo3.jpg" style="width:150px; height:50px;"></a>
+  <a href="#" class="w3-bar-item logo"><img src="images/logo3.jpg" style="width:150px; height:50px;"> - Skala Penilaian Perilaku Atentif Siswa</a>
   </div>
 </div>
 

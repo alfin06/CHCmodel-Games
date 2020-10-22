@@ -172,11 +172,31 @@
       height: calc(100% - 50px);
       }*/
       }
+
+
+.logo{
+  font-family: 'Fredoka One', cursive;
+  font-weight: bold;
+  color:#630100;
+}
 	  
 div#scroll {
 	height: 500px;
 	overflow-Y: scroll;
 }
+
+
+
+@media (min-width: 568px) {
+     #parent_name{
+  min-width:450px;
+}
+   /*   .main-block {
+      flex-direction: row;
+      height: calc(100% - 50px);
+      }*/
+      }
+
    .footer{
       background-color: #9df2e6;
       color:white;
@@ -223,7 +243,7 @@ div#scroll {
 
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#" class="w3-bar-item"><img src="images/logo3.jpg" style="width:150px; height:50px;"></a>
+    <a href="#" class="w3-bar-item logo"><img src="images/logo3.jpg" style="width:150px; height:50px;"> - Skala Penilaian Perilaku Atentif Siswa</a>
   </div>
 </div>
 
@@ -249,7 +269,7 @@ div#scroll {
 			</div>
 			<br/>
 			<h1>Informed Consent Orang tua</h1>
-			<p>Saya, <input type="text" id="parent_name" name="parent_name" style="width:450px;" placeholder="(diisi nama orang tua/wali)" required />, usia: 
+			<p>Saya, <input type="text" id="parent_name" name="parent_name" style="" placeholder="(diisi nama orang tua/wali)" required />, usia: 
 			   <input type="text" id="parent_age" name="parent_age" style="width:100px;" required />tahun,</p> 
 			<p>selaku orang tua/wali dari <b><?php echo $user_check; ?></b>, bahwa saya memahami penjelasan penelitian, dan saya bersedia untuk berpartisipasi dalam penelitian dengan topik Pengembangan Skala Penilaian Perilaku Atentif Siswa (SPPAS) yang dilaksanakan oleh Antania Djuwita dari Untar.</p>
 			<button type="submit" id="btnAgree" class="btn btn-success" name="btnAgree">Saya setuju</button>

@@ -124,6 +124,13 @@
   padding-bottom:50px;
 }
   }
+
+  .logo{
+  font-family: 'Fredoka One', cursive;
+  font-weight: bold;
+  color:#630100;
+}
+
 	</style>
 </head>
 <body>
@@ -209,19 +216,21 @@
 	}
 ?>
 
+
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="menu.php" class="w3-bar-item w3-button"><i class="fas fa-arrow-left"></i></a>
+    <a href="menu.php" class="w3-bar-item w3-button"><i class="fas fa-arrow-left"></i></b></a>
+    <a href="#" class="w3-bar-item logo"><img src="images/logo3.jpg" style="width:150px; height:50px;"> - Skala Penilaian Perilaku Atentif Siswa</a>
   </div>
 </div>
 
 <!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+<div class="w3-content w3-padding-64" style="max-width:1564px">
 
   <br />
   <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
+  <div class="w3-container w3-padding-64" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 gameTitle">Permainan C: Moving</h3>
   </div>
 
