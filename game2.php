@@ -235,9 +235,7 @@
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom" style="width:100%;text-align: center;">
       <div class="w3-display-container gameInstruction"><img src="images/digit.png" style="width:200px; height:200px;margin-bottom: 20px;">
-       <p>Kamu harus mengingat posisi kartu-kartu angka yang ada di layarmu, 
-		   lalu klik secara berurutan satu per satu kartu-kartu tersebut mulai dari angka yang terkecil 
-		   sampai yang paling besar. Bermainlah secepat & setepat yang kamu bisa.</p>
+       <p>Kamu harus mengingat posisi kartu-kartu angka yang ada di layarmu, lalu klik <b>secara berurutan</b> satu per satu kartu-kartu tersebut mulai dari angka yang terkecil sampai yang paling besar. Bermainlah secepat dan setepat yang kamu bisa.</p>
       </div>
     </div>
   </div>
@@ -245,12 +243,35 @@
   <form class="validation-wizard" method="post" enctype="multipart/form-data">
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom" style="width:100%;text-align: center;">
+      <?php
+		$qry ="SELECT game2_start
+             FROM account
+            WHERE id =".$login_session;
+         
+		$result = $db->query($qry);// or die(mysql_error());
+	
+		while($r = mysqli_fetch_array($result))
+		{
+			$game  = $r['game2_start'] != null ? "Y" : "N";
+		}
+		
+		if ($game == "Y")
+		{
+	  ?>
       <div class="w3-display-container">
 		<button type="submit" name="start" id="start" class="btn btnStart">Mulai Permainan</button>
       </div>
+	  <?php
+		}
+		else
+		{
+	  ?>
 	  <div class="w3-display-container">
 		<button type="submit" class="btn btnUpload" name="upload" id="upload">Selesai Permainan </button>
 	  </div>
+	  <?php
+		}
+	  ?>
     </div>
   </div>
   

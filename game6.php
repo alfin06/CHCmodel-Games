@@ -271,10 +271,7 @@
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom" style="width:100%;text-align: center;">
       <div class="w3-display-container gameInstruction"><img src="images/rushhour.png" style="width:200px; height:200px;margin-bottom: 20px;">
-        <p>Bermainlah sebanyak 3 kali dimulai dari tingkat kesulitan easy, lalu medium, lalu hard.</p>
-		<p>Ayo, keluarkan balok berwarna merah ke arah exit dengan cara menggeser ke atas/bawah/kiri/kanan</p> 
-		<p>balok-baloknya. Pikirkan baik-baik saat akan menggeser balok-baloknya, semakin sedikit (efektif)</p>
-		<p>gerakan yang kamu buat, maka semakin baik skor kamu.</p> 
+        <p>Ayo, keluarkan balok warna merah ke arah EXIT dengan cara klik balok yang akan kamu geser, lalu geser menggunakan arah panah atas/bawah/kiri/kanan yang ada pada keyboard kamu. Pikirkan baik-baik saat akan menggeser balok-baloknya,semakin sedikit (efektif) gerakan menggeser yang kamu buat,maka semakin baik skor kamu.</p> 
       </div>
     </div>
   </div>
@@ -282,12 +279,35 @@
   <form class="validation-wizard" method="post" enctype="multipart/form-data">
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom" style="width:100%;text-align: center;">
+      <?php
+		$qry ="SELECT game6_start
+             FROM account
+            WHERE id =".$login_session;
+         
+		$result = $db->query($qry);// or die(mysql_error());
+	
+		while($r = mysqli_fetch_array($result))
+		{
+			$game  = $r['game6_start'] != null ? "Y" : "N";
+		}
+		
+		if ($game == "Y")
+		{
+	  ?>
       <div class="w3-display-container">
 		<button type="submit" name="start" id="start" class="btn btnStart">Mulai Permainan</button>
       </div>
+	  <?php
+		}
+		else
+		{
+	  ?>
 	  <div class="w3-display-container">
 		<button type="submit" class="btn btnUpload" name="upload" id="upload">Selesai Permainan </button>
 	  </div>
+	  <?php
+		}
+	  ?>
     </div>
   </div>
   

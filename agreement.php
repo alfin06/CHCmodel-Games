@@ -254,21 +254,21 @@ div#scroll {
            <b>S</b>kala <b>P</b>enilaian <b>P</b>erilaku <b>A</b>tentif <b>S</b>iswa
           </div>-->
           <form method="post">
-			<h1>Prolog Singkat</h1>
+			<h1>Prolog Singkat & Penjelasan Penelitian</h1>
 			<div> <!-- id="scroll" -->
 				<p>Salam sejahtera dan sehat selalu.</p><br/>
-				<p>Perkenalkan, saya Antania Djuwita, mahasiswi Magister Psikologi Profesi bidang Psikologi Pendidikan dari Universitas Tarumanagara (Untar), Jakarta (NPM: 717191027). Saya sedang melakukan penelitian dengan topik Pengembangan Skala Penilaian Perilaku Atentif Siswa (SPPAS).  Saya bekerja sama dengan SDK Ketapang 1 (Jakarta) dan SDK Ketapang 3 (Cibubur) serta memperoleh ijin seorang pakar atensi (konsentrasi) dari salah satu klinik tumbuh kembang anak di Jakarta.</p>
+				<p>Perkenalkan, saya Antania Djuwita, mahasiswi Magister Psikologi Profesi bidang peminatan Psikologi Pendidikan dari Universitas Tarumanagara (Untar), Jakarta (NPM: 717191027). Saya sedang melakukan penelitian dengan topik Pengembangan Skala Penilaian Perilaku Atentif Siswa (SPPAS).  Saya bekerja sama dengan Sekolah Dasar Kristen Ketapang 1 (Jakarta) dan Sekolah Dasar Kristen Ketapang 3 (Cibubur) serta memperoleh ijin seorang pakar atensi (konsentrasi) dari salah satu klinik tumbuh kembang anak di Jakarta.</p>
 				<br/>
-				<p>Besar harapan saya, kiranya Ayah/Bunda berkenan mengizinkan putra/putrinya untuk  berpartisipasi dalam penelitian ini.  Bentuk partisipasi putra/putri Ayah/Bunda adalah dengan cara, Penugasan Siswa (selama ±60 menit). Tugas yang dikerjakan berupa enam buah permainan ketangkasan otak secara virtual yang akan dipandu dalam website SPPAS ini. Partisipasi putra/putri dalam penelitian ini akan menjadi pengalaman berharga dan memperluas wawasan mengenai berbagai tugas yang memerlukan perhatian penuh. Hasil penelitian ini bermanfaat bagi pengembangan ilmu di bidang Psikologi Pendidikan.</p>
+				<p>Besar harapan saya, kiranya ayah/bunda berkenan mengizinkan putra/putrinya untuk  berpartisipasi dalam penelitian ini.  Bentuk partisipasi putra/putri ayah/bunda adalah dengan cara, Penugasan Siswa (selama ±60 menit). Tugas yang dikerjakan berupa enam buah permainan ketangkasan otak secara virtual yang akan dipandu dalam website SPPAS ini. Partisipasi putra/putri dalam penelitian ini akan menjadi pengalaman berharga dan memperluas wawasan mengenai berbagai tugas yang memerlukan perhatian penuh. Hasil penelitian ini bermanfaat bagi pengembangan ilmu di bidang Psikologi Pendidikan. </p>
 				<br/>
-				<p>Peneliti menjamin kerahasiaan identitas dan jawaban putra/putri Ayah/Bunda, karena hasil pengerjaan tugas sepenuhnya <b>hanya</b> digunakan untuk kepentingan penelitian.</p>
+				<p>Peneliti menjamin kerahasiaan identitas dan jawaban putra/putri ayah/bunda, karena hasil pengerjaan tugas sepenuhnya <b>hanya</b> digunakan untuk kepentingan penelitian.</p>
 				<br/>
-				<p>Apabila Ayah/Bunda berkenan mengizinkan putra/putrinya turut berpartisipasi dalam penelitian ini, saya mohon kesediaan Ayah/Bunda untuk melengkapi data diri, dan mengklik pernyataan “Ya, saya setuju” di bagian bawah halaman ini. Partisipasi ini bersifat sukarela sehingga Ayah/Bunda berhak mengurungkan niat untuk berpartisipasi tanpa konsekuensi apapun.</p>
-				<p>Apabila ada hal-hal yang ingin ditanyakan berkaitan dengan penelitian ini, Ayah/Bunda dapat menghubungi saya di alamat email antania.717191027@stu.untar.ac.id. Apabila Ayah/Bunda bermaksud mengetahui hasil penelitian ini di kemudian hari, Ayah/Bunda dapat menghubungi pihak sekolah, karena hasil penelitian akan saya sampaikan kepada pihak sekolah. Terima kasih atas kesediaan Ayah/Bunda untuk berpartisipasi dalam penelitian ini.</p>
+				<p>Apabila ayah/bunda berkenan mengizinkan putra/putrinya turut berpartisipasi dalam penelitian ini, saya mohon kesediaan ayah/bunda untuk melengkapi data diri, dan mengklik pernyataan “Ya, saya setuju” di bagian bawah halaman ini. Partisipasi ini bersifat sukarela sehingga ayah/bunda berhak mengurungkan niat untuk berpartisipasi tanpa konsekuensi apapun.</p>
+				<p>Apabila ada hal-hal yang ingin ditanyakan berkaitan dengan penelitian ini, ayah/bunda dapat menghubungi saya di alamat email antania.717191027@stu.untar.ac.id. Apabila ayah/bunda bermaksud mengetahui hasil penelitian ini di kemudian hari, ayah/bunda dapat menghubungi pihak sekolah, karena hasil penelitian akan saya sampaikan kepada pihak sekolah. Terima kasih atas kesediaan ayah/bunda untuk berpartisipasi dalam penelitian ini.</p>
 				<br/>
 			</div>
 			<br/>
-			<h1>Informed Consent Orang tua</h1>
+			<h1>Persetujuan Sesudah Penjelasan Penelitian</h1>
 			<p>Saya, <input type="text" id="parent_name" name="parent_name" style="" placeholder="(diisi nama orang tua/wali)" required />, usia: 
 			   <input type="text" id="parent_age" name="parent_age" style="width:100px;" required />tahun,</p> 
 			<p>selaku orang tua/wali dari <b><?php echo $user_check; ?></b>, bahwa saya memahami penjelasan penelitian, dan saya bersedia untuk berpartisipasi dalam penelitian dengan topik Pengembangan Skala Penilaian Perilaku Atentif Siswa (SPPAS) yang dilaksanakan oleh Antania Djuwita dari Untar.</p>

@@ -237,9 +237,7 @@
       <div class="w3-display-container gameInstruction"><img src="images/bait.png" style="width:200px; height:200px;margin-bottom: 20px;">
         <p>Saat awal bermain kamu akan dapat kesempatan untuk mencoba jawab terlebih dahulu. Barulah setelah itu siapkan dirimu untuk langsung bermain ya!</p>
 		<br/>
-		<p>Yuk, tunjukkan menggunakan tombol arah atas/bawah/kiri/kanan pada keyboard kamu, 
-		   arah <b>ikan yang berada di bagian tengah</b> dari sekumpulan ikan pada saat mereka muncul di layar kamu. 
-		   Jawablah secepat & setepat yang kamu bisa, jangan sampai si ikan hiu besar lewat di layarmu!</p>
+		<p>Yuk, tunjukkan menggunakan tombol arah atas/bawah/kiri/kanan pada keyboard kamu, arah <b>ikan yang berada di bagian tengah</b> dari sekumpulan ikan pada saat mereka muncul di layar kamu. Jawablah secepat dan setepat yang kamu bisa, jangan sampai si ikan hiu besar lewat di layarmu!</p>
       </div>
     </div>
   </div>
@@ -247,12 +245,35 @@
   <form class="validation-wizard" method="post" enctype="multipart/form-data">
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom" style="width:100%;text-align: center;">
+	  <?php
+		$qry ="SELECT game1_start
+             FROM account
+            WHERE id =".$login_session;
+         
+		$result = $db->query($qry);// or die(mysql_error());
+	
+		while($r = mysqli_fetch_array($result))
+		{
+			$game  = $r['game1_start'] != null ? "Y" : "N";
+		}
+		
+		if ($game == "Y")
+		{
+	  ?>
       <div class="w3-display-container">
 		<button type="submit" name="start" id="start" class="btn btnStart">Mulai Permainan</button>
       </div>
+	  <?php
+		}
+		else
+		{
+	  ?>
 	  <div class="w3-display-container">
 		<button type="submit" class="btn btnUpload" name="upload" id="upload">Selesai Permainan </button>
 	  </div>
+	  <?php
+		}
+	  ?>
     </div>
   </div>
   

@@ -137,6 +137,10 @@ background-color: white;
 		font-size: 10pt;
 		margin-right: 50%;
 	  }
+	  
+	.button {
+    margin-left:20px;
+}
 
     </style>
 
@@ -165,46 +169,49 @@ background-color: white;
 	<div class="w3-full">
 		<span class="petunjukTitle">Petunjuk Utama (<b>WAJIB DIBACA</b> sebelum mulai):</span>
 		<ol>
-			<li>Siapkan laptop/ PC kamu untuk mengikuti serangkaian penugasan berupa permainan ketangkasan otak selama ±60 menit ke depan, jadi tetaplah tinggal di dalam website ini.</li>
-			<li>Buatlah folder baru di desktop kamu dan beri nama Penugasan Siswa untuk menyimpan dokumentasi selama penugasan berlangsung</li>
-			<li>Saat akan mulai bermain kamu tidak perlu login ke website braingymmer, tapi setiap kali selesai bermain 1 permainan, kamu harus login ya. Bermainlah secara berurutan sesuai dengan urutan huruf (A sampai E) dengan mengikuti alur seperti pada instruksi nomor 6.</li>
-			<li>Setiap kali selesai bermain, kamu harus login ke website braingymmer untuk dapat melihat hasil skornya menggunakan email dan password yang sudah kamu buat sebelumnya pada waktu ‘register’, lalu dokumentasikan skor kamu dengan cara screenshot tampilan skor kamu pada permainan tersebut.
-				<br />Cara screenshot:
+			<li>Siapkan <i>laptop</i> atau komputer kamu untuk mengikuti serangkaian penugasan berupa permainan ketangkasan otak selama ±60 menit ke depan, jadi tetaplah tinggal di dalam <i>website</i> ini.</li>
+			<li>Buatlah folder baru di desktop kamu dan beri nama : <b>SPPAS_Nama lengkap siswa_Kelas</b> untuk menyimpan dokumentasi selama penugasan berlangsung.</li>
+			<li>Silahkan registrasi di website SPPAS dengan mengisi data diri, kemudian membaca penjelasan penelitian.</li>
+			<li>Baca dan pahami terlebih dahulu <b>Petunjuk Umum</b>, lalu tekan tombol <b>Register Braingymmer</b> untuk mendaftar di <i>website braingymmer</i>. Gunakan email sekolah kamu untuk register.</li>
+			<li>Setelah terdaftar di <i>website braingymmer</i>, kamu harus langsung logout dari <i>website braingymmer</i>.</li>
+			<li>Silahkan kembali ke website SPPAS, saat akan mulai bermain tekan tombol <b>Mulai Permainan</b> maka kamu langsung diarahkan ke <i>website braingymmer.</i></li>
+			<li>Setelah terdaftar pada <i>website braingymmer</i>, kamu dapat langsung mulai bermain (<b>tanpa perlu</b> login ke <i>website braingymmer</i>), tapi setiap kali selesai bermain, kamu harus login untuk dapat melihat skor kamu. Bermainlah secara berurutan sesuai dengan urutan huruf (A sampai E) dengan mengikuti alur seperti pada petunjuk nomor 9.</li>
+			<li>Setiap kali selesai bermain, kamu <b>harus login</b> ke <i>website braingymmer</i> untuk dapat melihat skor kamu, lalu dokumentasikan skor kamu dengan cara print screen tampilan skor kamu pada permainan tersebut.
+				<br />Cara print screen :
 				<ul>
-					<li>*Tekan tombol print screen pada keyboard kamu, lalu buka program <b>Paint</b> pada laptop/PC kamu, 
-					    paste di sana (dengan menekan tombol Ctrl dan V secara bersamaan pada keyboard kamu. 
-						Kemudian simpan file dengan format <b>JPEG</b> di folder yang tadi sudah kamu buat di desktop dengan 
-						nama masing-masing permainan.</li>
+					<li>Tekan tombol print screen pada keyboard kamu, lalu buka program <b>Paint</b> pada laptop/PC kamu, paste di sana (dengan menekan tombol <b>Ctrl dan V</b> secara bersamaan pada keyboard kamu). Kemudian simpan file dengan format <b>JPEG</b> di folder yang tadi sudah kamu buat di desktop dengan nama : Nama permainan_Nama lengkap siswa (<b>contoh untuk Permainan A: Bait_Antania Djuwita</b>).</li>
 				</ul>
+				<img src="images/prtsc.jpg" style="width:350px; height:350px;"/>
+				<img src="images/paint.png" style="width:650px; height:350px;"/>
 			</li>
-			<li>Setelah menyimpan screenshot hasil skor kamu, silahkan kembali ke halaman SPPAS untuk unggah (upload) 
-			    screenshot skor permainan kamu pada bagian yang sudah disediakan.</li>
-			<li>Sebelum kamu melanjutkan ke permainan B, <b>ingat kamu harus logout dari website brain gymmer.</b> 
-				<br/>Begini alurnya: 
+			<li>Setelah menyimpan print screen skor kamu, silahkan <b>kembali ke halaman website SPPAS</b> dan menekan tombol <b>Selesai Permainan</b> untuk melanjutkan ke permainan B. <b>Ingat kamu harus logout dari website braingymmer</b>.
+			<br/>Begini alurnya: 
 				<ol type="a">
-					<li>bermain (tanpa login ke website braingymmer)</li>
-					<li>login ke website braingymmer untuk dapat melihat dan screenshot hasil skor permainannya</li>
-					<li>logout untuk dapat melanjutkan bermain ke permainan berikutnya.   
-						Ulangi alur yang sama untuk permainan B,C,D dan E.</li>
+					<li>tekan tombol Mulai Permainan pada website SPPAS, lalu bermainlah (tanpa login ke website braingymmer)</li>
+					<li>Selesai bermain, login ke website braingymmer untuk dapat melihat dan print screen hasil skor permainannya</li>
+					<li>logout dari website braingymmer dan tekan tombol Selesai Permainan pada website SPPAS untuk dapat melanjutkan bermain ke permainan berikutnya.</li>
+					<li>Ulangi alur yang sama untuk permainan B,C,D dan E.</li>
 				</ol>
 			</li>
 			<li>Kamu hanya diberikan satu kali kesempatan dalam setiap permainan, jadi bermainlah sebaik dan secepat yang kamu bisa sampai selesai.</li>
-			<li>Untuk permainan F (Rush Hour), kamu akan bermain sebanyak 3 kali mulai dari tingkat kesulitan easy, medium, 
-			    lalu hard. Setiap kali berhasil menyelesaikan satu level permainan, segera screenshot, kemudian simpan dengan 
-				format <b>JPEG</b> di desktop dengan nama:<br/>
-				RH1 untuk level easy, RH2 untuk level medium, RH3 untuk level hard. Setelah    
-				selesai bermain ketiga level tersebut, kembali ke halaman SPPAS untuk unggah  
-				(upload) screenshot hasil permainanmu.
+			<li>Untuk permainan F (Rush Hour), kamu akan bermain sebanyak 3 kali mulai dari tingkat kesulitan easy, medium, lalu hard. Setiap kali berhasil menyelesaikan satu level permainan, segera print screen, kemudian simpan dengan format JPEG di desktop dengan nama : <br/>
+			RH1_Nama lengkap siswa untuk <i>level easy</i>, RH2_Nama lengkap siswa untuk <i>level medium</i>, RH3_Nama lengkap siswa untuk <i>level hard</i>. Tetaplah tinggal di dalam permainan Rush Hour setelah kamu menyelesaikan satu level permainan, untuk selanjutnya bermain pada level berikutnya.
 			</li>
-			<li>Silahkan menyimak video tutorial berikut ini agar semakin jelas alur bermain dan cara mendokumentasikan 
-			    (screenshot) skor kamu pada setiap permainan.</li>
+			<li>Silahkan menyimak video tutorial berikut ini agar semakin jelas alur bermain dan cara mendokumentasikan (print screen) skor kamu pada setiap permainan. </li>
+			<li>Mintalah bantuan orang tua atau orang dewasa yang ada di rumah kamu untuk mengambil foto sebanyak tiga kali sewaktu kamu sedang mengerjakan penugasan permainan ini (bebas pada permainan apa saja). Lalu simpanlah juga tiga foto tersebut ke dalam folder yang sudah kamu buat di desktop saat awal tadi.</li>
+			<li>Langkah terakhir, periksa kembali folder kamu pastikan ada 11 foto yang terdiri dari: masing-masing satu foto untuk Permainan A sampai E (total lima foto), tiga foto untuk Permainan F dan tiga foto sewaktu kamu mengerjakan penugasan permainan ini.</li>
+			<li>Setelah lengkap seluruhnya, sekarang waktunya untuk unggah folder tersebut ke dalam Google Classroom : Project Atensi Siswa SDKK1 atau Project Atensi Siswa SDKK3 (sesuai dengan asal sekolah kamu masing-masing). Selamat, kamu sudah menyelesaikan penugasan permainan ini. Terima kasih.</li>
 		</ol> 
 	</div>
 </div>
 
 <!-- Contact Section -->
   <div class="w3-container w3-padding-32 interlude" id="contact">
-    <h3 class=" w3-padding-16"></h3>
+	<div class="w3-container w3-cell">
+		<form action="https://www.braingymmer.com/en/register/" target="_blank">
+			<button type="submit" class="w3-button w3-blue button">Register BrainGymmer</button>
+		</form>
+	</div>
   </div>
 
 <div class="w3-container gamelist">

@@ -234,12 +234,12 @@
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom" style="width:100%;text-align: center;">
       <div class="w3-display-container gameInstruction"><img src="images/post.png" style="width:200px; height:200px;margin-bottom: 20px;">
-        <p>Perhatikan dengan teliti di bagian atas, bagaimana kamu harus menyortir/mengelompokkan surat yang ada:</p>
+        <p>Perhatikan dengan teliti di bagian atas, bagaimana kamu harus mengelompokkan surat yang ada: </p>
 		<ul>
-			<li>Sort by text: mengikut tulisan pada amplop surat.</li>
-			<li>Sort by color: mengikuti warna amplop suratnya.</li>
+			<li><i>Sort by text</i>: mengikut tulisan pada amplop surat.</li>
+			<li><i>Sort by color</i>: mengikuti warna amplop suratnya.</li>
 		</ul>
-		<p>Bermainlah secepat dan setepat yang kamu bisa. Selamat mengelompokkan surat-surat ya!</p>
+		<p>Bermainlah secepat dan setepat yang kamu bisa. Selamat mengelompokkan surat-suratnya ya!</p>
       </div>
     </div>
   </div>
@@ -247,12 +247,35 @@
   <form class="validation-wizard" method="post" enctype="multipart/form-data">
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom" style="width:100%;text-align: center;">
+      <?php
+		$qry ="SELECT game5_start
+             FROM account
+            WHERE id =".$login_session;
+         
+		$result = $db->query($qry);// or die(mysql_error());
+	
+		while($r = mysqli_fetch_array($result))
+		{
+			$game  = $r['game5_start'] != null ? "Y" : "N";
+		}
+		
+		if ($game == "Y")
+		{
+	  ?>
       <div class="w3-display-container">
 		<button type="submit" name="start" id="start" class="btn btnStart">Mulai Permainan</button>
       </div>
+	  <?php
+		}
+		else
+		{
+	  ?>
 	  <div class="w3-display-container">
 		<button type="submit" class="btn btnUpload" name="upload" id="upload">Selesai Permainan </button>
 	  </div>
+	  <?php
+		}
+	  ?>
     </div>
   </div>
   
