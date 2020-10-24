@@ -182,7 +182,7 @@ background-color: white;
 					<li>Tekan tombol print screen pada keyboard kamu, lalu buka program <b>Paint</b> pada laptop/PC kamu, paste di sana (dengan menekan tombol <b>Ctrl dan V</b> secara bersamaan pada keyboard kamu). Kemudian simpan file dengan format <b>JPEG</b> di folder yang tadi sudah kamu buat di desktop dengan nama : Nama permainan_Nama lengkap siswa (<b>contoh untuk Permainan A: Bait_Antania Djuwita</b>).</li>
 				</ul>
 				<img src="images/prtsc.jpg" style="width:350px; height:350px;"/>
-				<img src="images/paint.png" style="width:650px; height:350px;"/>
+				<!-- <img src="images/paint.png" style="width:650px; height:350px;"/> -->
 			</li>
 			<li>Setelah menyimpan print screen skor kamu, silahkan <b>kembali ke halaman website SPPAS</b> dan menekan tombol <b>Selesai Permainan</b> untuk melanjutkan ke permainan B. <b>Ingat kamu harus logout dari website braingymmer</b>.
 			<br/>Begini alurnya: 

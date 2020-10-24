@@ -310,6 +310,12 @@
 			else
 			{
 			?>
+      <div class="title">
+        <h3>Selamat bergabung dalam SPPAS! Mohon menyiapkan laptop atau 
+            komputer kamu untuk mengikuti serangkaian penugasan berupa 
+            permainan ketangkasan otak selama ±60 menit ke depan, jadi 
+            tetaplah tinggal di dalam website ini.</h3>
+      </div>
 			<div class="title">
               <i class="fas fa-pencil-alt"></i>
               <h2>Lengkapi data :</h2>
