@@ -142,6 +142,9 @@
   background-color: #546f70;
   border-radius: 5px;
   border:15px solid #ffd065;
+  margin-left: 200px;
+  margin-right: 200px;
+   margin-bottom: 100px;
 }
 .btn_login{
   color: rgb(175,238,238);
@@ -169,9 +172,27 @@
 }
 
  .footer{
-      background-color: #9df2e6;
-      color:white;
+      background-color: rgba(255,255,255,0.4);
+      color:#7d7d7d;
+      position: absolute;
+      top:100%;
+      width:100%;
     }
+
+    .titleFont{
+  font-family: 'Rammetto One', cursive;
+  font-size: 37px;
+  color:white;
+}
+.titleWelcoming{
+  font-family: 'Walter Turncoat', cursive;
+}
+.titleWording{
+  text-align: center;
+  padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
     </style>
   </head>
   <body>
@@ -310,11 +331,12 @@
 			else
 			{
 			?>
-      <div class="title">
-        <h3>Selamat bergabung dalam SPPAS! Mohon menyiapkan laptop atau 
+      <div class="titleWording">
+       <p> <span class="titleFont">Selamat bergabung dalam SPPAS! </span><br /></p>
+       <p> <span class="titleWelcoming">Mohon menyiapkan laptop atau 
             komputer kamu untuk mengikuti serangkaian penugasan berupa 
             permainan ketangkasan otak selama ±60 menit ke depan, jadi 
-            tetaplah tinggal di dalam website ini.</h3>
+            tetaplah tinggal di dalam website ini.<span></p>
       </div>
 			<div class="title">
               <i class="fas fa-pencil-alt"></i>
@@ -345,16 +367,17 @@
            <img src="images/logo5.png" style="width:150px; height:150px;"><br />
            <b>S</b>kala <b>P</b>enilaian <b>P</b>erilaku <b>A</b>tentif <b>S</b>iswa
            </div>
+           
+<!-- Footer -->
+<footer class="w3-center footer">
+  <i class="fa fa-copyright" aria-hidden="true"></i>copyright reserverd 2020 - Developed by FINNIX
+</footer>
         </div>
 
 
     </div>
 
 
-<!-- Footer -->
-<footer class="w3-center footer">
-  <i class="fa fa-copyright" aria-hidden="true"></i>copyright reserverd 2020 - Developed by FINNIX
-</footer>
 
   </body>
 </html>
