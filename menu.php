@@ -167,6 +167,9 @@ background-color: white;
 
 <div class="w3-container petunjuk">
 	<div class="w3-full">
+		<iframe width="650" height="415" src="https://www.youtube.com/embed/2ZXmK7G9AjE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div class="w3-full">
 		<span class="petunjukTitle">Petunjuk Utama (<b>WAJIB DIBACA</b> sebelum mulai):</span>
 		<ol>
 			<li>Buatlah file word baru di desktop kamu dan beri nama : <b>SPPAS_Nama lengkap siswa_Kelas</b> untuk menyimpan dokumentasi selama penugasan berlangsung.</li>
