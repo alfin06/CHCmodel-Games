@@ -169,22 +169,22 @@ background-color: white;
 	<div class="w3-full">
 		<span class="petunjukTitle">Petunjuk Utama (<b>WAJIB DIBACA</b> sebelum mulai):</span>
 		<ol>
-			<li>Siapkan <i>laptop</i> atau komputer kamu untuk mengikuti serangkaian penugasan berupa permainan ketangkasan otak selama ±60 menit ke depan, jadi tetaplah tinggal di dalam <i>website</i> ini.</li>
-			<li>Buatlah folder baru di desktop kamu dan beri nama : <b>SPPAS_Nama lengkap siswa_Kelas</b> untuk menyimpan dokumentasi selama penugasan berlangsung.</li>
-			<li>Silahkan registrasi di website SPPAS dengan mengisi data diri, kemudian membaca penjelasan penelitian.</li>
-			<li>Baca dan pahami terlebih dahulu <b>Petunjuk Umum</b>, lalu tekan tombol <b>Register Braingymmer</b> untuk mendaftar di <i>website braingymmer</i>. Gunakan email sekolah kamu untuk register.</li>
-			<li>Setelah terdaftar di <i>website braingymmer</i>, kamu harus langsung logout dari <i>website braingymmer</i>.</li>
-			<li>Silahkan kembali ke website SPPAS, saat akan mulai bermain tekan tombol <b>Mulai Permainan</b> maka kamu langsung diarahkan ke <i>website braingymmer.</i></li>
-			<li>Setelah terdaftar pada <i>website braingymmer</i>, kamu dapat langsung mulai bermain (<b>tanpa perlu</b> login ke <i>website braingymmer</i>), tapi setiap kali selesai bermain, kamu harus login untuk dapat melihat skor kamu. Bermainlah secara berurutan sesuai dengan urutan huruf (A sampai E) dengan mengikuti alur seperti pada petunjuk nomor 9.</li>
-			<li>Setiap kali selesai bermain, kamu <b>harus login</b> ke <i>website braingymmer</i> untuk dapat melihat skor kamu, lalu dokumentasikan skor kamu dengan cara print screen tampilan skor kamu pada permainan tersebut.
+			<li>Buatlah file word baru di desktop kamu dan beri nama : <b>SPPAS_Nama lengkap siswa_Kelas</b> untuk menyimpan dokumentasi selama penugasan berlangsung.</li>
+			<li>Baca dan pahami terlebih dahulu Petunjuk Umum ini, lalu tekan tombol Register Braingymmer untuk mendaftar di website braingymmer. Gunakan email sekolah kamu dan buat password (bebas) untuk register.</li>
+			<li>Kamu hanya diberikan satu kali kesempatan dalam setiap permainan, jadi bermainlah sebaik dan secepat yang kamu bisa sampai selesai.</li>
+			<li>Setelah terdaftar di website braingymmer, kamu harus langsung logout dari website braingymmer.</li>
+			<li>Silahkan kembali ke website SPPAS, pilih permainan A. Kemudian saat akan mulai bermain tekan tombol Mulai Permainan maka kamu langsung diarahkan ke website braingymmer.</li>
+			<li>Kamu dapat langsung mulai bermain (tanpa perlu login ke website braingymmer), tapi setiap kali selesai bermain, kamu harus login untuk dapat melihat skor kamu. Bermainlah secara berurutan sesuai dengan urutan huruf (A sampai E) dengan mengikuti alur seperti pada petunjuk nomor 8.</li>
+			<li>Setiap kali selesai bermain, kamu harus login ke website braingymmer untuk dapat melihat skor kamu, lalu dokumentasikan skor kamu dengan cara print screen tampilan skor kamu pada permainan tersebut. Lalu paste di file word SPPAS kamu dan pilih menu file-save.
 				<br />Cara print screen :
 				<ul>
-					<li>Tekan tombol print screen pada keyboard kamu, lalu buka program <b>Paint</b> pada laptop/PC kamu, paste di sana (dengan menekan tombol <b>Ctrl dan V</b> secara bersamaan pada keyboard kamu). Kemudian simpan file dengan format <b>JPEG</b> di folder yang tadi sudah kamu buat di desktop dengan nama : Nama permainan_Nama lengkap siswa (<b>contoh untuk Permainan A: Bait_Antania Djuwita</b>).</li>
-				</ul>
+					<li>*Pengguna Windows: Tekan tombol print screen pada keyboard kamu, lalu paste di file word SPPAS kamu dengan menekan tombol Ctrl dan V secara bersamaan pada keyboard kamu. </li>
+          <li>*Pengguna Macbook: Tekan tombol Command, Shift dan 3, pada keyboard kamu Jika sudah, maka hasil print screen kamu sudah otomatis langsung tersimpan di desktop kamu. Selanjutnya kamu perlu copy hasil print screen tersbut dan paste gambar tersebut di file word SPPAS kamu. </li>
+        </ul>
 				<img src="images/prtsc.jpg" style="width:350px; height:350px;"/>
 				<!-- <img src="images/paint.png" style="width:650px; height:350px;"/> -->
 			</li>
-			<li>Setelah menyimpan print screen skor kamu, silahkan <b>kembali ke halaman website SPPAS</b> dan menekan tombol <b>Selesai Permainan</b> untuk melanjutkan ke permainan B. <b>Ingat kamu harus logout dari website braingymmer</b>.
+			<li>Setelah menyimpan print screen skor kamu, ingat, kamu harus logout dari website braingymmer. Lalu kembali ke halaman website SPPAS dan menekan tombol Selesai Permainan untuk melanjutkan ke permainan B.
 			<br/>Begini alurnya: 
 				<ol type="a">
 					<li>tekan tombol Mulai Permainan pada website SPPAS, lalu bermainlah (tanpa login ke website braingymmer)</li>
@@ -193,14 +193,13 @@ background-color: white;
 					<li>Ulangi alur yang sama untuk permainan B,C,D dan E.</li>
 				</ol>
 			</li>
-			<li>Kamu hanya diberikan satu kali kesempatan dalam setiap permainan, jadi bermainlah sebaik dan secepat yang kamu bisa sampai selesai.</li>
-			<li>Untuk permainan F (Rush Hour), kamu akan bermain sebanyak 3 kali mulai dari tingkat kesulitan easy, medium, lalu hard. Setiap kali berhasil menyelesaikan satu level permainan, segera print screen, kemudian simpan dengan format JPEG di desktop dengan nama : <br/>
-			RH1_Nama lengkap siswa untuk <i>level easy</i>, RH2_Nama lengkap siswa untuk <i>level medium</i>, RH3_Nama lengkap siswa untuk <i>level hard</i>. Tetaplah tinggal di dalam permainan Rush Hour setelah kamu menyelesaikan satu level permainan, untuk selanjutnya bermain pada level berikutnya.
+			<li>Untuk permainan F (Rush Hour), kamu akan bermain sebanyak 3 kali mulai dari tingkat kesulitan easy, medium, lalu hard. Setiap kali berhasil menyelesaikan satu level permainan, segera print screen, kemudian paste di file word SPPAS kamu. 
+          Tetaplah tinggal di dalam permainan Rush Hour setelah kamu menyelesaikan satu level permainan, untuk selanjutnya bermain pada level berikutnya.
 			</li>
 			<li>Silahkan menyimak video tutorial berikut ini agar semakin jelas alur bermain dan cara mendokumentasikan (print screen) skor kamu pada setiap permainan. </li>
-			<li>Mintalah bantuan orang tua atau orang dewasa yang ada di rumah kamu untuk mengambil foto sebanyak tiga kali sewaktu kamu sedang mengerjakan penugasan permainan ini (bebas pada permainan apa saja). Lalu simpanlah juga tiga foto tersebut ke dalam folder yang sudah kamu buat di desktop saat awal tadi.</li>
-			<li>Langkah terakhir, periksa kembali folder kamu pastikan ada 11 foto yang terdiri dari: masing-masing satu foto untuk Permainan A sampai E (total lima foto), tiga foto untuk Permainan F dan tiga foto sewaktu kamu mengerjakan penugasan permainan ini.</li>
-			<li>Setelah lengkap seluruhnya, sekarang waktunya untuk unggah folder tersebut ke dalam Google Classroom : Project Atensi Siswa SDKK1 atau Project Atensi Siswa SDKK3 (sesuai dengan asal sekolah kamu masing-masing). Selamat, kamu sudah menyelesaikan penugasan permainan ini. Terima kasih.</li>
+			<li>Mintalah bantuan orang tua untuk mengambil foto sebanyak tiga kali sewaktu kamu sedang mengerjakan penugasan permainan ini (bebas pada permainan apa saja). Lalu simpanlah juga tiga foto tersebut ke dalam file word SPPAS kamu.</li>
+			<li>Langkah terakhir, periksa kembali file word SPPAS kamu, pastikan ada 11 foto yang terdiri dari: masing-masing satu foto untuk Permainan A sampai E (total lima foto), tiga foto untuk Permainan F dan tiga foto sewaktu kamu mengerjakan penugasan permainan ini.</li>
+			<li>Setelah lengkap seluruhnya, sekarang waktunya untuk unggah file word SPPAS kamu ke dalam <b>Google Classroom : Project Atensi Siswa SD KK 1 atau Project Atensi Siswa SD KK 3 (sesuai dengan asal sekolah kamu masing-masing)</b>. Selamat, kamu sudah menyelesaikan penugasan permainan ini. Terima kasih.</li>
 		</ol> 
 	</div>
 </div>
