@@ -203,7 +203,8 @@
 	$name = $_POST['name'];
 	$gender = $_POST['gender'];
 	$age = $_POST['age'];
-	$grade = "SD Kelas " . (intval($_POST['grade'])-1);
+  $grade = "SD Kelas " . (intval($_POST['grade'])-1);
+  $result_name = '';
 	
 	date_default_timezone_set('Asia/Bangkok');
 	$date = date("Y-m-d G:i:s");
@@ -211,13 +212,49 @@
 	// Insert data
 	if (isset($_POST['insert']))
 	{
-		$result = $db->query("INSERT INTO account(name, gender, age, signup_date, grade)
+    $qry ="SELECT id, name, age, consent, game6_end
+				     FROM account
+            WHERE UPPER(name) = UPPER('".$name."')
+              AND grade = '" . $grade . "'";
+			   
+    $result = $db->query($qry);
+    
+    while($r = mysqli_fetch_array($result))
+		{
+      $result_name = $r['name'];
+      $_SESSION['login_user'] = $r['name'];
+      $consent = $r['consent'];
+      $game6  = $r['game6_end'] != "" ? "Y" : "N";
+    }
+    
+    if ($result_name == '')
+    {
+      $result = $db->query("INSERT INTO account(name, gender, age, signup_date, grade)
 									  VALUES ('".$name."', '".$gender."', ".$age.", '".$date."', '".$grade."')");
 									  
-		if ($result === TRUE) 
+      if ($result === TRUE) 
+      {
+        $_SESSION['login_user'] = $name;
+        
+        echo "<script>";
+        echo "window.open('agreement.php', '_SELF');";
+        echo "</script>";
+      }
+    }
+    else if($game6 == "Y")
 		{
-			$_SESSION['login_user'] = $name;
-			
+			echo "<script>";
+			echo "window.open('end.php', '_SELF');";
+			echo "</script>";
+		}
+    else if (trim($consent) == 'Y')
+    {
+			echo "<script>";
+			echo "window.open('menu.php', '_SELF');";
+			echo "</script>";
+		}
+		else
+		{
 			echo "<script>";
 			echo "window.open('agreement.php', '_SELF');";
 			echo "</script>";
@@ -238,17 +275,17 @@
 			$consent = $r['consent'];
 			$game6  = $r['game6_end'] != "" ? "Y" : "N";
 		}
-		
-		if (trim($consent) == 'Y')
-		{
-			echo "<script>";
-			echo "window.open('menu.php', '_SELF');";
-			echo "</script>";
-		}
-		else if($game6 == "Y")
+    
+    if($game6 == "Y")
 		{
 			echo "<script>";
 			echo "window.open('end.php', '_SELF');";
+			echo "</script>";
+		}
+		else if (trim($consent) == 'Y')
+		{
+			echo "<script>";
+			echo "window.open('menu.php', '_SELF');";
 			echo "</script>";
 		}
 		else
