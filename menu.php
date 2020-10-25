@@ -169,7 +169,7 @@ background-color: white;
 	<div class="w3-full">
 		<iframe width="650" height="415" src="https://www.youtube.com/embed/2ZXmK7G9AjE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
-	<div class="w3-full">
+	<!-- <div class="w3-full">
 		<span class="petunjukTitle">Petunjuk Utama (<b>WAJIB DIBACA</b> sebelum mulai):</span>
 		<ol>
 			<li>Buatlah file word baru di desktop kamu dan beri nama : <b>SPPAS_Nama lengkap siswa_Kelas</b> untuk menyimpan dokumentasi selama penugasan berlangsung.</li>
@@ -185,7 +185,6 @@ background-color: white;
           <li>*Pengguna Macbook: Tekan tombol Command, Shift dan 3, pada keyboard kamu Jika sudah, maka hasil print screen kamu sudah otomatis langsung tersimpan di desktop kamu. Selanjutnya kamu perlu copy hasil print screen tersbut dan paste gambar tersebut di file word SPPAS kamu. </li>
         </ul>
 				<img src="images/prtsc.jpg" style="width:350px; height:350px;"/>
-				<!-- <img src="images/paint.png" style="width:650px; height:350px;"/> -->
 			</li>
 			<li>Setelah menyimpan print screen skor kamu, ingat, kamu harus logout dari website braingymmer. Lalu kembali ke halaman website SPPAS dan menekan tombol Selesai Permainan untuk melanjutkan ke permainan B.
 			<br/>Begini alurnya: 
@@ -204,7 +203,7 @@ background-color: white;
 			<li>Langkah terakhir, periksa kembali file word SPPAS kamu, pastikan ada 11 foto yang terdiri dari: masing-masing satu foto untuk Permainan A sampai E (total lima foto), tiga foto untuk Permainan F dan tiga foto sewaktu kamu mengerjakan penugasan permainan ini.</li>
 			<li>Setelah lengkap seluruhnya, sekarang waktunya untuk unggah file word SPPAS kamu ke dalam <b>Google Classroom : Project Atensi Siswa SD KK 1 atau Project Atensi Siswa SD KK 3 (sesuai dengan asal sekolah kamu masing-masing)</b>. Selamat, kamu sudah menyelesaikan penugasan permainan ini. Terima kasih.</li>
 		</ol> 
-	</div>
+	</div> -->
 </div>
 
 <!-- Contact Section -->
