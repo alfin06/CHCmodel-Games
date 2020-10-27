@@ -167,7 +167,8 @@ background-color: white;
 
 <div class="w3-container petunjuk">
 	<div class="w3-full">
-		<iframe width="650" height="415" src="https://www.youtube.com/embed/2ZXmK7G9AjE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    <iframe width="650" height="415" src="https://www.youtube.com/embed/Fc2XeKe0_CY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> &nbsp;
+	    <iframe width="650" height="415" src="https://www.youtube.com/embed/N_v8azBGAiA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 	<!-- <div class="w3-full">
 		<span class="petunjukTitle">Petunjuk Utama (<b>WAJIB DIBACA</b> sebelum mulai):</span>
