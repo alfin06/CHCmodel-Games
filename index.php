@@ -214,7 +214,7 @@
 	{
     $qry ="SELECT id, name, age, consent, game6_end
 				     FROM account
-            WHERE UPPER(name) = UPPER('".$name."')
+            WHERE UPPER(name) =UPPER('".$name."')
               AND grade = '" . $grade . "'";
 			   
     $result = $db->query($qry);

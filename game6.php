@@ -137,64 +137,11 @@
 	//upload gambar
 	if (isset($_POST['upload']))
 	{
-		// Gambar 1
-		//$nagambaradd = $_FILES['nagaadd']['name'];
-		//$ukurangambar = $_FILES['nagaadd']['size'];//lihat ukuran gambar
-		//$typegambar = $_FILES['nagaadd']['type']; // lihat type gambar
-		//$file_tmp = $_FILES['nagaadd']['tmp_name'];
-		
-		//$nagambaradd_temp = explode(".", $nagambaradd);
-		
-		//$extension = end($nagambaradd_temp);
-		//$namaakhir = $login_session;
-		//$namaakhir = "game6_".$namaakhir.".".$extension;
-		
-		// Gambar 2
-		//$nagambaradd2 = $_FILES['nagaadd2']['name'];
-		//$ukurangambar2 = $_FILES['nagaadd2']['size'];//lihat ukuran gambar
-		//$typegambar2 = $_FILES['nagaadd2']['type']; // lihat type gambar
-		//$file_tmp2 = $_FILES['nagaadd2']['tmp_name'];
-		
-		//$nagambaradd_temp2 = explode(".", $nagambaradd2);
-		
-		//$extension2 = end($nagambaradd_temp2);
-		//$namaakhir2 = $login_session;
-		//$namaakhir2 = "game6b_".$namaakhir2.".".$extension2;
-		
-		// Gambar 3
-		//$nagambaradd3 = $_FILES['nagaadd3']['name'];
-		//$ukurangambar3 = $_FILES['nagaadd3']['size'];//lihat ukuran gambar
-		//$typegambar3 = $_FILES['nagaadd3']['type']; // lihat type gambar
-		//$file_tmp3 = $_FILES['nagaadd3']['tmp_name'];
-		
-		//$nagambaradd_temp3 = explode(".", $nagambaradd3);
-		
-		//$extension3 = end($nagambaradd_temp3);
-		//$namaakhir3 = $login_session;
-		//$namaakhir3 = "game6c_".$namaakhir3.".".$extension3;
-		
-		//if ($nagambaradd == "" || $nagambaradd2 == "" || $nagambaradd3 == "")
-		//{
-		?>
-			<script type="text/javascript">
-				alert('Mohon upload semua screenshot secara bersamaan.');
-			</script> 
-		<?php	
-		//}
-		//else if((($typegambar == "image/jpeg" || $typegambar == "image/png" || $typegambar == "image/jpg") && 
-		//	$nagambaradd !="" && $ukurangambar < 1000000 ) && (($typegambar2 == "image/jpeg" || $typegambar2 == "image/png" || //$typegambar2 == "image/jpg") && 
-		//	$nagambaradd2 !="" && $ukurangambar2 < 1000000 ) && (($typegambar3 == "image/jpeg" || $typegambar3 == "image/png" || //$typegambar3 == "image/jpg") && 
-		//	$nagambaradd3 !="" && $ukurangambar3 < 1000000 ))
-		//{
 			$a="UPDATE account 
 				   SET game6_end = '".$date."'
 				 WHERE id=".$login_session;
 
-			$result = $db->query($a);	
-
-		//	move_uploaded_file($file_tmp,"images/upload/".$namaakhir);
-		//	move_uploaded_file($file_tmp2,"images/upload/".$namaakhir2);
-		//	move_uploaded_file($file_tmp3,"images/upload/".$namaakhir3);
+			$result = $db->query($a);
 			
 			if ($result === TRUE) 
 			{
@@ -208,19 +155,11 @@
 			{
 	?>
 				<script type="text/javascript">
-					alert('Gambar gagal diunggah.');
+					alert('Gagal.');
 				</script> 
 	<?php
 			}
-		//}
-		//else
-		//{
-	?>
-			<script type="text/javascript">
-				alert('Ada kesalahan pada gambar.');
-			</script> 
-	<?php
-		//}
+
 	}
 	
 	// Go to game page
@@ -279,35 +218,15 @@
   <form class="validation-wizard" method="post" enctype="multipart/form-data">
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom" style="width:100%;text-align: center;">
-      <?php
-		$qry ="SELECT game6_start
-             FROM account
-            WHERE id =".$login_session;
-         
-		$result = $db->query($qry);// or die(mysql_error());
-	
-		while($r = mysqli_fetch_array($result))
-		{
-			$game  = $r['game6_start'] != null ? "Y" : "N";
-		}
-		
-		if ($game == "Y")
-		{
-	  ?>
+
       <div class="w3-display-container">
 		<button type="submit" name="start" id="start" class="btn btnStart">Mulai Permainan</button>
       </div>
-	  <?php
-		}
-		else
-		{
-	  ?>
+
 	  <div class="w3-display-container">
 		<button type="submit" class="btn btnUpload" name="upload" id="upload">Selesai Permainan </button>
 	  </div>
-	  <?php
-		}
-	  ?>
+
     </div>
   </div>
   
