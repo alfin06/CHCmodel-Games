@@ -254,7 +254,7 @@
 	
 		while($r = mysqli_fetch_array($result))
 		{
-			$game  = $r['game1_start'] != null ? "Y" : "N";
+			$game  = $r['game1_start'] == null ? "Y" : "N";
 		}
 		
 		if ($game == "Y")
