@@ -142,6 +142,9 @@
   background-color: #546f70;
   border-radius: 5px;
   border:15px solid #ffd065;
+  margin-left: 200px;
+  margin-right: 200px;
+   margin-bottom: 100px;
 }
 .btn_login{
   color: rgb(175,238,238);
@@ -169,9 +172,27 @@
 }
 
  .footer{
-      background-color: #9df2e6;
-      color:white;
+      background-color: rgba(255,255,255,0.4);
+      color:#7d7d7d;
+      position: absolute;
+      top:100%;
+      width:100%;
     }
+
+    .titleFont{
+  font-family: 'Rammetto One', cursive;
+  font-size: 37px;
+  color:white;
+}
+.titleWelcoming{
+  font-family: 'Walter Turncoat', cursive;
+}
+.titleWording{
+  text-align: center;
+  padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
     </style>
   </head>
   <body>
@@ -182,7 +203,8 @@
 	$name = $_POST['name'];
 	$gender = $_POST['gender'];
 	$age = $_POST['age'];
-	$grade = "SD Kelas " . (intval($_POST['grade'])-1);
+  $grade = "SD Kelas " . (intval($_POST['grade'])-1);
+  $result_name = '';
 	
 	date_default_timezone_set('Asia/Bangkok');
 	$date = date("Y-m-d G:i:s");
@@ -190,13 +212,49 @@
 	// Insert data
 	if (isset($_POST['insert']))
 	{
-		$result = $db->query("INSERT INTO account(name, gender, age, signup_date, grade)
+    $qry ="SELECT id, name, age, consent, game6_end
+				     FROM account
+            WHERE UPPER(name) =UPPER('".$name."')
+              AND grade = '" . $grade . "'";
+			   
+    $result = $db->query($qry);
+    
+    while($r = mysqli_fetch_array($result))
+		{
+      $result_name = $r['name'];
+      $_SESSION['login_user'] = $r['name'];
+      $consent = $r['consent'];
+      $game6  = $r['game6_end'] != "" ? "Y" : "N";
+    }
+    
+    if ($result_name == '')
+    {
+      $result = $db->query("INSERT INTO account(name, gender, age, signup_date, grade)
 									  VALUES ('".$name."', '".$gender."', ".$age.", '".$date."', '".$grade."')");
 									  
-		if ($result === TRUE) 
+      if ($result === TRUE) 
+      {
+        $_SESSION['login_user'] = $name;
+        
+        echo "<script>";
+        echo "window.open('agreement.php', '_SELF');";
+        echo "</script>";
+      }
+    }
+    else if($game6 == "Y")
 		{
-			$_SESSION['login_user'] = $name;
-			
+			echo "<script>";
+			echo "window.open('end.php', '_SELF');";
+			echo "</script>";
+		}
+    else if (trim($consent) == 'Y')
+    {
+			echo "<script>";
+			echo "window.open('menu.php', '_SELF');";
+			echo "</script>";
+		}
+		else
+		{
 			echo "<script>";
 			echo "window.open('agreement.php', '_SELF');";
 			echo "</script>";
@@ -217,17 +275,17 @@
 			$consent = $r['consent'];
 			$game6  = $r['game6_end'] != "" ? "Y" : "N";
 		}
-		
-		if (trim($consent) == 'Y')
-		{
-			echo "<script>";
-			echo "window.open('menu.php', '_SELF');";
-			echo "</script>";
-		}
-		else if($game6 == "Y")
+    
+    if($game6 == "Y")
 		{
 			echo "<script>";
 			echo "window.open('end.php', '_SELF');";
+			echo "</script>";
+		}
+		else if (trim($consent) == 'Y')
+		{
+			echo "<script>";
+			echo "window.open('menu.php', '_SELF');";
 			echo "</script>";
 		}
 		else
@@ -310,6 +368,13 @@
 			else
 			{
 			?>
+      <div class="titleWording">
+       <p> <span class="titleFont">Selamat bergabung dalam SPPAS! </span><br /></p>
+       <p> <span class="titleWelcoming">Mohon menyiapkan laptop atau 
+            komputer kamu untuk mengikuti serangkaian penugasan berupa 
+            permainan ketangkasan otak selama ±60 menit ke depan, jadi 
+            tetaplah tinggal di dalam website ini.<span></p>
+      </div>
 			<div class="title">
               <i class="fas fa-pencil-alt"></i>
               <h2>Lengkapi data :</h2>
@@ -339,16 +404,17 @@
            <img src="images/logo5.png" style="width:150px; height:150px;"><br />
            <b>S</b>kala <b>P</b>enilaian <b>P</b>erilaku <b>A</b>tentif <b>S</b>iswa
            </div>
+           
+<!-- Footer -->
+<footer class="w3-center footer">
+  <i class="fa fa-copyright" aria-hidden="true"></i>copyright reserverd 2020 - Developed by FINNIX
+</footer>
         </div>
 
 
     </div>
 
 
-<!-- Footer -->
-<footer class="w3-center footer">
-  <i class="fa fa-copyright" aria-hidden="true"></i>copyright reserverd 2020 - Developed by FINNIX
-</footer>
 
   </body>
 </html>

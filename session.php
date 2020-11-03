@@ -6,7 +6,7 @@
    
    $ses_sql = mysqli_query($db,"SELECT id, name, gender
 								  FROM account 
-								 WHERE name = '" . $user_check . "'");
+								 WHERE UPPER(name) = UPPER('" . $user_check . "')");
    
    $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
    

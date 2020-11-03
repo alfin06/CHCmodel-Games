@@ -264,7 +264,7 @@ div#scroll {
 				<p>Peneliti menjamin kerahasiaan identitas dan jawaban putra/putri ayah/bunda, karena hasil pengerjaan tugas sepenuhnya <b>hanya</b> digunakan untuk kepentingan penelitian.</p>
 				<br/>
 				<p>Apabila ayah/bunda berkenan mengizinkan putra/putrinya turut berpartisipasi dalam penelitian ini, saya mohon kesediaan ayah/bunda untuk melengkapi data diri, dan mengklik pernyataan “Ya, saya setuju” di bagian bawah halaman ini. Partisipasi ini bersifat sukarela sehingga ayah/bunda berhak mengurungkan niat untuk berpartisipasi tanpa konsekuensi apapun.</p>
-				<p>Apabila ada hal-hal yang ingin ditanyakan berkaitan dengan penelitian ini, ayah/bunda dapat menghubungi saya di alamat email antania.717191027@stu.untar.ac.id. Apabila ayah/bunda bermaksud mengetahui hasil penelitian ini di kemudian hari, ayah/bunda dapat menghubungi pihak sekolah, karena hasil penelitian akan saya sampaikan kepada pihak sekolah. Terima kasih atas kesediaan ayah/bunda untuk berpartisipasi dalam penelitian ini.</p>
+				<p>Apabila ada hal-hal yang ingin ditanyakan berkaitan dengan penelitian ini, ayah/bunda dapat menghubungi saya di alamat email antania.717191027@stu.untar.ac.id atau di WhatsApp 081807149296. Apabila ayah/bunda bermaksud mengetahui hasil penelitian ini di kemudian hari, ayah/bunda dapat menghubungi pihak sekolah, karena hasil penelitian akan saya sampaikan kepada pihak sekolah. Terima kasih atas kesediaan ayah/bunda untuk berpartisipasi dalam penelitian ini.</p>
 				<br/>
 			</div>
 			<br/>

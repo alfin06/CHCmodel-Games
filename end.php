@@ -265,7 +265,10 @@
   <div class="w3-row-padding">
     <div class="w3-col m8 l9 w3-margin-bottom" style="width:100%;text-align: center;">
       <div class="w3-display-container gameInstruction"><img src="images/logo5.png" style="width:200px; height:200px;margin-bottom: 20px;">
-        <h3>Terima kasih sudah berpartisipasi!</h3> 
+        <h3>Terima kasih sudah berpartisipasi!</h3>
+		<h5>Jangan lupa upload file kamu ke dalam 
+			<b>Google Classroom : Project Atensi Siswa SD KK 1 atau Project Atensi Siswa SD KK 3 
+			  (sesuai dengan asal sekolah kamu masing-masing)</b>.</h5> 
       </div>
     </div>
   </div>
