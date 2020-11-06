@@ -146,10 +146,28 @@
 	</div>
   
     <!-- Page content -->
-	<form method="POST" id="screen1" style="display: block;">
 	<div class="w3-content w3-padding" style="max-width:1564px; margin-top: 20px;">
-	  <div class="w3-container w3-padding-64 w3-margin-16" id="projects">
+		<br/><br/>
+	  <div class="w3-container w3-padding-32 w3-margin-32" id="projects">
+		<h3>Skala Penilaian Guru</h3>
 		<br />
+		<p>
+			Salam sejahtera bagi kita semua. Perkenalkan, saya Antania Djuwita, mahasiswi Magister Psikologi Profesi Bidang Peminatan Psikologi Pendidikan dari Universitas Tarumanagara (Untar),Jakarta. Saat ini saya sedang menyusun penelitian dengan tema pengembangan Skala Penilaian Perilaku Atentif Siswa. Partisipasi bapak/ ibu guru akan sangat bermanfaat untuk pengembangan dan kemajuan bidang psikologi pendidikan.
+		</p><br />
+		<p>Hormat saya,</p>
+		<p>Antania Djuwita</p>
+		<p>email: antania.717191027@stu.untar.ac.id</p>
+		<p>WA: +6281807149296</p>
+	  </div>
+	  
+	  <div>
+		<form action="export_excel.php" method="post">
+			<button type="submit" id="btn">Download Excel</button>
+		</form>
+	  </div>
+	  
+	  <form method="POST" id="screen1" style="display: block;">
+	  <div class="w3-container w3-padding-64 w3-margin-16" id="projects">
 		<h3>Data Diri</h3>
 		<br />
 		<form>
@@ -178,15 +196,6 @@
 			<input type="text" class="form-control" id="tgl" name="tgl" value='<?php echo $signup_date;?>' disabled>
 		  </div>
 		</form>
-	  </div>
-
-	  <!-- Project Section -->
-	  <div class="w3-container w3-padding-32 w3-margin-32" id="projects">
-		<h3>Skala Penilaian Guru</h3>
-		<br />
-		<p>
-			Di bawah ini ada butir-butir masalah perilaku pada anak umumnya. Silahkan isi tiap butir menurut perilaku anak/ murid pada enam bulan terakhir. Pada setiap butir, tanyakan diri anda "Berapa banyak masalah ini terjadi dalam enam bulan teakhir?", dan beri tanda (&#8226;) pada salah satu kolom yang paling tepat. Jika sama sekali tidak dan sangat jarang, anda dapat memberi tanda (&#8226;) kolom 1. Jika selalu demikian, anda dapat memberi tanda (&#8226;) kolom 4. Anda dapat memberi tanda (&#8226;) kolom 2 untuk kadang-kadang dan kolom 3 untuk seringkali. Mohon semua butir diisi.
-		</p>
 	  </div>
 
 	  <div class="w3-row-padding">
@@ -529,7 +538,8 @@
 			Catatan: Anak dengan skor SPPAHI lebih besar dari Cutoff Score dinyatakan sebagai berisiko tinggi mengalami Gangguan pemusatan Perhatian/ Hiperaktivitas (GPPH) atau Attention Deficit Hyperactivity Disorder (ADHD). Anak yang berisiko tinggi dianjurkan untuk segera dilakukan pemeriksaan lebih lanjut sesuai dengan prosedur pemeriksaan anak dengan GPPH. 
 		</i></small></p>
 	  </div>
+	  </form>
 	</div>
-	</form>
+	
   </body>
 </html>
