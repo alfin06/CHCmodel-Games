@@ -87,7 +87,10 @@
 
 	$result = $db->query("SELECT DATE_FORMAT(signup_date, '%d/%m/%Y at %H:%i') AS tgl_signup, name, grade, student_name, email, phone, question1, question2, question3, question4, 
 								 question5, question6, question7, question8, question9, question10, question11, question12, question13,
-								 question14, question15, question16, question17, question18, question19, question20
+								 question14, question15, question16, question17, question18, question19, question20,
+								 question21, question22, question23,
+								 question24, question25, question26, question27, question28, question29, question30,
+								 question31, question32, question33, question34, question35
 							FROM survey
 						   WHERE id = ".$_SESSION['survey_id']);
 									  
@@ -119,6 +122,21 @@
 		$question18 = $r['question18'];
 		$question19 = $r['question19'];
 		$question20 = $r['question20'];
+		$question21 = $r['question21'];
+		$question22 = $r['question22'];
+		$question23 = $r['question23'];
+		$question24 = $r['question24'];
+		$question25 = $r['question25'];
+		$question26 = $r['question26'];
+		$question27 = $r['question27'];
+		$question28 = $r['question28'];
+		$question29 = $r['question29'];
+		$question30 = $r['question30'];
+		$question31 = $r['question31'];
+		$question32 = $r['question32'];
+		$question33 = $r['question33'];
+		$question34 = $r['question34'];
+		$question35 = $r['question35'];
 	}
   ?>
 	<div class="w3-top">
@@ -188,7 +206,8 @@
 				<tbody>
 					<tr>
 						<td>1.</td>
-						<td>Sering sulit mempertahankan perhatian pada waktu melaksanakan tugas atau kegiatan bermain.</td>
+						<td>Kesulitan untuk mempertahankan perhatian pada saat melaksanakan tugas yang menuntut berpikir,
+							 seperti menalar, mengingat, ketelitian, keakuratan.</td>
 						<td><input type="radio" value="1" name="question1" <?php if($question1==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question1" <?php if($question1==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question1" <?php if($question1==3) echo 'checked'; ?>/></td>
@@ -196,7 +215,7 @@
 					</tr>
 					<tr>
 						<td>2.</td>
-						<td>Gagal menyelesaikan sesuatu yang telah dimulai.</td>
+						<td>Berlari-lari atau memanjat secara berlebihan pada situasi yang tidak sesuai untuk hal tersebut.</td>
 						<td><input type="radio" value="1" name="question2" <?php if($question2==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question2" <?php if($question2==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question2" <?php if($question2==3) echo 'checked'; ?>/></td>
@@ -204,7 +223,8 @@
 					</tr>
 					<tr>
 						<td>3.</td>
-						<td>Gagal memberi perhatian kepada hal-hal kecil atau ceroboh dalam menyelesaikan tugas-tugas sekolah, pekerjaan, atau kegiatan lainnya.</td>
+						<td>Tidak mampu menyelesaikan pekerjaan yang sudah dimulai, khususnya yang menuntut kecakapan
+							berpikir seperti menalar, mengingat, ketelitian dan keakuratan.</td>
 						<td><input type="radio" value="1" name="question3" <?php if($question3==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question3" <?php if($question3==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question3" <?php if($question3==3) echo 'checked'; ?>/></td>
@@ -212,7 +232,8 @@
 					</tr>
 					<tr>
 						<td>4.</td>
-						<td>Sering seolah-olah tidak memperhatikan orang pada waktu diajak berbicara.</td>
+						<td>Tidak mampu memberi perhatian kepada hal-hal kecil, khususnya dalam pengerjaan tugas atau
+							kegiatan lainnya yang menuntut ketelitian sehingga cenderung ceroboh.</td>
 						<td><input type="radio" value="1" name="question4" <?php if($question4==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question4" <?php if($question4==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question4" <?php if($question4==3) echo 'checked'; ?>/></td>
@@ -220,7 +241,7 @@
 					</tr>
 					<tr>
 						<td>5.</td>
-						<td>Sering lambat dalam menyelesaikan tugas di sekolah (mencatat, menyalin, mengerjakan soal).</td>
+						<td> Ketika berada dalam suatu percakapan cenderung tidak memperhatikan lawan bicara.</td>
 						<td><input type="radio" value="1" name="question5" <?php if($question5==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question5" <?php if($question5==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question5" <?php if($question5==3) echo 'checked'; ?>/></td>
@@ -228,7 +249,7 @@
 					</tr>
 					<tr>
 						<td>6.</td>
-						<td>Sering lupa tentang sesuatu yang telah dipelajari.</td>
+						<td>Membutuhkan waktu tambahan dalam pengerjaan tugas seperti mencatat, menyalin dan mengerjakan soal.</td>
 						<td><input type="radio" value="1" name="question6" <?php if($question6==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question6" <?php if($question6==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question6" <?php if($question6==3) echo 'checked'; ?>/></td>
@@ -236,7 +257,7 @@
 					</tr>
 					<tr>
 						<td>7.</td>
-						<td>Menghindari, enggan, atau mengalami kesulitan melaksanakan tugas-tugas yang membutuhkan ketekunan yang berkesinambungan (seperti menyelesaikan pekerjaan sekolah atau pekerjaan rumah).</td>
+						<td>Kemampuan sosialisasi buruk.</td>
 						<td><input type="radio" value="1" name="question7" <?php if($question7==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question7" <?php if($question7==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question7" <?php if($question7==3) echo 'checked'; ?>/></td>
@@ -244,7 +265,7 @@
 					</tr>
 					<tr>
 						<td>8.</td>
-						<td>Membutuhkan bimbingan penuh untuk dapat menyelesaikan tugas.</td>
+						<td>Mudah lupa hal-hal yang telah dipelajari. </td>
 						<td><input type="radio" value="1" name="question8" <?php if($question8==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question8" <?php if($question8==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question8" <?php if($question8==3) echo 'checked'; ?>/></td>
@@ -252,7 +273,7 @@
 					</tr>
 					<tr>
 						<td>9.</td>
-						<td>Sering perhatiannya mudah terpecah atau terbagi.</td>
+						<td>Menghindari, enggan, atau mengalami kesulitan melaksanakan tugas-tugas yang membutuhkan ketekunan seperti menyelesaikan pekerjaan sekolah atau pekerjaan rumah.</td>
 						<td><input type="radio" value="1" name="question9" <?php if($question9==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question9" <?php if($question9==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question9" <?php if($question9==3) echo 'checked'; ?>/></td>
@@ -260,7 +281,7 @@
 					</tr>
 					<tr>
 						<td>10.</td>
-						<td>Tidak mampu menyelesaikan tugas dengan baik tanpa bantuan orang lain.</td>
+						<td>Membutuhkan bimbingan penuh untuk dapat menyelesaikan tugas yang menuntut untuk berpikir dan ketekunan.</td>
 						<td><input type="radio" value="1" name="question10" <?php if($question10==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question10" <?php if($question10==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question10" <?php if($question10==3) echo 'checked'; ?>/></td>
@@ -268,7 +289,7 @@
 					</tr>
 					<tr>
 						<td>11.</td>
-						<td>Tidak dapat menyelesaikan tugas sesuai dengan waktunya.</td>
+						<td>Mengalami kesulitan untuk bermain atau melaksanakan kegiatan dengan tenang di waktu senggang.</td>
 						<td><input type="radio" value="1" name="question11" <?php if($question11==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question11" <?php if($question11==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question11" <?php if($question11==3) echo 'checked'; ?>/></td>
@@ -276,7 +297,7 @@
 					</tr>
 					<tr>
 						<td>12.</td>
-						<td>Tidak dapat mengikuti perintah secara berurutan.</td>
+						<td>Mudah terstimulus atau 'terpancing' sehingga bertindak impulsif (bertindak tanpa berpikir).</td>
 						<td><input type="radio" value="1" name="question12" <?php if($question12==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question12" <?php if($question12==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question12" <?php if($question12==3) echo 'checked'; ?>/></td>
@@ -284,7 +305,7 @@
 					</tr>
 					<tr>
 						<td>13.</td>
-						<td>Perhatiannya mudah beralih ketika diberi petunjuk untuk mengerjakan sesuatu.</td>
+						<td>Melontarkan jawaban secara terburu-buru terhadap pertanyaan yang belum selesai ditanyakan.</td>
 						<td><input type="radio" value="1" name="question13" <?php if($question13==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question13" <?php if($question13==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question13" <?php if($question13==3) echo 'checked'; ?>/></td>
@@ -292,7 +313,7 @@
 					</tr>
 					<tr>
 						<td>14.</td>
-						<td>Perhatiannya sering mudah dialihkan oleh rangsangan dari luar.</td>
+						<td>Meninggalkan tempat duduk di kelas atau situasi lain di mana diharapkan untuk tetap duduk diam.</td>
 						<td><input type="radio" value="1" name="question14" <?php if($question14==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question14" <?php if($question14==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question14" <?php if($question14==3) echo 'checked'; ?>/></td>
@@ -300,7 +321,7 @@
 					</tr>
 					<tr>
 						<td>15.</td>
-						<td>Sering ceroboh atau tidak teliti dalam menyelesaikan tugas.</td>
+						<td>Mengalami kesulitan untuk antri atau menunggu giliran dalam bermain atau situasi kelompok.</td>
 						<td><input type="radio" value="1" name="question15" <?php if($question15==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question15" <?php if($question15==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question15" <?php if($question15==3) echo 'checked'; ?>/></td>
@@ -308,7 +329,7 @@
 					</tr>
 					<tr>
 						<td>16.</td>
-						<td>Sering menghilangkan benda-benda yang diperlukan untuk menyelesaikan tugas atau kegiatan lain (seperti tugas sekolah: pensil, buku, peralatan atau alat bermain).</td>
+						<td>Perhatian mudah terpecah atau terbagi ke hal lain yang bukan merupakan fokus utama. </td>
 						<td><input type="radio" value="1" name="question16" <?php if($question16==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question16" <?php if($question16==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question16" <?php if($question16==3) echo 'checked'; ?>/></td>
@@ -316,7 +337,7 @@
 					</tr>
 					<tr>
 						<td>17.</td>
-						<td>Sering tidak mendengarkan pada waktu diajak berbicara secara langsung.</td>
+						<td>Mudah tersinggung dan merasa terganggu oleh orang lain.</td>
 						<td><input type="radio" value="1" name="question17" <?php if($question17==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question17" <?php if($question17==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question17" <?php if($question17==3) echo 'checked'; ?>/></td>
@@ -324,7 +345,7 @@
 					</tr>
 					<tr>
 						<td>18.</td>
-						<td>Sering gagal menyelesaikan tugas.</td>
+						<td>Kesulitan dalam menyelesaikan tugas, khususnya menuntut untuk berpikir, ketekunan dan ketelitian dengan baik, tanpa bantuan orang lain.</td>
 						<td><input type="radio" value="1" name="question18" <?php if($question18==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question18" <?php if($question18==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question18" <?php if($question18==3) echo 'checked'; ?>/></td>
@@ -332,7 +353,7 @@
 					</tr>
 					<tr>
 						<td>19.</td>
-						<td>Tidak mampu mengikuti petunjuk dan gagal menyelesaikan tugas sekolah (tidak disebabkan oleh tingkah laku/ sikap menentang atau kegagalan untuk memahami petunjuk).</td>
+						<td>Terkendala untuk menyelesaikan tugas tepat pada waktunya, lebih dikarenakan kesulitan mempertahankan perhatian sewaktu mengerjakannya. </td>
 						<td><input type="radio" value="1" name="question19" <?php if($question19==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question19" <?php if($question19==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question19" <?php if($question19==3) echo 'checked'; ?>/></td>
@@ -340,11 +361,132 @@
 					</tr>
 					<tr>
 						<td>20.</td>
-						<td>Sering "bengong" pada waktu melaksanakan tugas.</td>
+						<td>Kesulitan untuk mengikuti perintah maupun instruksi yang berjenjang.</td>
 						<td><input type="radio" value="1" name="question20" <?php if($question20==1) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="2" name="question20" <?php if($question20==2) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="3" name="question20" <?php if($question20==3) echo 'checked'; ?>/></td>
 						<td><input type="radio" value="4" name="question20" <?php if($question20==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>21.</td>
+						<td>Perhatiannya mudah beralih ketika diberi petunjuk untuk mengerjakan sesuatu.</td>
+						<td><input type="radio" value="1" name="question21" <?php if($question21==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question21" <?php if($question21==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question21" <?php if($question21==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question21" <?php if($question21==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>22.</td>
+						<td>Perhatian mudah teralihkan oleh hal-hal lain seperti suara atau objek lain yang bergerak.</td>
+						<td><input type="radio" value="1" name="question22" <?php if($question22==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question22" <?php if($question22==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question22" <?php if($question22==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question22" <?php if($question22==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>23.</td>
+						<td>Cenderung ceroboh dan tidak teliti sewaktu mengerjakan tugas, khususnya yang menuntut untuk
+							berpikir, mengingat, ketelitian dan merespon dengan cepat.</td>
+						<td><input type="radio" value="1" name="question23" <?php if($question23==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question23" <?php if($question23==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question23" <?php if($question23==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question23" <?php if($question23==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>24.</td>
+						<td> Tidak pernah bisa diam, tidak mengenal lelah.</td>
+						<td><input type="radio" value="1" name="question24" <?php if($question24==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question24" <?php if($question24==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question24" <?php if($question24==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question24" <?php if($question24==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>25.</td>
+						<td>Kehilangan benda-benda yang diperlukan untuk menyelesaikan tugas atau kegiatan lain antara lain: alat tulis, buku, mainan.</td>
+						<td><input type="radio" value="1" name="question25" <?php if($question25==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question25" <?php if($question25==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question25" <?php if($question25==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question25" <?php if($question25==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>26.</td>
+						<td>Kesulitan untuk menyimak percakapan dengan lawan bicara.</td>
+						<td><input type="radio" value="1" name="question26" <?php if($question26==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question26" <?php if($question26==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question26" <?php if($question26==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question26" <?php if($question26==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>27.</td>
+						<td>Tidak mampu menyelesaikan tugas yang diberikan, terutama tugas yang menuntut untuk berpikir, bernalar, mengingat dan merespon dengan segera seperti mencongak, dikte, membaca bergiliran.</td>
+						<td><input type="radio" value="1" name="question27" <?php if($question27==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question27" <?php if($question27==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question27" <?php if($question27==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question27" <?php if($question27==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>28.</td>
+						<td>Cenderung selalu dalam keadaan "siap gerak" atau aktivitasnya seperti digerakkan oleh mesin.</td>
+						<td><input type="radio" value="1" name="question28" <?php if($question28==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question28" <?php if($question28==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question28" <?php if($question28==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question28" <?php if($question28==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>29.</td>
+						<td>Sulit dikendalikan pada saat di tempat umum.</td>
+						<td><input type="radio" value="1" name="question29" <?php if($question29==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question29" <?php if($question29==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question29" <?php if($question29==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question29" <?php if($question29==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>30.</td>
+						<td> Menyela atau memaksakan diri terhadap orang lain (misalnya memotong, "menyelak" percakapan atau menganggu jalannya sebuah permainan).</td>
+						<td><input type="radio" value="1" name="question30" <?php if($question30==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question30" <?php if($question30==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question30" <?php if($question30==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question30" <?php if($question30==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>31.</td>
+						<td>Usil, mengganggu siswa lain di dalam kelas.</td>
+						<td><input type="radio" value="1" name="question31" <?php if($question31==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question31" <?php if($question31==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question31" <?php if($question31==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question31" <?php if($question31==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>32.</td>
+						<td>Terlalu aktif atau aktivitasnya berlebihan.</td>
+						<td><input type="radio" value="1" name="question32" <?php if($question32==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question32" <?php if($question32==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question32" <?php if($question32==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question32" <?php if($question32==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>33.</td>
+						<td>Kesulitan mengikuti instruksi sehingga gagal untuk menyelesaikan tugas sekolah, bukan karena tingkah laku atau sikap menentang atau tidak memahami instruksi.</td>
+						<td><input type="radio" value="1" name="question33" <?php if($question33==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question33" <?php if($question33==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question33" <?php if($question33==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question33" <?php if($question33==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>34.</td>
+						<td>Tidak bisa duduk diam (kaki dan tangannya tidak bisa diam, atau selalu bergerak).</td>
+						<td><input type="radio" value="1" name="question34" <?php if($question34==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question34" <?php if($question34==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question34" <?php if($question34==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question34" <?php if($question34==4) echo 'checked'; ?>/></td>
+					</tr>
+					<tr>
+						<td>35.</td>
+						<td>Melamun atau memikirkan hal lain pada saat mengerjakan tugas.</td>
+						<td><input type="radio" value="1" name="question35" <?php if($question35==1) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="2" name="question35" <?php if($question35==2) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="3" name="question35" <?php if($question35==3) echo 'checked'; ?>/></td>
+						<td><input type="radio" value="4" name="question35" <?php if($question35==4) echo 'checked'; ?>/></td>
 					</tr>
 				</tbody>
 			</table>
@@ -356,7 +498,9 @@
 		$result = $db->query("SELECT (question1+question2+question3+question4+question5+question6+
 									  question7+question8+question9+question10+question11+question12+
 									  question13+question14+question15+question16+question17+question18+
-									  question19+question20) AS skor
+									  question19+question20+question21+question22+question23+
+									  question24+question25+question26+question27+question28+question29+question30+
+								      question31+question32+question33+question34+question35) AS skor
 							FROM survey
 						   WHERE id = ".$_SESSION['survey_id']);
 									  
