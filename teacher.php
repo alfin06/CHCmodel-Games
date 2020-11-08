@@ -55,7 +55,7 @@
 	 	background-color: #ff5f5f;
 		  border-radius: 25px;
 		  border:10px solid #ffd065;
-		  font-size: 16px;
+		  font-size: 20px;
 	 }
 
 	 .title{
@@ -320,285 +320,285 @@
 						<td>1.</td>
 						<td>Kesulitan untuk mempertahankan perhatian pada saat melaksanakan tugas yang menuntut berpikir,
 							 seperti menalar, mengingat, ketelitian, keakuratan.</td>
-						<td><input type="radio" value="1" name="question1" required /></td>
+						<td><input type="radio" value="0" name="question1" required /></td>
+						<td><input type="radio" value="1" name="question1" /></td>
 						<td><input type="radio" value="2" name="question1" /></td>
 						<td><input type="radio" value="3" name="question1" /></td>
-						<td><input type="radio" value="4" name="question1" /></td>
 					</tr>
 					<tr>
 						<td>2.</td>
 						<td>Berlari-lari atau memanjat secara berlebihan pada situasi yang tidak sesuai untuk hal tersebut.</td>
-						<td><input type="radio" value="1" name="question2" required /></td>
+						<td><input type="radio" value="0" name="question2" required /></td>
+						<td><input type="radio" value="1" name="question2" /></td>
 						<td><input type="radio" value="2" name="question2" /></td>
 						<td><input type="radio" value="3" name="question2" /></td>
-						<td><input type="radio" value="4" name="question2" /></td>
 					</tr>
 					<tr>
 						<td>3.</td>
 						<td>Tidak mampu menyelesaikan pekerjaan yang sudah dimulai, khususnya yang menuntut kecakapan
 							berpikir seperti menalar, mengingat, ketelitian dan keakuratan.</td>
-						<td><input type="radio" value="1" name="question3" required /></td>
+						<td><input type="radio" value="0" name="question3" required /></td>
+						<td><input type="radio" value="1" name="question3" /></td>
 						<td><input type="radio" value="2" name="question3" /></td>
 						<td><input type="radio" value="3" name="question3" /></td>
-						<td><input type="radio" value="4" name="question3" /></td>
 					</tr>
 					<tr>
 						<td>4.</td>
 						<td>Tidak mampu memberi perhatian kepada hal-hal kecil, khususnya dalam pengerjaan tugas atau
 							kegiatan lainnya yang menuntut ketelitian sehingga cenderung ceroboh.</td>
-						<td><input type="radio" value="1" name="question4" required /></td>
+						<td><input type="radio" value="0" name="question4" required /></td>
+						<td><input type="radio" value="1" name="question4" /></td>
 						<td><input type="radio" value="2" name="question4" /></td>
 						<td><input type="radio" value="3" name="question4" /></td>
-						<td><input type="radio" value="4" name="question4" /></td>
 					</tr>
 					<tr>
 						<td>5.</td>
 						<td>Ketika berada dalam suatu percakapan cenderung tidak memperhatikan lawan bicara.</td>
-						<td><input type="radio" value="1" name="question5" required /></td>
+						<td><input type="radio" value="0" name="question5" required /></td>
+						<td><input type="radio" value="1" name="question5" /></td>
 						<td><input type="radio" value="2" name="question5" /></td>
 						<td><input type="radio" value="3" name="question5" /></td>
-						<td><input type="radio" value="4" name="question5" /></td>
 					</tr>
 					<tr>
 						<td>6.</td>
 						<td>Membutuhkan waktu tambahan dalam pengerjaan tugas seperti mencatat, menyalin dan mengerjakan soal.</td>
-						<td><input type="radio" value="1" name="question6" required /></td>
+						<td><input type="radio" value="0" name="question6" required /></td>
+						<td><input type="radio" value="1" name="question6" /></td>
 						<td><input type="radio" value="2" name="question6" /></td>
 						<td><input type="radio" value="3" name="question6" /></td>
-						<td><input type="radio" value="4" name="question6" /></td>
 					</tr>
 					<tr>
 						<td>7.</td>
 						<td>Kemampuan sosialisasi buruk.</td>
-						<td><input type="radio" value="1" name="question7" required /></td>
+						<td><input type="radio" value="0" name="question7" required /></td>
+						<td><input type="radio" value="1" name="question7" /></td>
 						<td><input type="radio" value="2" name="question7" /></td>
 						<td><input type="radio" value="3" name="question7" /></td>
-						<td><input type="radio" value="4" name="question7" /></td>
 					</tr>
 					<tr>
 						<td>8.</td>
 						<td>Mudah lupa hal-hal yang telah dipelajari. </td>
-						<td><input type="radio" value="1" name="question8" required /></td>
+						<td><input type="radio" value="0" name="question8" required /></td>
+						<td><input type="radio" value="1" name="question8" /></td>
 						<td><input type="radio" value="2" name="question8" /></td>
 						<td><input type="radio" value="3" name="question8" /></td>
-						<td><input type="radio" value="4" name="question8" /></td>
 					</tr>
 					<tr>
 						<td>9.</td>
 						<td>Menghindari, enggan, atau mengalami kesulitan melaksanakan tugas-tugas yang membutuhkan ketekunan seperti menyelesaikan pekerjaan sekolah atau pekerjaan rumah.</td>
-						<td><input type="radio" value="1" name="question9" required /></td>
+						<td><input type="radio" value="0" name="question9" required /></td>
+						<td><input type="radio" value="1" name="question9" /></td>
 						<td><input type="radio" value="2" name="question9" /></td>
 						<td><input type="radio" value="3" name="question9" /></td>
-						<td><input type="radio" value="4" name="question9" /></td>
 					</tr>
 					<tr>
 						<td>10.</td>
 						<td>Membutuhkan bimbingan penuh untuk dapat menyelesaikan tugas yang menuntut untuk berpikir dan ketekunan.</td>
-						<td><input type="radio" value="1" name="question10" required /></td>
+						<td><input type="radio" value="0" name="question10" required /></td>
+						<td><input type="radio" value="1" name="question10" /></td>
 						<td><input type="radio" value="2" name="question10" /></td>
 						<td><input type="radio" value="3" name="question10" /></td>
-						<td><input type="radio" value="4" name="question10" /></td>
 					</tr>
 					<tr>
 						<td>11.</td>
 						<td>Mengalami kesulitan untuk bermain atau melaksanakan kegiatan dengan tenang di waktu senggang.</td>
-						<td><input type="radio" value="1" name="question11" required /></td>
+						<td><input type="radio" value="0" name="question11" required /></td>
+						<td><input type="radio" value="1" name="question11" /></td>
 						<td><input type="radio" value="2" name="question11" /></td>
 						<td><input type="radio" value="3" name="question11" /></td>
-						<td><input type="radio" value="4" name="question11" /></td>
 					</tr>
 					<tr>
 						<td>12.</td>
 						<td>Mudah terstimulus atau 'terpancing' sehingga bertindak impulsif (bertindak tanpa berpikir).</td>
-						<td><input type="radio" value="1" name="question12" required /></td>
+						<td><input type="radio" value="0" name="question12" required /></td>
+						<td><input type="radio" value="1" name="question12" /></td>
 						<td><input type="radio" value="2" name="question12" /></td>
 						<td><input type="radio" value="3" name="question12" /></td>
-						<td><input type="radio" value="4" name="question12" /></td>
 					</tr>
 					<tr>
 						<td>13.</td>
 						<td>Melontarkan jawaban secara terburu-buru terhadap pertanyaan yang belum selesai ditanyakan.</td>
-						<td><input type="radio" value="1" name="question13" required /></td>
+						<td><input type="radio" value="0" name="question13" required /></td>
+						<td><input type="radio" value="1" name="question13" /></td>
 						<td><input type="radio" value="2" name="question13" /></td>
 						<td><input type="radio" value="3" name="question13" /></td>
-						<td><input type="radio" value="4" name="question13" /></td>
 					</tr>
 					<tr>
 						<td>14.</td>
 						<td>Meninggalkan tempat duduk di kelas atau situasi lain di mana diharapkan untuk tetap duduk diam.</td>
-						<td><input type="radio" value="1" name="question14" required /></td>
+						<td><input type="radio" value="0" name="question14" required /></td>
+						<td><input type="radio" value="1" name="question14" /></td>
 						<td><input type="radio" value="2" name="question14" /></td>
 						<td><input type="radio" value="3" name="question14" /></td>
-						<td><input type="radio" value="4" name="question14" /></td>
 					</tr>
 					<tr>
 						<td>15.</td>
-						<td>Mengalami kesulitan untuk antri atau menunggu giliran dalam bermain atau situasi kelompok.</td>
-						<td><input type="radio" value="1" name="question15" required /></td>
+						<td>Mengalami kesulitan untuk antre atau menunggu giliran dalam bermain atau situasi kelompok.</td>
+						<td><input type="radio" value="0" name="question15" required /></td>
+						<td><input type="radio" value="1" name="question15" /></td>
 						<td><input type="radio" value="2" name="question15" /></td>
 						<td><input type="radio" value="3" name="question15" /></td>
-						<td><input type="radio" value="4" name="question15" /></td>
 					</tr>
 					<tr>
 						<td>16.</td>
 						<td>Perhatian mudah terpecah atau terbagi ke hal lain yang bukan merupakan fokus utama. </td>
-						<td><input type="radio" value="1" name="question16" required /></td>
+						<td><input type="radio" value="0" name="question16" required /></td>
+						<td><input type="radio" value="1" name="question16" /></td>
 						<td><input type="radio" value="2" name="question16" /></td>
 						<td><input type="radio" value="3" name="question16" /></td>
-						<td><input type="radio" value="4" name="question16" /></td>
 					</tr>
 					<tr>
 						<td>17.</td>
 						<td>Mudah tersinggung dan merasa terganggu oleh orang lain.</td>
-						<td><input type="radio" value="1" name="question17" required /></td>
+						<td><input type="radio" value="0" name="question17" required /></td>
+						<td><input type="radio" value="1" name="question17" /></td>
 						<td><input type="radio" value="2" name="question17" /></td>
 						<td><input type="radio" value="3" name="question17" /></td>
-						<td><input type="radio" value="4" name="question17" /></td>
 					</tr>
 					<tr>
 						<td>18.</td>
 						<td>Kesulitan dalam menyelesaikan tugas, khususnya menuntut untuk berpikir, ketekunan dan ketelitian dengan baik, tanpa bantuan orang lain.</td>
-						<td><input type="radio" value="1" name="question18" required /></td>
+						<td><input type="radio" value="0" name="question18" required /></td>
+						<td><input type="radio" value="1" name="question18" /></td>
 						<td><input type="radio" value="2" name="question18" /></td>
 						<td><input type="radio" value="3" name="question18" /></td>
-						<td><input type="radio" value="4" name="question18" /></td>
 					</tr>
 					<tr>
 						<td>19.</td>
 						<td>Terkendala untuk menyelesaikan tugas tepat pada waktunya, lebih dikarenakan kesulitan mempertahankan perhatian sewaktu mengerjakannya. </td>
-						<td><input type="radio" value="1" name="question19" required /></td>
+						<td><input type="radio" value="0" name="question19" required /></td>
+						<td><input type="radio" value="1" name="question19" /></td>
 						<td><input type="radio" value="2" name="question19" /></td>
 						<td><input type="radio" value="3" name="question19" /></td>
-						<td><input type="radio" value="4" name="question19" /></td>
 					</tr>
 					<tr>
 						<td>20.</td>
 						<td>Kesulitan untuk mengikuti perintah maupun instruksi yang berjenjang.</td>
-						<td><input type="radio" value="1" name="question20" required /></td>
+						<td><input type="radio" value="0" name="question20" required /></td>
+						<td><input type="radio" value="1" name="question20" /></td>
 						<td><input type="radio" value="2" name="question20" /></td>
 						<td><input type="radio" value="3" name="question20" /></td>
-						<td><input type="radio" value="4" name="question20" /></td>
 					</tr>
 					<tr>
 						<td>21.</td>
 						<td>Perhatiannya mudah beralih ketika diberi petunjuk untuk mengerjakan sesuatu.</td>
-						<td><input type="radio" value="1" name="question21" required /></td>
+						<td><input type="radio" value="0" name="question21" required /></td>
+						<td><input type="radio" value="1" name="question21" /></td>
 						<td><input type="radio" value="2" name="question21" /></td>
 						<td><input type="radio" value="3" name="question21" /></td>
-						<td><input type="radio" value="4" name="question21" /></td>
 					</tr>
 					<tr>
 						<td>22.</td>
 						<td>Perhatian mudah teralihkan oleh hal-hal lain seperti suara atau objek lain yang bergerak.</td>
-						<td><input type="radio" value="1" name="question22" required /></td>
+						<td><input type="radio" value="0" name="question22" required /></td>
+						<td><input type="radio" value="1" name="question22" /></td>
 						<td><input type="radio" value="2" name="question22" /></td>
 						<td><input type="radio" value="3" name="question22" /></td>
-						<td><input type="radio" value="4" name="question22" /></td>
 					</tr>
 					<tr>
 						<td>23.</td>
 						<td>Cenderung ceroboh dan tidak teliti sewaktu mengerjakan tugas, khususnya yang menuntut untuk
 							berpikir, mengingat, ketelitian dan merespon dengan cepat.</td>
-						<td><input type="radio" value="1" name="question23" required /></td>
+						<td><input type="radio" value="0" name="question23" required /></td>
+						<td><input type="radio" value="1" name="question23" /></td>
 						<td><input type="radio" value="2" name="question23" /></td>
 						<td><input type="radio" value="3" name="question23" /></td>
-						<td><input type="radio" value="4" name="question23" /></td>
 					</tr>
 					<tr>
 						<td>24.</td>
 						<td>Tidak pernah bisa diam, tidak mengenal lelah.</td>
-						<td><input type="radio" value="1" name="question24" required /></td>
+						<td><input type="radio" value="0" name="question24" required /></td>
+						<td><input type="radio" value="1" name="question24" /></td>
 						<td><input type="radio" value="2" name="question24" /></td>
 						<td><input type="radio" value="3" name="question24" /></td>
-						<td><input type="radio" value="4" name="question24" /></td>
 					</tr>
 					<tr>
 						<td>25.</td>
 						<td>Kehilangan benda-benda yang diperlukan untuk menyelesaikan tugas atau kegiatan lain antara lain: alat tulis, buku, mainan.</td>
-						<td><input type="radio" value="1" name="question25" required /></td>
+						<td><input type="radio" value="0" name="question25" required /></td>
+						<td><input type="radio" value="1" name="question25" /></td>
 						<td><input type="radio" value="2" name="question25" /></td>
 						<td><input type="radio" value="3" name="question25" /></td>
-						<td><input type="radio" value="4" name="question25" /></td>
 					</tr>
 					<tr>
 						<td>26.</td>
 						<td>Kesulitan untuk menyimak percakapan dengan lawan bicara.</td>
-						<td><input type="radio" value="1" name="question26" required /></td>
+						<td><input type="radio" value="0" name="question26" required /></td>
+						<td><input type="radio" value="1" name="question26" /></td>
 						<td><input type="radio" value="2" name="question26" /></td>
 						<td><input type="radio" value="3" name="question26" /></td>
-						<td><input type="radio" value="4" name="question26" /></td>
 					</tr>
 					<tr>
 						<td>27.</td>
 						<td>Tidak mampu menyelesaikan tugas yang diberikan, terutama tugas yang menuntut untuk berpikir, bernalar, mengingat dan merespon dengan segera seperti mencongak, dikte, membaca bergiliran.</td>
-						<td><input type="radio" value="1" name="question27" required /></td>
+						<td><input type="radio" value="0" name="question27" required /></td>
+						<td><input type="radio" value="1" name="question27" /></td>
 						<td><input type="radio" value="2" name="question27" /></td>
 						<td><input type="radio" value="3" name="question27" /></td>
-						<td><input type="radio" value="4" name="question27" /></td>
 					</tr>
 					<tr>
 						<td>28.</td>
 						<td>Cenderung selalu dalam keadaan "siap gerak" atau aktivitasnya seperti digerakkan oleh mesin.</td>
-						<td><input type="radio" value="1" name="question28" required /></td>
+						<td><input type="radio" value="0" name="question28" required /></td>
+						<td><input type="radio" value="1" name="question28" /></td>
 						<td><input type="radio" value="2" name="question28" /></td>
 						<td><input type="radio" value="3" name="question28" /></td>
-						<td><input type="radio" value="4" name="question28" /></td>
 					</tr>
 					<tr>
 						<td>29.</td>
 						<td>Sulit dikendalikan pada saat di tempat umum.</td>
-						<td><input type="radio" value="1" name="question29" required /></td>
+						<td><input type="radio" value="0" name="question29" required /></td>
+						<td><input type="radio" value="1" name="question29" /></td>
 						<td><input type="radio" value="2" name="question29" /></td>
 						<td><input type="radio" value="3" name="question29" /></td>
-						<td><input type="radio" value="4" name="question29" /></td>
 					</tr>
 					<tr>
 						<td>30.</td>
 						<td>Menyela atau memaksakan diri terhadap orang lain (misalnya memotong, "menyelak" percakapan atau menganggu jalannya sebuah permainan).</td>
-						<td><input type="radio" value="1" name="question30" required /></td>
+						<td><input type="radio" value="0" name="question30" required /></td>
+						<td><input type="radio" value="1" name="question30" /></td>
 						<td><input type="radio" value="2" name="question30" /></td>
 						<td><input type="radio" value="3" name="question30" /></td>
-						<td><input type="radio" value="4" name="question30" /></td>
 					</tr>
 					<tr>
 						<td>31.</td>
 						<td>Usil, mengganggu siswa lain di dalam kelas.</td>
-						<td><input type="radio" value="1" name="question31" required /></td>
+						<td><input type="radio" value="0" name="question31" required /></td>
+						<td><input type="radio" value="1" name="question31" /></td>
 						<td><input type="radio" value="2" name="question31" /></td>
 						<td><input type="radio" value="3" name="question31" /></td>
-						<td><input type="radio" value="4" name="question31" /></td>
 					</tr>
 					<tr>
 						<td>32.</td>
 						<td>Terlalu aktif atau aktivitasnya berlebihan.</td>
-						<td><input type="radio" value="1" name="question32" required /></td>
+						<td><input type="radio" value="0" name="question32" required /></td>
+						<td><input type="radio" value="1" name="question32" /></td>
 						<td><input type="radio" value="2" name="question32" /></td>
 						<td><input type="radio" value="3" name="question32" /></td>
-						<td><input type="radio" value="4" name="question32" /></td>
 					</tr>
 					<tr>
 						<td>33.</td>
 						<td>Kesulitan mengikuti instruksi sehingga gagal untuk menyelesaikan tugas sekolah, bukan karena tingkah laku atau sikap menentang atau tidak memahami instruksi.</td>
-						<td><input type="radio" value="1" name="question33" required /></td>
+						<td><input type="radio" value="0" name="question33" required /></td>
+						<td><input type="radio" value="1" name="question33" /></td>
 						<td><input type="radio" value="2" name="question33" /></td>
 						<td><input type="radio" value="3" name="question33" /></td>
-						<td><input type="radio" value="4" name="question33" /></td>
 					</tr>
 					<tr>
 						<td>34.</td>
 						<td>Tidak bisa duduk diam (kaki dan tangannya tidak bisa diam, atau selalu bergerak).</td>
-						<td><input type="radio" value="1" name="question34" required /></td>
+						<td><input type="radio" value="0" name="question34" required /></td>
+						<td><input type="radio" value="1" name="question34" /></td>
 						<td><input type="radio" value="2" name="question34" /></td>
 						<td><input type="radio" value="3" name="question34" /></td>
-						<td><input type="radio" value="4" name="question34" /></td>
 					</tr>
 					<tr>
 						<td>35.</td>
 						<td>Melamun atau memikirkan hal lain pada saat mengerjakan tugas.</td>
-						<td><input type="radio" value="1" name="question35" required /></td>
+						<td><input type="radio" value="0" name="question35" required /></td>
+						<td><input type="radio" value="1" name="question35" /></td>
 						<td><input type="radio" value="2" name="question35" /></td>
 						<td><input type="radio" value="3" name="question35" /></td>
-						<td><input type="radio" value="4" name="question35" /></td>
 					</tr>
 				</tbody>
 			</table>
