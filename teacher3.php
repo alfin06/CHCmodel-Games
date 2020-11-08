@@ -5,8 +5,8 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-<title>Survey</title>
+  <head>
+    <title>Survey</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -17,9 +17,9 @@
 	<link rel="icon" type="image/x-icon" href="images/logo4.jpg" />
 
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	
-	<style>
-	html, body {
+
+    <style>
+      html, body {
       min-height: 100%;
       background-image: url("images/bg1.png");
       /* Full height */
@@ -29,8 +29,8 @@
       background-repeat: repeat;
       background-size: cover;
     }
-
-	body, div, form, input, select, p { 
+	
+    body, div, form, input, select, p { 
       padding: 0;
       margin: 0;
       outline: none;
@@ -48,7 +48,7 @@
 	  text-decoration: underline;
 	}
 	
-	button, #insert {
+	button {
 		cursor: pointer; 
 	 }
 	 .dv_tableresult{
@@ -73,88 +73,10 @@
 		width: 90%;
 	 }
 }
-
-	* {
-	box-sizing: border-box;
-	}
-
-	body {
-	background-color: #f1f1f1;
-	}
-
-	#screen1 {
-	margin: 100px auto;
-	font-family: Raleway;
-	padding: 40px;
-	width: 70%;
-	min-width: 300px;
-	}
-
-	h1 {
-	text-align: center;  
-	}
-
-	input {
-	padding: 10px;
-	width: 100%;
-	font-size: 17px;
-	font-family: Raleway;
-	border: 1px solid #aaaaaa;
-	}
-
-	/* Mark input boxes that gets an error on validation: */
-	input.invalid {
-	background-color: #ffdddd;
-	}
-
-	/* Hide all steps by default: */
-	.tab {
-	display: none;
-	}
-
-	button, #insert {
-	background-color: #4CAF50;
-	color: #ffffff;
-	border: none;
-	padding: 10px 20px;
-	font-size: 17px;
-	font-family: Raleway;
-	cursor: pointer;
-	}
-
-	button:hover {
-	opacity: 0.8;
-	}
-
-	#prevBtn {
-	background-color: #bbbbbb;
-	}
-
-	/* Make circles that indicate the steps of the form: */
-	.step {
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #bbbbbb;
-	border: none;  
-	border-radius: 50%;
-	display: inline-block;
-	opacity: 0.5;
-	}
-
-	.step.active {
-	opacity: 1;
-	}
-
-	/* Mark the steps that are finished and valid: */
-	.step.finish {
-	background-color: #4CAF50;
-	}
-	</style>
-</head>
-
-<body>
-<?php
+    </style>
+  </head>
+  <body>
+  <?php
 	date_default_timezone_set('Asia/Bangkok');
 	$date = date("Y-m-d G:i:s");
 
@@ -185,28 +107,29 @@
 		}
 	}
   ?>
-
 	<div class="w3-top">
 		<div class="w3-bar w3-white w3-wide w3-padding w3-card">
 			<a href="#" class="w3-bar-item"><img src="images/logo3.jpg" style="width:150px; height:50px;"></a>
 		</div>
 	</div>
-
-<form method="POST" id="screen1" style="display: block;">
-	
-  <!-- One "tab" for each step in the form: -->
-  <div class="tab">
-  		<h3>Skala Penilaian Guru</h3>
-		<br/>
-  		<p>
+  
+    <!-- Page content -->
+	<form method="POST" id="screen1" style="display: block;">
+	<div class="w3-content w3-padding" style="max-width:1564px; margin-top: 20px;">
+	  <br/><br/>
+	  <div class="w3-container w3-padding-32 w3-margin-32" id="projects">
+		<h3>Skala Penilaian Guru</h3>
+		<br />
+		<p>
 			Salam sejahtera bagi kita semua. Perkenalkan, saya Antania Djuwita, mahasiswi Magister Psikologi Profesi Bidang Peminatan Psikologi Pendidikan dari Universitas Tarumanagara (Untar),Jakarta. Saat ini saya sedang menyusun penelitian dengan tema pengembangan Skala Penilaian Perilaku Atentif Siswa. Partisipasi bapak/ ibu guru akan sangat bermanfaat untuk pengembangan dan kemajuan bidang psikologi pendidikan.
 		</p><br />
 		<p>Hormat saya,</p>
 		<p>Antania Djuwita</p>
 		<p>email: antania.717191027@stu.untar.ac.id</p>
 		<p>WA: +6281807149296</p>
-		<br />
+	  </div>
 
+	  <div class="w3-container w3-padding-32 w3-margin-32" id="projects">
 		<h3>Penjelasan Penelitian</h3>
 		<br />
 		<p>
@@ -219,72 +142,73 @@
 		<p>Apabila bapak/ibu berkenan berpartisipasi dalam penelitian ini, saya meminta kesedian 
 		   bapak/ibu untuk melengkapi data diri dan memberikan persetujuan pada pilihan "bersedia".
 		</p>
-  </div>
+	  </div>
+	  
+	  <div class="w3-container w3-padding-64 w3-margin-16" id="projects">
+		<h3>Data Diri</h3>
+		<br />
+		<form>
+		  <div class="form-group">
+			<label for="name">Nama lengkap guru</label>
+			<input type="text" class="form-control" id="name" name="name" placeholder="" required>
+		  </div>
+		  <div class="form-group">
+			<label for="exampleInputPassword1">Tahun lalu mengajar kelas</label>
+			<select class="form-control" id="grade" name="grade" required>
+				<option value="" disabled selected>Pilih kelas</option>
+				<option value="SD Kelas 3">SD Kelas 3</option>
+				<option value="SD Kelas 4">SD Kelas 4</option>
+				<option value="SD Kelas 5">SD Kelas 5</option>
+				<option value="SD Kelas 6">SD Kelas 6</option>
+			</select>
+		  </div>
+		  <div class="form-group">
+			<label for="name">Nama lengkap siswa yang diberi penilaian</label>
+			<select class="form-control" id="student" name="student" required>
+				<option value="" disabled selected>Pilih siswa</option>
+				<?php
+					$qry ="SELECT DISTINCT name
+							 FROM account
+							WHERE consent = 'Y'
+							ORDER BY name ASC";
+							 
+					$result = $db->query($qry);// or die(mysql_error());
+					
+					while($r = mysqli_fetch_array($result))
+					{
+						echo "<option value='".$r['name']."'>";
+						echo $r['name'];
+						echo "</option>";
+					}
+				?>
+			</select>
+		  </div>
+		  <div class="form-group">
+			<label for="name">Email</label>
+			<input type="email" class="form-control" id="email" name="email" placeholder="">
+		  </div>
+		  <div class="form-group">
+			<label for="name">No. handphone</label>
+			<input type="text" class="form-control" id="phone" name="phone" placeholder="">
+		  </div>
+		  <div class="form-group">
+			<div style="float:left;">
+		    	<input type="checkbox" id="bersedia" name="bersedia" style="float:left; width:25px; height:25px;" required>
+			</div>
+			<div>
+				<p>
+				Saya sudah memahami penjelasan penelitian. Saya, dengan penuh kesadaran dan tanpa paksaan 
+				dari pihak manapun, bersedia untuk berpartisipasi dalam penelitian dengan tema Pengembangan 
+				Skala Penilaian Perilaku Atentif Siswa yang dilaksanakan oleh Antania Djuwita dari Untar. 
+				Apabila di kemudian hari saya mengundurkan diri dari penelitian ini, maka saya tidak akan 
+				dituntut apapun.
+				</p>
+			</div>
+		  </div>
+		</form>
+	  </div>
 
-  <div class="tab">
-  	<h3>Data Diri & Persetujuan Setelah Penjelasan Penelitian</h3>
-	<br />
-		<div class="form-group">
-		<label for="name">Nama lengkap guru</label>
-		<input type="text" class="form-control" id="name" name="name" placeholder="" required>
-		</div>
-		<div class="form-group">
-		<label for="exampleInputPassword1">Tahun lalu mengajar kelas</label>
-		<select class="form-control" id="grade" name="grade" required>
-			<option value="" disabled selected>Pilih kelas</option>
-			<option value="SD Kelas 3">SD Kelas 3</option>
-			<option value="SD Kelas 4">SD Kelas 4</option>
-			<option value="SD Kelas 5">SD Kelas 5</option>
-			<option value="SD Kelas 6">SD Kelas 6</option>
-		</select>
-		</div>
-		<div class="form-group">
-		<label for="name">Nama lengkap siswa yang diberi penilaian</label>
-		<select class="form-control" id="student" name="student" required>
-			<option value="" disabled selected>Pilih siswa</option>
-			<?php
-				$qry ="SELECT DISTINCT name
-							FROM account
-						WHERE consent = 'Y'
-						ORDER BY name ASC";
-							
-				$result = $db->query($qry);// or die(mysql_error());
-				
-				while($r = mysqli_fetch_array($result))
-				{
-					echo "<option value='".$r['name']."'>";
-					echo $r['name'];
-					echo "</option>";
-				}
-			?>
-		</select>
-		</div>
-		<div class="form-group">
-		<label for="name">Email</label>
-		<input type="text" class="form-control" id="email" name="email" placeholder="">
-		</div>
-		<div class="form-group">
-		<label for="name">No. handphone</label>
-		<input type="text" class="form-control" id="phone" name="phone" placeholder="">
-		</div>
-		<div class="form-group">
-		<div style="float:left;">
-			<input type="checkbox" id="bersedia" name="bersedia" value="true" style="float:left; width:25px; height:25px;" required>
-		</div>
-		<div>
-			<p>
-			Saya sudah memahami penjelasan penelitian. Saya, dengan penuh kesadaran dan tanpa paksaan 
-			dari pihak manapun, bersedia untuk berpartisipasi dalam penelitian dengan tema Pengembangan 
-			Skala Penilaian Perilaku Atentif Siswa yang dilaksanakan oleh Antania Djuwita dari Untar. 
-			Apabila di kemudian hari saya mengundurkan diri dari penelitian ini, maka saya tidak akan 
-			dituntut apapun.
-			</p>
-		</div>
-		</div>
-  </div>
-
-  <div class="tab">
-  <div class="w3-row-padding">
+	  <div class="w3-row-padding">
 		<div class="w3-col m12 w3-margin-bottom">
 		  <div class="w3-display-container" style="overflow-x:auto;">
 		    <p>
@@ -605,32 +529,36 @@
 		  </div>
 		</div>
 	  </div>
-  </div>
+	  <div class="w3-row-padding">
+		<div class="w3-col m12 w3-margin-bottom">
+			<button type="submit" id="insert" name="insert" class="btn btn-success">Submit</button>
+		</div>
+	  </div>
 
-  <br/>
-  <div style="overflow:auto;">
-    <div style="text-align:center;">
-      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-	  <button type="submit" id="insert" name="insert" style="display:none;margin-left:50%;">Submit</button>
-    </div>
-  </div>
-
-  <!-- Circles which indicates the steps of the form: -->
-  <div style="text-align:center;margin-top:40px;">
-    <span class="step"></span>
-    <span class="step"></span>
-  </div>
-</form>
-
-<form id="screen2" style="display: none;">
+	<!-- End page content -->
+	
+	  <!--<div class="w3-row-padding w3-padding-32">
+		<p><small><i>
+			Cutoff Score:<br/>
+			Pemeriksa Orang tua	> 30<br/>
+			Pemeriksa Guru	    > 29<br/>
+			Pemeriksa Dokter	> 22
+		</p></small></i>
+		<p><small><i>
+			Catatan: Anak dengan skor SPPAHI lebih besar dari Cutoff Score dinyatakan sebagai berisiko tinggi mengalami Gangguan pemusatan Perhatian/ Hiperaktivitas (GPPH) atau Attention Deficit Hyperactivity Disorder (ADHD). Anak yang berisiko tinggi dianjurkan untuk segera dilakukan pemeriksaan lebih lanjut sesuai dengan prosedur pemeriksaan anak dengan GPPH. 
+		</i></small></p>
+	  </div>-->
+	</div>
+	</form>
+	
+	<form id="screen2" style="display: none;">
 	<div class="w3-content w3-padding" style="max-width:1564px; margin-top: 150px;">
 		<h2>Terima kasih atas partisipasinya. Saya sangat mengapresiasi tanggapan bapak/ibu.
 			Kemajuan pendidikan berawal dari semangat guru-guru penggerak.</h2>
 	</div>
-</form>
-
-<?php
+	</form>
+	
+	<?php
 	if (isset($_SESSION['done']))
 	{
 		if ($_SESSION['done'] == "Y")
@@ -643,97 +571,6 @@
 	<?php
 		}
 	}
-?>
-
-<script>
-var currentTab = 0; // Current tab is set to be the first tab (0)
-showTab(currentTab); // Display the current tab
-
-function showTab(n) {
-  // This function will display the specified tab of the form...
-  var x = document.getElementsByClassName("tab");
-  x[n].style.display = "block";
-  //... and fix the Previous/Next buttons:
-  if (n == 0) {
-    document.getElementById("prevBtn").style.display = "none";
-  } else {
-    document.getElementById("prevBtn").style.display = "inline";
-  }
-  if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").style.display = "none";
-	document.getElementById("prevBtn").style.display = "none";
-	document.getElementById("insert").style.display = "block";
-  } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
-  }
-  //... and run a function that will display the correct step indicator:
-  fixStepIndicator(n)
-}
-
-function nextPrev(n) {
-  // This function will figure out which tab to display
-  var x = document.getElementsByClassName("tab");
-  // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateForm()) return false;
-  // Hide the current tab:
-  x[currentTab].style.display = "none";
-  // Increase or decrease the current tab by 1:
-  currentTab = currentTab + n;
-  // if you have reached the end of the form...
-  if (currentTab == (x.length - 1)) {
-    // ... the form gets submitted:
-    //document.getElementById("regForm").submit();
-	document.getElementById("nextBtn").style.display = "none";
-	document.getElementById("prevBtn").style.display = "none";
-	document.getElementById("insert").style.display = "block";
-  }
-  // Otherwise, display the correct tab:
-  showTab(currentTab);
-}
-
-function validateForm() {
-  // This function deals with validation of the form fields
-   var x, y, i, valid = true;
-   x = document.getElementsByClassName("tab");
-   y = x[currentTab].getElementsByTagName("input");
-   // A loop that checks every input field in the current tab:
-   for (i = 0; i < y.length; i++) {
-     // If a field is empty...
-	 if (y[i].getAttribute("type") == "checkbox")
-	 {
-		if (!y[i].checked)
-		{
-			y[i].className += " invalid";
-			valid = false;
-		}
-	 }
-     
-	 if (y[i].value == "") 
-	 {
-       // add an "invalid" class to the field:
-       y[i].className += " invalid";
-       // and set the current valid status to false
-       valid = false;
-     }
-   }
-   // If the valid status is true, mark the step as finished and valid:
-   if (valid) {
-     document.getElementsByClassName("step")[currentTab].className += " finish";
-   }
-   return valid; // return the valid status
-//	return true;
-}
-
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class on the current step:
-  x[n].className += " active";
-}
-</script>
-
-</body>
+	?>
+  </body>
 </html>
