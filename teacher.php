@@ -184,6 +184,11 @@
 			echo "</script>";
 		}
 	}
+
+	if (isset($_POST['back']))
+	{
+		$_SESSION['done'] = null;
+	}
   ?>
 
 	<div class="w3-top">
@@ -623,10 +628,11 @@
   </div>
 </form>
 
-<form id="screen2" style="display: none;">
+<form method="post" id="screen2" style="display: none;">
 	<div class="w3-content w3-padding" style="max-width:1564px; margin-top: 150px;">
 		<h2>Terima kasih atas partisipasinya. Saya sangat mengapresiasi tanggapan bapak/ibu.
-			Kemajuan pendidikan berawal dari semangat guru-guru penggerak.</h2>
+			Kemajuan pendidikan berawal dari semangat guru-guru penggerak.</h2><br />
+		<button type="submit" name="back" id="back" class="btn" style="margin-left:50%; font-size:16pt;">Kembali ke survey</button>
 	</div>
 </form>
 
