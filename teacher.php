@@ -314,10 +314,10 @@
 					<tr class="w3-pale-yellow">
 						<th>No.</th>
 						<th>Perilaku Anak</th>
-						<th>Sangat jarang</th>
-						<th>Kadang-kadang</th>
-						<th>Sering</th>
-						<th>Sangat Sering</th>
+						<th>Sangat jarang(1)</th>
+						<th>Kadang-kadang(2)</th>
+						<th>Sering(3)</th>
+						<th>Sangat Sering(4)</th>
 					</tr>
 				</thead>
 				<tbody>

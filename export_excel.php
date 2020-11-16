@@ -90,6 +90,20 @@
 		$question34 = $r['question34'];
 		$question35 = $r['question35'];
 	}
+
+	$result2 = $db->query("SELECT (question1+question2+question3+question4+question5+question6+
+									  question7+question8+question9+question10+question11+question12+
+									  question13+question14+question15+question16+question17+question18+
+									  question19+question20+question21+question22+question23+
+									  question24+question25+question26+question27+question28+question29+question30+
+								      question31+question32+question33+question34+question35) AS skor
+							FROM survey
+						   WHERE id = ".$_SESSION['survey_id']);
+									  
+	while($r = mysqli_fetch_array($result2))
+	{
+		$score = $r['skor'];
+	}
 	?>
 
 	<center>
@@ -130,10 +144,10 @@
 			<tr class="w3-pale-yellow">
 				<th>No.</th>
 				<th>Perilaku Anak</th>
-				<th>Sangat jarang</th>
-				<th>Kadang-kadang</th>
-				<th>Sering</th>
-				<th>Sangat Sering</th>
+				<th>Sangat jarang(1)</th>
+				<th>Kadang-kadang(2)</th>
+				<th>Sering(3)</th>
+				<th>Sangat Sering(4)</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -423,5 +437,10 @@
 			</tr>
 		</tbody>
 	</table>
+	<div class="w3-row-padding">
+		<div class="w3-col m12 w3-margin-bottom">
+			<h3>Total Skor: <?php echo $score; ?> </h3>
+		</div>
+	</div>
 </body>
 </html>
