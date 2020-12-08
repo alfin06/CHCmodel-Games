@@ -525,6 +525,28 @@
 		</div>
 	  </div>
 
+	  <?php
+		$result = $db->query("SELECT (question1+question3+question4+question5+question6+
+									  question8+question9+question10+
+									  question17+question18+
+									  question19+question20+question21+question22+question23+
+									  question25+question26+question27+
+								      question33+question35) AS skor
+							FROM survey
+						   WHERE id = ".$_SESSION['survey_id']);
+									  
+		while($r = mysqli_fetch_array($result))
+		{
+			$score2 = $r['skor'];
+		}
+	  ?>
+	  
+	  <div class="w3-row-padding">
+		<div class="w3-col m12 w3-margin-bottom">
+			<h3>Total Skor 2: <?php echo $score2; ?> </h3>
+		</div>
+	  </div>
+
 	<!-- End page content -->
 	
 	  <div class="w3-row-padding w3-padding-32">
