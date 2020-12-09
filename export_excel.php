@@ -107,7 +107,7 @@
 
 	$result3 = $db->query("SELECT (question1+question3+question4+question5+question6+
 									  question8+question9+question10+
-									  question17+question18+
+									  question16+question18+
 									  question19+question20+question21+question22+question23+
 									  question25+question26+question27+
 								      question33+question35) AS skor
